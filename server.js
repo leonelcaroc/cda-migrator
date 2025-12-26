@@ -3,6 +3,7 @@ import express from "express";
 // import dotenv from "dotenv";
 import runMigration from "./src/migration.js";
 import runTestMigration from "./src/testMigration.js";
+import runAddCsfCoops from "./src/addCsfCoops.js";
 
 // dotenv.config();
 
@@ -13,7 +14,8 @@ app.get("/health", (_, res) => {
   res.json({ status: "ok" });
 });
 
-runTestMigration();
+// runTestMigration();
+runAddCsfCoops();
 
 const PORT = 6000;
 

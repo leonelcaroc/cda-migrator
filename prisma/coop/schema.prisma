@@ -38,6 +38,8 @@ model CooperativeOrg {
   migrated                 Int?                @default(0)
   prevComplianceRemarks    String?
   acronym                  String?
+  dateOfRegistration       DateTime?
+  recentAmendmentDate      DateTime?
   BranchSatellite          BranchSatellite[]
   alternateRepresentative  Representative?     @relation("OrgAlternateRep", fields: [alternateRepId], references: [id])
   amendmentApplication     Cooperatives?       @relation("OrgAmendmentApplication", fields: [amendmentApplicationId], references: [id])
@@ -244,6 +246,7 @@ model Cooperatives {
   totalNoOfRegularMembers             Int?
   mergingCoops                        Json?
   isSubsidiaryCooperative             Boolean?                  @default(false)
+  isBspRegistered                     Boolean?
   amendmentOrg                        CooperativeOrg?           @relation("OrgAmendmentApplication")
   approvedByOrg                       CooperativeOrg?           @relation("OrgApprovedApplication")
   barangay                            Barangays?                @relation(fields: [brgyCode], references: [brgyCode])
@@ -539,9 +542,7 @@ model BranchSatellite {
   province_id            String?
   cityMun_id             String?
   barangay_id            String?
-  town                   String?
   zipCode                String?
-  street_name            String?
   subdivisionVillageZone String?
   unitRoomFloorBuilding  String?
   lotBlockPhaseHouseNo   String?
@@ -577,6 +578,10 @@ model BranchSatellite {
   proposedAreaToServe    String?
   registeredAt           DateTime?
   registrationNo         String?            @unique
+  documents              Json?
+  streetName             String?
+  townDistrict           String?
+  expiresAt              DateTime?
   barangay               Barangays?         @relation(fields: [barangay_id], references: [id])
   cityMun                CityMunicipality?  @relation(fields: [cityMun_id], references: [id])
   cooperativeOrg         CooperativeOrg     @relation(fields: [cooperativeOrgId], references: [id])
@@ -597,6 +602,7 @@ model CtcApplication {
   isDraft           Boolean?               @default(true)
   version           String                 @default("1")
   validator_id      String?
+  expiresAt         DateTime?
   closure           ClosureApplication?
   conversion        ConversionApplication?
   branchSatellite   BranchSatellite?       @relation(fields: [branchSatelliteId], references: [id])
@@ -604,52 +610,65 @@ model CtcApplication {
 }
 
 model TransferApplication {
-  id              String            @id @default(uuid())
-  applicationId   String            @unique
-  reason          String?
-  documents       Json?
-  newTown         String?
-  newZipCode      String?
-  newStreet       String?
-  newSubdivision  String?
-  newUnitBldg     String?
-  newLotBlock     String?
-  createdAt       DateTime          @default(now())
-  updatedAt       DateTime          @updatedAt
-  deletedAt       DateTime?
-  endedAt         DateTime?
-  newBarangayCode String?
-  newCityMunCode  String?
-  newProvinceCode String?
-  newRegionCode   String?
-  application     CtcApplication    @relation(fields: [applicationId], references: [id])
-  newBarangay     Barangays?        @relation(fields: [newBarangayCode], references: [brgyCode])
-  newCityMun      CityMunicipality? @relation(fields: [newCityMunCode], references: [citymunCode])
-  newProvince     Province?         @relation(fields: [newProvinceCode], references: [provCode])
-  newRegion       Regions?          @relation(fields: [newRegionCode], references: [regCode])
+  id               String            @id @default(uuid())
+  applicationId    String            @unique
+  reason           String?
+  documents        Json?
+  newTown          String?
+  newZipCode       String?
+  newStreet        String?
+  newSubdivision   String?
+  newUnitBldg      String?
+  newLotBlock      String?
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @updatedAt
+  deletedAt        DateTime?
+  endedAt          DateTime?
+  newBarangayCode  String?
+  newCityMunCode   String?
+  newProvinceCode  String?
+  newRegionCode    String?
+  letterOfIntent   String?
+  noticeOfTransfer String?
+  application      CtcApplication    @relation(fields: [applicationId], references: [id])
+  newBarangay      Barangays?        @relation(fields: [newBarangayCode], references: [brgyCode])
+  newCityMun       CityMunicipality? @relation(fields: [newCityMunCode], references: [citymunCode])
+  newProvince      Province?         @relation(fields: [newProvinceCode], references: [provCode])
+  newRegion        Regions?          @relation(fields: [newRegionCode], references: [regCode])
 }
 
 model ConversionApplication {
-  id            String         @id @default(uuid())
-  applicationId String         @unique
-  convertFrom   String?
-  convertTo     String?
-  documents     Json?
-  createdAt     DateTime       @default(now())
-  updatedAt     DateTime       @updatedAt
-  reason        String?
-  application   CtcApplication @relation(fields: [applicationId], references: [id])
+  id                         String         @id @default(uuid())
+  applicationId              String         @unique
+  convertFrom                String?
+  convertTo                  String?
+  documents                  Json?
+  createdAt                  DateTime       @default(now())
+  updatedAt                  DateTime       @updatedAt
+  reason                     String?
+  letterOfIntent             String?
+  auditedFinancialStatement  String?
+  businessPlan               String?
+  certOfNoticePosted         String?
+  certSignedManualOperations String?
+  generalAssemblyResolution  String?
+  noticeOfConversion         String?
+  oathOfUndertaking          String?
+  originalCert               String?
+  application                CtcApplication @relation(fields: [applicationId], references: [id])
 }
 
 model ClosureApplication {
-  id            String         @id @default(uuid())
-  applicationId String         @unique
-  closureReason String?
-  closureDate   DateTime?
-  documents     Json?
-  createdAt     DateTime       @default(now())
-  updatedAt     DateTime       @updatedAt
-  application   CtcApplication @relation(fields: [applicationId], references: [id])
+  id              String         @id @default(uuid())
+  applicationId   String         @unique
+  closureReason   String?
+  closureDate     DateTime?
+  documents       Json?
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+  letterOfIntent  String?
+  noticeOfClosure String?
+  application     CtcApplication @relation(fields: [applicationId], references: [id])
 }
 
 model Laboratory {
@@ -687,6 +706,7 @@ model Laboratory {
   contactNumber          String?
   contactPerson          String?
   documents              Json?
+  expiresAt              DateTime?
   barangay               Barangays?         @relation(fields: [barangay_id], references: [id])
   cityMun                CityMunicipality?  @relation(fields: [cityMun_id], references: [id])
   commonBondMembership   BondOfMembership?  @relation(fields: [commonBondMembershipId], references: [id])
@@ -837,6 +857,13 @@ model TransactionLog {
   officialReceipt String?
   referenceId     String?
   orderNo         String
+}
+
+model CdaChairman {
+  id               Int     @id @default(autoincrement())
+  chairman         String?
+  active_status    Int?
+  effectivity_date String?
 }
 
 enum ApplicationStatus {

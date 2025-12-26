@@ -104,6 +104,7 @@ export default function runTestMigration() {
           continue;
         }
 
+        const newReferenceId = generateReferenceId();
         const regNo = row.regNo.trim();
         let coopName = row.coopName?.trim() || `Unknown_${regNo}`;
 
@@ -254,7 +255,7 @@ export default function runTestMigration() {
                   connect: { id: coopType.id },
                 },
                 coopTypeList: coopType.coopTypeList,
-                registrationId: regNo,
+                registrationId: newReferenceId,
                 isAmendment: false,
                 formOfRegistration: "none",
                 totalAuthorizedShareCapital,
