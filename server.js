@@ -1,0 +1,22 @@
+import "dotenv/config";
+import express from "express";
+// import dotenv from "dotenv";
+import runMigration from "./src/migration.js";
+import runTestMigration from "./src/testMigration.js";
+
+// dotenv.config();
+
+const app = express();
+app.use(express.json());
+
+app.get("/health", (_, res) => {
+  res.json({ status: "ok" });
+});
+
+runTestMigration();
+
+const PORT = 6000;
+
+app.listen(PORT, () => {
+  console.log(`🚀 Migrator app running on http://localhost:${PORT}`);
+});

@@ -1,0 +1,166 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../../node_modules/@prisma/client/auth"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL_AUTH")
+}
+
+model User {
+  id            String     @id @default(uuid())
+  lastname      String?
+  firstname     String?
+  middlename    String?
+  suffix        String?
+  mobile        String?
+  email         String     @unique
+  gender        String?
+  address       String?
+  id_type       String?
+  id_no         String?
+  password      String?
+  role_name     String?
+  verified_at   DateTime?
+  created_at    DateTime?  @default(now())
+  updated_at    DateTime?  @updatedAt
+  deleted_at    DateTime?
+  refreshToken  String?    @unique
+  firebaseToken String?
+  firebaseUid   String?    @unique
+  status        UserStatus @default(PENDING)
+  provider      String?
+  migrated      Int?
+}
+
+model Verification {
+  id         String    @id @default(uuid())
+  email      String
+  expires_at DateTime?
+  created_at DateTime? @default(now())
+}
+
+model PasswordResetToken {
+  id        String   @id @default(uuid())
+  token     String   @unique
+  email     String?
+  userId    String?
+  adminId   String?
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+}
+
+model Admin {
+  id            String       @id @default(uuid())
+  email         String       @unique
+  password      String?
+  firstname     String?
+  lastname      String?
+  middlename    String?
+  suffix        String?
+  mobile        String?
+  id_type       String?
+  id_no         String?
+  region        String?
+  is_default    Boolean?
+  verified_at   DateTime?
+  refreshToken  String?      @unique
+  roleId        String
+  created_at    DateTime     @default(now())
+  updated_at    DateTime     @updatedAt
+  deleted_at    DateTime?
+  department_id String?
+  department    Departments? @relation(fields: [department_id], references: [id])
+  role          Role         @relation(fields: [roleId], references: [id])
+}
+
+model Role {
+  id          String           @id @default(uuid())
+  name        String
+  description String?
+  created_at  DateTime         @default(now())
+  updated_at  DateTime         @updatedAt
+  deleted_at  DateTime?
+  subRole     String?
+  slug        String?          @unique
+  admins      Admin[]
+  permissions RolePermission[]
+}
+
+model Permission {
+  id          String           @id @default(uuid())
+  name        String
+  slug        String           @unique
+  description String?
+  created_at  DateTime         @default(now())
+  updated_at  DateTime         @updatedAt
+  deleted_at  DateTime?
+  groupName   String?
+  roles       RolePermission[]
+}
+
+model RolePermission {
+  id           String     @id @default(uuid())
+  roleId       String?
+  permissionId String
+  created_at   DateTime   @default(now())
+  actionId     String?
+  action       Action?    @relation(fields: [actionId], references: [id])
+  permission   Permission @relation(fields: [permissionId], references: [id])
+  role         Role?      @relation(fields: [roleId], references: [id])
+
+  @@unique([roleId, permissionId])
+}
+
+model Regions {
+  id         String    @id @default(uuid())
+  psgcCode   String
+  regDesc    String
+  regCode    String    @unique
+  label      String?
+  created_at DateTime? @default(now())
+  updated_at DateTime? @updatedAt
+  deleted_at DateTime?
+}
+
+model TypesOfID {
+  id         String    @id @default(uuid())
+  name       String    @unique
+  created_at DateTime? @default(now())
+  updated_at DateTime? @updatedAt
+  deleted_at DateTime?
+}
+
+model Departments {
+  id         String    @id @default(uuid())
+  name       String    @unique
+  slug       String
+  acronym    String
+  created_at DateTime? @default(now())
+  updated_at DateTime? @updatedAt
+  deleted_at DateTime?
+  admins     Admin[]
+}
+
+model Module {
+  id          String   @id @default(uuid())
+  name        String
+  createdAt   DateTime @default(now())
+  description String?
+  actions     Action[]
+}
+
+model Action {
+  id       String           @id @default(uuid())
+  name     String
+  moduleId String
+  module   Module           @relation(fields: [moduleId], references: [id])
+  roles    RolePermission[]
+}
+
+enum UserStatus {
+  PENDING  @map("pending")
+  APPROVED @map("approved")
+  DENIED   @map("denied")
+}
