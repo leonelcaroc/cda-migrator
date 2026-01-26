@@ -5,23 +5,35 @@ import randomPassword from "./utils/randomPassword.js";
 import { loadJSON } from "./utils/loadJson.js";
 import path from "path";
 import fs from "fs";
+import { v4 as uuid } from "uuid";
 import { generateReferenceId } from "./utils/generateReferenceId.js";
 
 const logFilePath = path.join(process.cwd(), "csf_credential_logs.txt");
 
+// Clear previous log
+fs.writeFileSync(logFilePath, "email,password\n");
+
 export default async function runAddCsfCoops() {
+  // const csfCoops = loadJSON("csf_migration.json");
+
+  // 3 CSF Coops Only
   const csfCoops = loadJSON("csf_migration.json");
+  // .slice(0, 1);
+
+  const cooperators = loadJSON("csf_cooperators.json");
+  // console.log("CSF Cooperators: ", cooperators);
 
   let successCount = 0;
   let skipCount = 0;
   let errorCount = 0;
 
   console.log(
-    `Starting migration of ${csfCoops.length} credit surety fund cooperatives...`
+    `Starting migration of ${csfCoops.length} credit surety fund cooperatives...`,
   );
 
   for (const [index, row] of csfCoops.entries()) {
     console.log(`Processing ${index + 1}/${csfCoops.length}`);
+    ``;
 
     try {
       const newReferenceId = generateReferenceId();
@@ -32,6 +44,54 @@ export default async function runAddCsfCoops() {
       const csfCoopTypeId = "d4c3b2a1-7e6f-4d2c-9b1a-6e5d4c3b2a1f";
       const isBspRegistered = Number(row.isBspRegistered) === 1;
       const areaOfOperation = row.type.toLowerCase(); // city or province
+      const regCode = row.regCode; // Region Code
+      const provCode = row.provCode; // Province Code
+      const citymunCode = row.citymunCode; // City/Municipality Code
+      const brgyCode = row.brgyCode; // Barangay Code
+
+      const cooperatorList = cooperators
+        .filter((item) => item.csfRegNo === registrationNo)
+        .map((item) => ({
+          id: uuid(),
+          coopId: "",
+          name: item.name.trim(),
+          type: item.type.trim().toLowerCase(),
+          address: item.address?.trim().replace(/\s+/g, " "),
+          representative: `${item.lastName}, ${item.firstName} ${item.middleName}`,
+          nationality: "Filipino",
+          role:
+            item.role.toLowerCase() === "chairman"
+              ? "chairperson"
+              : item.role.toLowerCase() === "director"
+                ? "board-of-director"
+                : "",
+          bod: Boolean(item.role?.trim()),
+          residence: item.residence?.trim().replace(/\s+/g, " "),
+          contribution: Number(item.contribution.trim()),
+          contributionType: item.contributionType.trim().toLowerCase(),
+          amountOfPaidUpSharesCommon: 0,
+          amountOfPaidUpSharesPreferred: 0,
+          amountOfSubscribedSharesCommon: 0,
+          amountOfSubscribedSharesPreferred: 0,
+          noOfPaidUpSharesCommon: 0,
+          noOfPaidUpSharesPreferred: 0,
+          noOfSubscribedSharesCommon: 0,
+          noOfSubscribedSharesPreferred: 0,
+          restrictedCapital:
+            item.contributionType === "grant"
+              ? Number(item.contribution)
+              : Number(item.contribution) * 0.99, // Multiply into 99% if contributionType is investment
+        }));
+
+      console.log("cooperatorList: ", cooperatorList);
+
+      const treasurer = cooperatorList?.find((item) => item.isTreasurer === 1);
+
+      const treasurerFullName = treasurer
+        ? `${treasurer.lastName ?? ""}, ${treasurer.firstName ?? ""} ${treasurer.middleName ?? ""}`
+            .replace(/\s+/g, " ")
+            .trim()
+        : null;
 
       // Validate required fields
       if (!registrationNo || !cooperativeName || !email) {
@@ -45,6 +105,8 @@ export default async function runAddCsfCoops() {
         where: { regNo: registrationNo },
         select: { id: true },
       });
+
+      // TODO
 
       if (existingCoop) {
         console.log(`[SKIP] Cooperative already exists: ${registrationNo}`);
@@ -84,9 +146,14 @@ export default async function runAddCsfCoops() {
         });
 
         if (!loggedUsers.has(email)) {
-          fs.appendFileSync(logFilePath, `${email},${plainPassword}\n`);
+          fs.appendFileSync(
+            logFilePath,
+            `${cooperativeName}, ${registrationNo}, ${email}, ${plainPassword}\n`,
+          );
           loggedUsers.add(email);
         }
+
+        // console.log("cooperatorList: ", cooperatorList);
 
         await prismaCoop.cooperativeOrg.create({
           data: {
@@ -109,7 +176,31 @@ export default async function runAddCsfCoops() {
                 isAmendment: false,
                 isBspRegistered: isBspRegistered,
                 areaOfOperation,
+                commonBondOfMembership: "associational",
+                cooperatorList: cooperatorList,
+                assignedTreasurer: treasurerFullName,
                 isDraft: false,
+                applicationStatus: "APPROVED",
+                region: {
+                  connect: {
+                    regCode: regCode,
+                  },
+                },
+                province: {
+                  connect: {
+                    provCode: provCode,
+                  },
+                },
+                cityMunicipality: {
+                  connect: {
+                    citymunCode: citymunCode,
+                  },
+                },
+                barangay: {
+                  connect: {
+                    brgyCode: brgyCode,
+                  },
+                },
                 // migrated: 1,
               },
             },

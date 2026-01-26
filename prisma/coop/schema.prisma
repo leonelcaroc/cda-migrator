@@ -41,6 +41,7 @@ model CooperativeOrg {
   dateOfRegistration       DateTime?
   recentAmendmentDate      DateTime?
   BranchSatellite          BranchSatellite[]
+  CoopStatus               CoopStatus[]
   alternateRepresentative  Representative?     @relation("OrgAlternateRep", fields: [alternateRepId], references: [id])
   amendmentApplication     Cooperatives?       @relation("OrgAmendmentApplication", fields: [amendmentApplicationId], references: [id])
   approvedCooperative      Cooperatives?       @relation("OrgApprovedApplication", fields: [approvedCooperativeId], references: [id])
@@ -53,29 +54,27 @@ model CooperativeOrg {
 }
 
 model Cooperatives {
-  id                                  String                    @id @default(uuid())
+  id                                  String                     @id @default(uuid())
   cooperativeOrgId                    String?
-  registrationId                      String?                   @unique
+  registrationId                      String?                    @unique
   applicationType                     String?
   level                               String?
-  isAmendment                         Boolean?                  @default(false)
+  isAmendment                         Boolean?                   @default(false)
   isConsolidation                     Boolean?
   primaryRepresentative               String?
   secondaryRepresentative             String?
-  secretaryCertUrl                    String?
-  isYouthCooperative                  Boolean?                  @default(false)
-  isGuardianCooperative               Boolean?                  @default(false)
+  isYouthCooperative                  Boolean?                   @default(false)
+  isGuardianCooperative               Boolean?                   @default(false)
   regularAndAssociate                 String?
   regularMemberQualifications         Json?
   associateMemberQualifications       Json?
-  childCooperatives                   Json?
   validator_question_id               String?
   cooperativeCategory                 String?
   cooperativeTypeId                   String?
   industryClassification              Json?
   cooperativeName                     String?
   coopNamePrefix                      String?
-  allowCustomName                     Boolean?                  @default(false)
+  allowCustomName                     Boolean?                   @default(false)
   cooperativeNameAcronym              String?
   regCode                             String?
   provCode                            String?
@@ -90,7 +89,7 @@ model Cooperatives {
   fedEngagedIn                        String?
   purposes                            Json?
   federationPurposes                  Json?
-  termOfExistence                     Int?                      @default(50)
+  termOfExistence                     Int?                       @default(50)
   chairmanOfBoard                     String?
   commonBondOfMembership              String?
   fieldOfMembership                   String?
@@ -104,7 +103,7 @@ model Cooperatives {
   fedCooperators                      Json?
   totalFeeContributions               Int?
   boardOfDirectors                    Json?
-  totalAuthorizedShareCapital         Int?
+  totalAuthorizedShareCapital         BigInt?
   totalShares                         Int?
   shareParValue                       Int?
   hasPreferredShare                   Boolean?
@@ -112,8 +111,8 @@ model Cooperatives {
   preferredShareParValue              Int?
   commonShares                        Int?
   commonShareParValue                 Int?
-  totalSubscribedCapital              Int?
-  totalPaidUpCapital                  Int?
+  totalSubscribedCapital              BigInt?
+  totalPaidUpCapital                  BigInt?
   paidUpShareCommon                   Json?
   paidUpSharePreferred                Json?
   regularMinimumSubscribed            Int?
@@ -154,7 +153,6 @@ model Cooperatives {
   optionalFundPercentage              Int?
   votingRights                        String?
   byLaws                              Json?
-  economicSurvey                      Json?
   treasurerAffidavit                  Json?
   documentaryRequirements             Json?
   otherDocumentaryRequirements        Json?
@@ -190,27 +188,27 @@ model Cooperatives {
   hardCopyValidationStatus            EvaluatorStatus?
   seniorCdsRemarks                    Json?
   regionalDirectorRemarks             Json?
-  applicationStatus                   ApplicationStatus?        @default(IN_PROGRESS)
+  applicationStatus                   ApplicationStatus?         @default(IN_PROGRESS)
   status                              Status?
-  isApproved                          Boolean?                  @default(false)
-  isDraft                             Boolean?                  @default(true)
-  isDetailsComplete                   Boolean?                  @default(false)
-  isAocComplete                       Boolean?                  @default(false)
-  isByLawsComplete                    Boolean?                  @default(false)
-  isEconSurveyComplete                Boolean?                  @default(false)
+  isApproved                          Boolean?                   @default(false)
+  isDraft                             Boolean?                   @default(true)
+  isDetailsComplete                   Boolean?                   @default(false)
+  isAocComplete                       Boolean?                   @default(false)
+  isByLawsComplete                    Boolean?                   @default(false)
+  isEconSurveyComplete                Boolean?                   @default(false)
   expiresAt                           DateTime?
   createdBy                           String?
   updatedBy                           String?
   date_of_cor                         DateTime?
-  created_at                          DateTime?                 @default(now())
-  updated_at                          DateTime?                 @updatedAt
+  created_at                          DateTime?                  @default(now())
+  updated_at                          DateTime?                  @updatedAt
   archived_at                         DateTime?
   deleted_at                          DateTime?
   closed_at                           DateTime?
   audit_logs                          Json?
   validatorId                         String?
   addressCoordinates                  Json?
-  version                             String                    @default("1")
+  version                             String                     @default("1")
   directorsTerm                       Int?
   noOfAuditCommittee                  Int?
   noOfEducAndTrainingCommittee        Int?
@@ -223,20 +221,20 @@ model Cooperatives {
   bodPerDiem                          Json?
   majorityMembersLocation             String?
   qualificationPeriodYears            Int?
-  totalRestrictedCapital              Int?
+  totalRestrictedCapital              BigInt?
   economicAspect                      Json?
   financialAspect                     Json?
   technicalAspect                     Json?
   bodElection                         String?
   consolidatingCoops                  Json?
-  formOfRegistration                  String?                   @default("none")
+  formOfRegistration                  String?                    @default("none")
   parentCoop                          Json?
   amendmentType                       String?
-  isMainOffice                        Boolean?                  @default(false)
+  isMainOffice                        Boolean?                   @default(false)
   transferRegionCode                  String?
   members                             Json?
   coopTypeList                        Json?
-  registrationNo                      String?                   @unique
+  registrationNo                      String?                    @unique
   electedAndQualifiedWithin           Int?
   chairperson                         String?
   totalNoOfFemaleMembers              Int?
@@ -245,19 +243,21 @@ model Cooperatives {
   totalNoOfAssociateMembers           Int?
   totalNoOfRegularMembers             Int?
   mergingCoops                        Json?
-  isSubsidiaryCooperative             Boolean?                  @default(false)
+  isSubsidiaryCooperative             Boolean?                   @default(false)
   isBspRegistered                     Boolean?
-  amendmentOrg                        CooperativeOrg?           @relation("OrgAmendmentApplication")
-  approvedByOrg                       CooperativeOrg?           @relation("OrgApprovedApplication")
-  barangay                            Barangays?                @relation(fields: [brgyCode], references: [brgyCode])
-  cityMunicipality                    CityMunicipality?         @relation(fields: [citymunCode], references: [citymunCode])
-  cooperativeOrg                      CooperativeOrg?           @relation("OrgApplications", fields: [cooperativeOrgId], references: [id])
-  cooperativeType                     TypeCooperative?          @relation(fields: [cooperativeTypeId], references: [id])
-  province                            Province?                 @relation(fields: [provCode], references: [provCode])
-  region                              Regions?                  @relation(fields: [regCode], references: [regCode])
-  validatorQuestion                   ValidatorQuestion?        @relation(fields: [validator_question_id], references: [id])
-  reservedCoopName                    ReservedCooperativeName[]
-  validationTool                      ValidationTool?           @relation("ValidationByRegistration")
+  amendmentNo                         Int?
+  migrated                            Int?                       @default(0)
+  CooperativeEconomicSurvey           CooperativeEconomicSurvey?
+  amendmentOrg                        CooperativeOrg?            @relation("OrgAmendmentApplication")
+  approvedByOrg                       CooperativeOrg?            @relation("OrgApprovedApplication")
+  barangay                            Barangays?                 @relation(fields: [brgyCode], references: [brgyCode])
+  cityMunicipality                    CityMunicipality?          @relation(fields: [citymunCode], references: [citymunCode])
+  cooperativeOrg                      CooperativeOrg?            @relation("OrgApplications", fields: [cooperativeOrgId], references: [id])
+  cooperativeType                     TypeCooperative?           @relation(fields: [cooperativeTypeId], references: [id])
+  province                            Province?                  @relation(fields: [provCode], references: [provCode])
+  region                              Regions?                   @relation(fields: [regCode], references: [regCode])
+  validatorQuestion                   ValidatorQuestion?         @relation(fields: [validator_question_id], references: [id])
+  validationTool                      ValidationTool?            @relation("ValidationByRegistration")
 }
 
 model Validation {
@@ -274,6 +274,7 @@ model ComplianceStatus {
   created_at      DateTime?        @default(now())
   deleted_at      DateTime?
   updated_at      DateTime         @updatedAt
+  CoopStatus      CoopStatus[]
   cooperativeOrgs CooperativeOrg[]
 }
 
@@ -284,6 +285,7 @@ model ComplianceCategory {
   deleted_at         DateTime?
   updated_at         DateTime         @updatedAt
   complianceStatusId Int?
+  CoopStatus         CoopStatus[]
   cooperativeOrgs    CooperativeOrg[]
 }
 
@@ -294,20 +296,8 @@ model ComplianceType {
   deleted_at           DateTime?
   updated_at           DateTime         @updatedAt
   complianceCategoryId Int?
+  CoopStatus           CoopStatus[]
   cooperativeOrgs      CooperativeOrg[]
-}
-
-model ReservedCooperativeName {
-  id            String       @id @default(uuid())
-  name          String?
-  cooperativeId String
-  createdBy     String?
-  updatedBy     String?
-  expiresAt     DateTime?
-  created_at    DateTime     @default(now())
-  updated_at    DateTime     @updatedAt
-  deleted_at    DateTime?
-  cooperative   Cooperatives @relation(fields: [cooperativeId], references: [id])
 }
 
 model Regions {
@@ -429,17 +419,18 @@ model AppRegistrationTypeFee {
 }
 
 model TypeCooperative {
-  id                      String                    @id @default(uuid())
-  name                    String                    @unique
-  category                String[]
-  isActive                Boolean?                  @default(true)
-  created_at              DateTime?                 @default(now())
-  updated_at              DateTime?                 @updatedAt
-  deleted_at              DateTime?
-  documentaryRequirements CooperativePurposes[]
-  cooperatives            Cooperatives[]
-  defaultPurposes         DocumentaryRequirements[]
-  classifications         TypeCoopIndustryLink[]
+  id                           String                         @id @default(uuid())
+  name                         String                         @unique
+  category                     String[]
+  isActive                     Boolean?                       @default(true)
+  created_at                   DateTime?                      @default(now())
+  updated_at                   DateTime?                      @updatedAt
+  deleted_at                   DateTime?
+  documentaryRequirements      CooperativePurposes[]
+  cooperatives                 Cooperatives[]
+  defaultPurposes              DocumentaryRequirements[]
+  classifications              TypeCoopIndustryLink[]
+  majorIndustryClassifications majorIndustryClassifications[] @relation("TypeCooperativeTomajorIndustryClassifications")
 }
 
 model CooperativePurposes {
@@ -482,22 +473,25 @@ model compositionOfMembership {
 }
 
 model majorIndustryClassifications {
-  id              Int                    @id @default(autoincrement())
-  description     String
-  created_at      DateTime?              @default(now())
-  updated_at      DateTime?              @updatedAt
-  deleted_at      DateTime?
-  classifications TypeCoopIndustryLink[]
+  id                         Int                          @id @default(autoincrement())
+  description                String
+  created_at                 DateTime?                    @default(now())
+  updated_at                 DateTime?                    @updatedAt
+  deleted_at                 DateTime?
+  classifications            TypeCoopIndustryLink[]
+  TypeCooperative            TypeCooperative[]            @relation("TypeCooperativeTomajorIndustryClassifications")
+  subIndustryClassifications subIndustryClassifications[] @relation("majorIndustryClassificationsTosubIndustryClassifications")
 }
 
 model subIndustryClassifications {
-  id              Int                    @id @default(autoincrement())
-  description     String
-  baseVolBus      String?
-  created_at      DateTime?              @default(now())
-  updated_at      DateTime?              @updatedAt
-  deleted_at      DateTime?
-  classifications TypeCoopIndustryLink[]
+  id                           Int                            @id @default(autoincrement())
+  description                  String
+  baseVolBus                   String?
+  created_at                   DateTime?                      @default(now())
+  updated_at                   DateTime?                      @updatedAt
+  deleted_at                   DateTime?
+  classifications              TypeCoopIndustryLink[]
+  majorIndustryClassifications majorIndustryClassifications[] @relation("majorIndustryClassificationsTosubIndustryClassifications")
 }
 
 model TypeCoopIndustryLink {
@@ -707,6 +701,7 @@ model Laboratory {
   contactPerson          String?
   documents              Json?
   expiresAt              DateTime?
+  manualOfOperations     String?
   barangay               Barangays?         @relation(fields: [barangay_id], references: [id])
   cityMun                CityMunicipality?  @relation(fields: [cityMun_id], references: [id])
   commonBondMembership   BondOfMembership?  @relation(fields: [commonBondMembershipId], references: [id])
@@ -866,6 +861,137 @@ model CdaChairman {
   effectivity_date String?
 }
 
+model CoopStatus {
+  id                 String              @id
+  coopOrgId          String
+  showCauseOrderId   String?             @unique
+  effectiveDate      DateTime
+  remarks            String?
+  updatedBy          String
+  createdAt          DateTime            @default(now())
+  updatedAt          DateTime
+  complianceStatusId Int?
+  statusCategoryId   Int?
+  statusTypeId       Int?
+  ComplianceStatus   ComplianceStatus?   @relation(fields: [complianceStatusId], references: [id])
+  CooperativeOrg     CooperativeOrg      @relation(fields: [coopOrgId], references: [id], onDelete: Cascade)
+  ShowCauseOrder     ShowCauseOrder?     @relation(fields: [showCauseOrderId], references: [id])
+  ComplianceCategory ComplianceCategory? @relation(fields: [statusCategoryId], references: [id])
+  ComplianceType     ComplianceType?     @relation(fields: [statusTypeId], references: [id])
+  CoopStatusHistory  CoopStatusHistory[]
+}
+
+model CoopStatusHistory {
+  id                 String     @id
+  coopStatusId       String
+  coopOrgId          String
+  complianceStatusId Int?
+  statusCategoryId   Int?
+  statusTypeId       Int?
+  showCauseOrderId   String?
+  effectiveDate      DateTime
+  remarks            String?
+  updatedBy          String
+  action             String
+  changeDetails      Json?
+  changedAt          DateTime   @default(now())
+  changedBy          String
+  reason             String?
+  createdAt          DateTime   @default(now())
+  CoopStatus         CoopStatus @relation(fields: [coopStatusId], references: [id], onDelete: Cascade)
+}
+
+model PcpcClasses {
+  id           Int       @id @default(autoincrement())
+  class_no     String?
+  name         String?
+  createdAt    DateTime? @default(now())
+  createdBy    String?
+  deletedAt    DateTime?
+  updatedAt    DateTime?
+  sub_class_no String?
+}
+
+model PsccMajorProduct {
+  id             Int              @id @default(autoincrement())
+  name           String?
+  createdBy      String?
+  createdAt      DateTime?        @default(now())
+  updatedAt      DateTime?
+  deletedAt      DateTime?
+  PsccSubProduct PsccSubProduct[]
+}
+
+model PsccSubProduct {
+  id               Int               @id @default(autoincrement())
+  code             String?           @unique
+  description      String?
+  details          Json?
+  createdBy        String?
+  createdAt        DateTime?         @default(now())
+  updatedAt        DateTime?
+  deletedAt        DateTime?
+  majorProductId   Int?
+  PsccMajorProduct PsccMajorProduct? @relation(fields: [majorProductId], references: [id])
+}
+
+model ShowCauseOrder {
+  id                    String                  @id
+  coopStatusId          String?                 @unique
+  scoType               String
+  grounds               String
+  yearOne               String
+  yearTwo               String
+  caseNumber            String                  @unique
+  dateIssued            DateTime
+  lifeStatus            Json
+  createdAt             DateTime                @default(now())
+  updatedAt             DateTime
+  CoopStatus            CoopStatus?
+  ShowCauseOrderHistory ShowCauseOrderHistory[]
+}
+
+model ShowCauseOrderHistory {
+  id               String          @id
+  showCauseOrderId String?
+  coopStatusId     String?
+  scoType          String
+  grounds          String
+  yearOne          String
+  yearTwo          String
+  caseNumber       String
+  dateIssued       DateTime
+  lifeStatus       Json
+  action           String
+  changeDetails    Json?
+  changedAt        DateTime        @default(now())
+  changedBy        String
+  reason           String?
+  createdAt        DateTime        @default(now())
+  ShowCauseOrder   ShowCauseOrder? @relation(fields: [showCauseOrderId], references: [id])
+}
+
+model CooperativeEconomicSurvey {
+  id                    String                 @id
+  cooperativeId         String                 @unique
+  surveyType            EconomicSurveyType
+  primarySurveyId       String?                @unique
+  csfSurveyId           String?                @unique
+  Cooperatives          Cooperatives           @relation(fields: [cooperativeId], references: [id])
+  EconomicSurveyCsf     EconomicSurveyCsf?     @relation(fields: [csfSurveyId], references: [id])
+  EconomicSurveyPrimary EconomicSurveyPrimary? @relation(fields: [primarySurveyId], references: [id])
+}
+
+model EconomicSurveyCsf {
+  id                        String                     @id
+  CooperativeEconomicSurvey CooperativeEconomicSurvey?
+}
+
+model EconomicSurveyPrimary {
+  id                        String                     @id
+  CooperativeEconomicSurvey CooperativeEconomicSurvey?
+}
+
 enum ApplicationStatus {
   APPROVED
   IN_PROGRESS
@@ -919,4 +1045,9 @@ enum CooperativeDocumentType {
   BYLAWS
   ECONOMIC_SURVEY
   TREASURER_AFFIDAVIT
+}
+
+enum EconomicSurveyType {
+  PRIMARY
+  CSF
 }

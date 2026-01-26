@@ -6,7 +6,7 @@ import path from "path";
 import hashPasswordUtil from "./utils/hashPasswordUtil.js";
 import randomPassword from "./utils/randomPassword.js";
 
-const getAllPrimaryCoops = `
+const getAllCoops = `
 SELECT
   rc.*,
   c.id                  AS mysql_coop_id,
@@ -59,7 +59,7 @@ const logFilePath = path.join(process.cwd(), "user_credentials_log.txt");
 fs.writeFileSync(logFilePath, "email,password\n");
 
 export default function runMigration() {
-  connection.query(getAllPrimaryCoops, async (err, results) => {
+  connection.query(getAllCoops, async (err, results) => {
     if (err) throw err;
 
     let successCount = 0;

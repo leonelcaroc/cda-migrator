@@ -159,6 +159,14 @@ model Action {
   roles    RolePermission[]
 }
 
+model LandingPageConfig {
+  id        String   @id
+  sections  Json
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime
+}
+
 enum UserStatus {
   PENDING  @map("pending")
   APPROVED @map("approved")
