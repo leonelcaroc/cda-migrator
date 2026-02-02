@@ -10,7 +10,6 @@ datasource db {
 
 model CooperativeOrg {
   id                       String              @id @default(uuid())
-  name                     String?
   email                    String?
   createdBy                String?
   createdAt                DateTime?           @default(now())
@@ -61,8 +60,6 @@ model Cooperatives {
   level                               String?
   isAmendment                         Boolean?                   @default(false)
   isConsolidation                     Boolean?
-  primaryRepresentative               String?
-  secondaryRepresentative             String?
   isYouthCooperative                  Boolean?                   @default(false)
   isGuardianCooperative               Boolean?                   @default(false)
   regularAndAssociate                 String?
@@ -103,7 +100,7 @@ model Cooperatives {
   fedCooperators                      Json?
   totalFeeContributions               Int?
   boardOfDirectors                    Json?
-  totalAuthorizedShareCapital         BigInt?
+  totalAuthorizedShareCapital         Int?
   totalShares                         Int?
   shareParValue                       Int?
   hasPreferredShare                   Boolean?
@@ -111,8 +108,8 @@ model Cooperatives {
   preferredShareParValue              Int?
   commonShares                        Int?
   commonShareParValue                 Int?
-  totalSubscribedCapital              BigInt?
-  totalPaidUpCapital                  BigInt?
+  totalSubscribedCapital              Int?
+  totalPaidUpCapital                  Int?
   paidUpShareCommon                   Json?
   paidUpSharePreferred                Json?
   regularMinimumSubscribed            Int?
@@ -221,7 +218,7 @@ model Cooperatives {
   bodPerDiem                          Json?
   majorityMembersLocation             String?
   qualificationPeriodYears            Int?
-  totalRestrictedCapital              BigInt?
+  totalRestrictedCapital              Int?
   economicAspect                      Json?
   financialAspect                     Json?
   technicalAspect                     Json?

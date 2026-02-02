@@ -7,141 +7,11 @@ import hashPasswordUtil from "./utils/hashPasswordUtil.js";
 import randomPassword from "./utils/randomPassword.js";
 import randomString from "./utils/randomString.js";
 import { generateReferenceId } from "./utils/generateReferenceId.js";
+import { createCooperativeApplication } from "./utils/createCooperativeApplication.js";
 
 const LIMIT = 5000;
 const OFFSET = 0;
 
-// NO Amendments Yet
-// const getAllCoops = `SELECT
-//   rc.*,
-
-//   c.id                    AS mysql_coop_id,
-//   c.users_id              AS mysql_users_id,
-//   c.type_of_cooperative   AS c_coop_type,
-
-//   u.id                  AS user_id,
-//   u.email               AS user_email,
-//   u.first_name           AS user_first_name,
-//   u.last_name            AS user_last_name,
-//   u.middle_name          AS user_middle_name,
-//   u.birthdate            AS user_birthdate,
-//   u.contact_number       AS user_contact_number,
-//   u.address              AS user_address,
-
-//   cap.id                 AS capitalization_id,
-//   cap.regular_members,
-//   cap.associate_members,
-//   cap.authorized_share_capital,
-//   cap.par_value,
-//   cap.common_share,
-//   cap.preferred_share,
-//   cap.total_amount_of_subscribed_capital,
-//   cap.total_no_of_subscribed_capital,
-//   cap.total_amount_of_paid_up_capital,
-//   cap.total_no_of_paid_up_capital,
-//   cap.minimum_subscribed_share_regular,
-//   cap.minimum_paid_up_share_regular,
-//   cap.minimum_subscribed_share_associate,
-//   cap.minimum_paid_up_share_associate,
-//   cap.amount_of_common_share_subscribed,
-//   cap.amount_of_common_share_subscribed_pervalue,
-//   cap.amount_of_preferred_share_subscribed,
-//   cap.amount_of_preferred_share_subscribed_pervalue,
-//   cap.amount_of_common_share_paidup,
-//   cap.amount_of_common_share_paidup_pervalue,
-//   cap.amount_of_preferred_share_paidup,
-//   cap.amount_of_preferred_share_paidup_pervalue,
-
-//   d.cooperators                       AS cooperators,
-
-//   e.branches                          AS branches,
-
-//   aoc.id                              AS aoc_yearsOfExistence,
-//   aoc.directors_turnover_days        AS aoc_directorsTurnoverDays,
-//   aoc.directors_turnover_days        AS aoc_directorsTurnoverDays
-
-// FROM registeredcoop rc
-
-// LEFT JOIN cooperatives c
-//   ON rc.application_id = c.id
-// LEFT JOIN users u
-//   ON c.users_id = u.id
-// LEFT JOIN capitalization cap
-//   ON rc.application_id = cap.cooperatives_id
-// LEFT JOIN (
-//   SELECT
-//     cooperatives_id,
-//     JSON_ARRAYAGG(
-//       JSON_OBJECT(
-//         'id', id,
-//         'full_name', full_name,
-//         'gender', gender,
-//         'birth_date', birth_date,
-//         'house_blk_no', house_blk_no,
-//         'streetName', streetName,
-//         'addrCode', addrCode,
-//         'position', position,
-//         'type_of_member', type_of_member,
-//         'number_of_subscribed_shares', number_of_subscribed_shares,
-//         'number_of_paid_up_shares', number_of_paid_up_shares,
-//         'proof_of_identity', proof_of_identity,
-//         'proof_date_issued', proof_date_issued,
-//         'place_of_issuance', place_of_issuance
-//       )
-//     ) AS cooperators
-//   FROM cooperators
-//   GROUP BY cooperatives_id
-// ) d ON rc.application_id = d.cooperatives_id
-// LEFT JOIN (
-//   SELECT
-//     regNo,
-//     COALESCE(
-//       JSON_ARRAYAGG(
-//         JSON_OBJECT(
-//         'id', id,
-//         'branchName', branchName)
-//       ),
-//       JSON_ARRAY()
-//     ) AS branches
-//   FROM branches
-//   GROUP BY regNo
-// ) e ON rc.regNo = e.regNo
-// LEFT JOIN articles_of_cooperation aoc
-//   ON rc.application_id = aoc.cooperatives_id
-// LEFT JOIN bylaws bl
-//   ON rc.application_id = bl.cooperatives_id
-
-// `;
-
-// LEFT JOIN (
-//   SELECT *
-//   FROM (
-//     SELECT *,
-//            ROW_NUMBER() OVER (PARTITION BY cooperative_id ORDER BY id ASC) AS rn
-//     FROM amend_coop
-//   ) t
-//   WHERE rn = 1
-// ) ac
-// ON rc.regNo = ac.regNo
-
-// -----------------
-
-// d.id                                AS cooperator_id,
-// d.full_name                         AS cooperator_fullname,
-// d.gender                            AS cooperator_gender,
-// d.birth_date                        AS cooperator_birthdate,
-// d.house_blk_no                      AS cooperator_house_blk_no,
-// d.streetName                        AS cooperator_streetName,
-// d.addrCode                          AS cooperator_addrCode,
-// d.position                          AS cooperator_position,
-// d.type_of_member                    AS cooperator_type_of_member,
-// d.number_of_subscribed_shares       AS cooperator_noOfSubscribedShares,
-// d.number_of_paid_up_shares          AS cooperator_noOfPaidUpShares,
-// d.proof_of_identity                 AS cooperator_proof_of_identity_number,
-// d.proof_date_issued                 AS cooperator_proof_date_issued,
-// d.place_of_issuance                 AS cooperator_place_of_issuance,
-
-// ---------------------------
 // Tables 'staff', 'business_activities_cooperative' and 'purposes' not yet included
 
 // LIMIT 5000
@@ -163,6 +33,14 @@ const getAllCoops = `SELECT
   u.birthdate            AS user_birthdate,
   u.contact_number       AS user_contact_number,
   u.address              AS user_address,
+
+  ca.id                  AS ca_user_id,
+  ca.fullname            AS ca_user_fullname,
+  ca.position            AS ca_user_position,
+  ca.idType              AS ca_user_idType,
+  ca.idNo                AS ca_user_idNo,
+  ca.email               AS ca_user_email,
+  ca.mobileNo            AS ca_user_mobileNo,
 
   cap.id                 AS capitalization_id,
   cap.regular_members,
@@ -192,9 +70,9 @@ const getAllCoops = `SELECT
 
   e.branches                          AS branches,
 
-  aoc.id                              AS aoc_yearsOfExistence,
-  aoc.directors_turnover_days        AS aoc_directorsTurnoverDays,
-  aoc.directors_turnover_days        AS aoc_directorsTurnoverDays,
+  aoc.id                            AS aoc_yearsOfExistence,
+  aoc.directors_turnover_days       AS aoc_directorsTurnoverDays,
+  aoc.directors_turnover_days       AS aoc_directorsTurnoverDays,
 
   ra.id                    AS ra_id,
   ra.cooperative_id        AS ra_cooperative_id,
@@ -222,13 +100,19 @@ const getAllCoops = `SELECT
   am.proposed_name                              AS am_proposedName,
   am.acronym_name                               AS am_acronymName,
   am.common_bond_of_membership                  AS am_commonBond,
-  am.field_of_membership                        AS am_fieldPfMembership,
+  am.field_of_membership                        AS am_fieldOfMembership,
   am.name_of_ins_assoc                          AS am_nameOfInsAssoc,
   am.area_of_operation                          AS am_areaOfOperation,
   am.refbrgy_brgyCode                           AS am_refBrgyCode,
   am.interregional                              AS am_interregional,
   am.regions                                    AS am_regions,
-  am.street                                     AS am_areaOfOperation
+  am.street                                     AS am_street,
+
+  am_cap.authorized_share_capital                     AS amcap_authorizedShareCapital,
+  am_cap.total_amount_of_subscribed_capital           AS amcap_totalAmountOfSubscribedCapital,
+  am_cap.total_amount_of_paid_up_capital              AS amcap_totalAmountOfPaidUpCapital
+
+
 
 FROM (
     SELECT rc.*
@@ -246,6 +130,22 @@ LEFT JOIN cooperatives c
   ON rc.application_id = c.id
 LEFT JOIN users u
   ON c.users_id = u.id
+
+LEFT JOIN (
+    SELECT ca1.*
+    FROM ca_user ca1
+    INNER JOIN (
+        SELECT regNo, MAX(dateCreated) AS latestDate
+        FROM ca_user
+        WHERE is_verified = '1'
+        GROUP BY regNo
+    ) ca_max
+    ON ca1.regNo = ca_max.regNo
+    AND ca1.dateCreated = ca_max.latestDate
+    WHERE ca1.is_verified = '1' 
+     AND ca1.status <> 'Denied'
+) ca
+ON rc.regNo = ca.regNo
 LEFT JOIN capitalization cap
   ON rc.application_id = cap.cooperatives_id
 LEFT JOIN (
@@ -307,46 +207,17 @@ ON rc.regNo = ra.regNo
 
 LEFT JOIN cooperatives am
   ON ra.cooperative_id = am.id
+LEFT JOIN capitalization am_cap
+  ON ra.cooperative_id = am_cap.cooperatives_id
 
 
+
+LIMIT 100
 
 `;
 
-// LIMIT 10
-
-// Save this
-// LEFT JOIN (
-//   SELECT ra1.*
-//   FROM registeredamendment ra1
-//   INNER JOIN (
-//     SELECT regNo, MAX(id) AS max_id, COUNT(*) AS amendment_count
-//     FROM registeredamendment
-//     GROUP BY regNo
-//   ) ra_max
-//   ON ra1.regNo = ra_max.regNo
-//   AND ra1.id = ra_max.max_id
-// ) ra
-// ON rc.regNo = ra.regNo
-
-// LIMIT 5
-
-// FROM registeredcoop rc
-
-// LEFT JOIN (
-//   SELECT *
-//   FROM registeredamendment ra1
-//   WHERE ra1.id = (
-//     SELECT MAX(ra2.id)
-//     FROM registeredamendment ra2
-//     WHERE ra2.regNo = ra1.regNo
-//   )
-// ) ra
-// ON rc.regNo = ra.regNo
-
-// LIMIT 1
-
-// LEFT JOIN amend_coop ac
-// ON rc.regNo = ac.regNo
+// LEFT JOIN ca_user ca
+//   ON rc.regNo = ca.regNo
 
 let mockEmailCounter = 1000;
 
@@ -404,29 +275,51 @@ export default function thirdTestMigration() {
           category: row.ra_category,
           type: row.ra_type,
           dateRegistered: row.ra_dateRegistered,
+          commonBond: row.ra_commonBond?.trim()?.toLowerCase(),
+          areaOfOperation: row.ra_areaOfOperation?.trim()?.toLowerCase(),
           noStreet: row.ra_noStreet,
           street: row.ra_Street,
           addrCode: row.ra_addrCode,
           interregional: row.ra_interregional,
           regions: row.ra_regions,
           compliant: row.ra_compliant,
-          totalAmendments: Number(row.ra_total_amendments) - 1, // Less 1, remove the initial registration
+          totalAmendments: Number(row.ra_total_amendments) - 1, // Less 1, remove the initial registration count
+
+          fieldOfMembership: row.am_fieldOfMembership,
+          // nameOfInsAssoc: row.am_nameOfInsAssoc ? [row.am_nameOfInsAssoc] : [],
+
+          // Capitalization
+          totalAuthorizedShareCapital: Number(
+            row.amcap_authorizedShareCapital || 0,
+          ),
+          totalSubscribedCapital: Number(
+            row.amcap_totalAmountOfSubscribedCapital || 0,
+          ),
+          totalPaidUpCapital: Number(row.amcap_totalAmountOfPaidUpCapital || 0),
         };
+
+        // console.log("am: ", row.am_field);
 
         // console.log("latestAmendment: ", latestAmendment);
         // console.log("Cooperators: ", row.d);
 
         const regNo = row.regNo.trim();
-        console.log(regNo);
+        // console.log(regNo);
 
         let coopName = row.coopName?.trim();
-        console.log(coopName);
+        // console.log(coopName);
+
+        // console.log("CA User Email: ", row.ca_user_email);
+
+        const streetName = row.Street?.trim() || "";
+
+        // console.log("Coop: ", regNo, coopName);
 
         const newReferenceId = generateReferenceId();
 
         const dateOfRegistration = normalizeDate(row.dateRegistered);
-        const recentAmendmentDateRegistration = normalizeDate(
-          registeredAmendment.dateRegistered,
+        const recentAmendmentDateRegistration = new Date(
+          normalizeDate(registeredAmendment.dateRegistered),
         );
 
         if (!regNo) {
@@ -482,8 +375,8 @@ export default function thirdTestMigration() {
           registeredAmendment.coopName,
         );
 
-        console.log("Category: ", coopCategory);
-        console.log("Type: ", finalCoopType.type);
+        // console.log("Category: ", coopCategory);
+        // console.log("Type: ", finalCoopType.type);
         // resolveCoopType(row?.c_coop_type, row.cooperativeName);
 
         if (!finalCoopType) {
@@ -510,11 +403,10 @@ export default function thirdTestMigration() {
           continue;
         }
 
-        // const initialRegistration = {};
-
         const capitalization = {
-          totalAuthorizedShareCapital:
-            Number(row.authorized_share_capital) || 0,
+          totalAuthorizedShareCapital: Number(
+            row.authorized_share_capital || 0,
+          ),
           totalNoOfRegularMembers: Number.isFinite(Number(row.regular_members))
             ? Number(row.regular_members)
             : 0,
@@ -558,9 +450,12 @@ export default function thirdTestMigration() {
             capitalization.totalAuthorizedShareCapital,
           totalNoOfRegularMembers: capitalization.totalNoOfRegularMembers,
           totalNoOfAssociateMembers: capitalization.totalNoOfAssociateMembers,
+          totalSubscribedCapital: capitalization.totalAmountOfSubscribedCapital,
+          totalPaidUpCapital: capitalization.totalAmountOfPaidUpCapital,
           isDraft: false,
           applicationStatus: "APPROVED",
           migrated: 1,
+          streetName: streetName,
           ...(addressCodes.regCode && addressCodes.regCode.length === 2
             ? { region: { connect: { regCode: addressCodes.regCode } } }
             : {}),
@@ -595,13 +490,26 @@ export default function thirdTestMigration() {
 
           cooperativeName: registeredAmendment.coopName,
           cooperativeCategory: normalizeCategory(registeredAmendment.category),
-          cooperativeType: {
-            connect: { id: amendmentCoopType.id },
-          },
+          // cooperativeType: amendmentCoopType?.id
+          //   ? { connect: { id: amendmentCoopType.id } }
+          //   : null,
+          ...(amendmentCoopType?.id
+            ? { cooperativeType: { connect: { id: amendmentCoopType.id } } }
+            : {}),
           coopTypeList: amendmentCoopType.coopTypeList,
           isAmendment: true,
           amendmentNo: Number(registeredAmendment.amendmentNo) || null,
+          fieldOfMembership:
+            registeredAmendment.fieldOfMembership?.trim() || "",
+          // nameOfAssociation: registeredAmendment.nameOfInsAssoc?.trim() || "",
+          streetName: registeredAmendment.street?.trim(),
           formOfRegistration: "none",
+          commonBondOfMembership: registeredAmendment.commonBond,
+          areaOfOperation: registeredAmendment.areaOfOperation,
+          totalAuthorizedShareCapital:
+            registeredAmendment.totalAuthorizedShareCapital,
+          totalSubscribedCapital: registeredAmendment.totalSubscribedCapital,
+          totalPaidUpCapital: registeredAmendment.totalPaidUpCapital,
           isDraft: false,
           applicationStatus: "APPROVED",
           migrated: 1,
@@ -644,6 +552,14 @@ export default function thirdTestMigration() {
             : {}),
         };
 
+        //  console.log("Coop: ", regNo, coopName, recentAmendmentDateRegistration);
+
+        //  if (!recentAmendmentDateRegistration) {
+        //   // console.log("Coop: ", regNo, coopName, registeredAmendment.dateRegistered ,recentAmendmentDateRegistration)
+        //   console.log("Coop: ", regNo, coopName ,recentAmendmentDateRegistration)
+        //   continue
+        //  }
+
         /**
          * Skip if org already exists
          */
@@ -659,6 +575,7 @@ export default function thirdTestMigration() {
 
         if (existingOrg) {
           duplicateCount++;
+          skipCount++;
           // console.log("Existing ORG: ", coopName);
           continue;
         }
@@ -667,13 +584,60 @@ export default function thirdTestMigration() {
          * USER
          */
 
-        let email = row.user_email?.trim();
+        let email = row.ca_user_email?.trim() || row.user_email?.trim();
         let plainPassword = randomPassword();
 
         if (!email) {
           email = `user_cda_${randomString()}_${mockEmailCounter}@gmail.com`;
           mockEmailCounter++;
         }
+
+        // let userName = {
+        //   firstName: row.user_first_name?.trim(),
+        //   middleName: row.user_last_name?.trim(),
+        //   lastName: row.user_middle_name?.trim(),
+        // };
+
+        // let fullName = row.ca_user_fullname.split(",");
+
+        // let ca_userName = {
+        //   firstName: fullName[0],
+        //   middleName: fullName[1],
+        //   lastName: fullName[2] || "",
+        // };
+
+        let finalName;
+
+        if (row?.ca_user_fullname) {
+          // Use CA user full name entirely
+          const fullName = row?.ca_user_fullname?.split(",");
+          finalName = {
+            firstName: fullName[0]?.trim(),
+            middleName: fullName[1]?.trim(),
+            lastName: fullName[2]?.trim() || "",
+          };
+        } else if (
+          row?.user_first_name ||
+          row?.user_last_name ||
+          row?.user_middle_name
+        ) {
+          // Use row.user_* entirely
+          finalName = {
+            firstName: row?.user_first_name?.trim(),
+            middleName: row?.user_middle_name?.trim(),
+            lastName: row?.user_last_name?.trim(),
+          };
+        } else {
+          // Fallback to default Mock User
+          finalName = {
+            firstName: "Mock",
+            middleName: "",
+            lastName: "User",
+          };
+        }
+
+        let contact_number =
+          row.ca_user_mobileNo?.trim() || row.user_contact_number?.trim();
 
         let existingUser = await prismaAuth.user.findFirst({
           where: { email },
@@ -685,10 +649,13 @@ export default function thirdTestMigration() {
           existingUser = await prismaAuth.user.create({
             data: {
               email,
-              firstname: row.user_first_name?.trim() || "Mock",
-              lastname: row.user_last_name?.trim() || "User",
-              middlename: row.user_middle_name?.trim() || "",
-              mobile: row.user_contact_number?.trim() || "",
+              // firstname: row.user_first_name?.trim() || "Mock",
+              // lastname: row.user_last_name?.trim() || "User",
+              // middlename: row.user_middle_name?.trim() || "",
+              firstname: finalName?.firstName,
+              middlename: finalName?.middleName,
+              lastname: finalName?.lastName,
+              mobile: contact_number || "",
               address: row.user_address?.trim() || "",
               status: "APPROVED",
               migrated: 1,
@@ -697,77 +664,15 @@ export default function thirdTestMigration() {
             },
           });
 
-          fs.appendFileSync(logFilePath, `${email},${plainPassword}\n`);
+          const spacer = "   ";
+
+          // fs.appendFileSync(logFilePath, `${email},${plainPassword}\n`);
+
+          fs.appendFileSync(
+            logFilePath,
+            `${regNo}${spacer}${coopName}${spacer}${email}${spacer}${plainPassword}\n`, // Add Region
+          );
         }
-
-        // try {
-        //   const initial = await prismaCoop.cooperatives.create({
-        //     data: initialRegistrationApplication,
-        //   });
-
-        //   const amendment = await prismaCoop.cooperatives.create({
-        //     data: initialRegistrationApplication,
-        //   });
-
-        //   // Create the latest amendment
-        //   // Run only if total amendments is more than
-        //   if (registeredAmendment.totalAmendments > 0) {
-        //     await prismaCoop.cooperativeOrg.update({
-        //       where: { id: coopOrg.id },
-        //       data: {
-        //         // recentAmendmentDate: ,
-        //         amendmentCount: registeredAmendment.amendmentNo,
-        //         approvedCooperative: {
-        //           create: {
-        //             ...latestRegisteredAmendment,
-        //           },
-        //         },
-        //       },
-        //     });
-        //   }
-
-        //   // Create Coop Org and Initial Registration
-        //   const coopOrg = await prismaCoop.cooperativeOrg.create({
-        //     data: {
-        //       cooperativeName: coopName,
-        //       acronym,
-        //       regNo,
-        //       dateOfRegistration: dateOfRegistration,
-        //       prevComplianceRemarks: row.compliant,
-        //       migrated: 1,
-        //       ownedBy: existingUser.id,
-
-        //       ...(coopCompliance.complianceStatusId &&
-        //       coopCompliance.complianceStatusId > 0
-        //         ? {
-        //             complianceStatus: {
-        //               connect: { id: coopCompliance.complianceStatusId },
-        //             },
-        //           }
-        //         : {}),
-
-        //       ...(coopCompliance.complianceCategoryId &&
-        //       coopCompliance.complianceCategoryId > 0
-        //         ? {
-        //             complianceCategory: {
-        //               connect: { id: coopCompliance.complianceCategoryId },
-        //             },
-        //           }
-        //         : {}),
-
-        //       ...(coopCompliance.complianceTypeId &&
-        //       coopCompliance.complianceTypeId > 0
-        //         ? {
-        //             complianceType: {
-        //               connect: { id: coopCompliance.complianceTypeId },
-        //             },
-        //           }
-        //         : {}),
-        //       cooperatives: ,
-        //       approvedCooperative: ,
-        //     },
-        //   });
-        // }
 
         try {
           // 1. Create the initial registration
@@ -796,6 +701,33 @@ export default function thirdTestMigration() {
               // prevComplianceRemarks: row.compliant,
               recentAmendmentDate: recentAmendmentDateRegistration || null,
               amendmentCount: registeredAmendment.amendmentNo || null,
+              email: email,
+              alternate_email: "",
+              contact_number: contact_number,
+              alternate_contact_number: "",
+              //     finalName = {
+              //   firstName: row?.user_first_name?.trim(),
+              //   middleName: row?.user_middle_name?.trim(),
+              //   lastName: row?.user_last_name?.trim(),
+              // };
+              primaryRepresentative: {
+                create: {
+                  firstname: finalName?.firstName,
+                  lastname: finalName?.lastName,
+                  middlename: finalName?.middleName,
+                  title: "",
+                  designation: "Chairperson",
+                  gender: "Male",
+                  nationality: "Filipino",
+                  birth_date: new Date("1985-06-15"),
+                  id_no: "ABC123456",
+                  governmentId: "Passport",
+                },
+              },
+              // primaryRepresentative: "",
+              // alternateRepresentative: "",
+              // laboratories: []
+              // BranchSatellite: []
               migrated: 1,
               ownedBy: existingUser.id,
 
@@ -826,7 +758,6 @@ export default function thirdTestMigration() {
                   }
                 : {}),
 
-              // 4. Link initial registration and amendment (if any) to cooperatives
               cooperatives: {
                 connect: [
                   { id: initial.id },
@@ -834,18 +765,9 @@ export default function thirdTestMigration() {
                 ],
               },
 
-              // 5. Set approvedCooperative
               approvedCooperative: {
                 connect: { id: approvedCoopData.id },
               },
-
-              // 6. Update amendment info if there was an amendment
-              ...(registeredAmendment.totalAmendments > 0
-                ? {
-                    amendmentCount: registeredAmendment.amendmentNo,
-                    recentAmendmentDate: amendment?.dateOfRegistration || null,
-                  }
-                : {}),
             },
           });
         } catch (error) {
@@ -996,274 +918,6 @@ function resolveCompliance(compliant) {
     complianceTypeId: 0,
   };
 }
-
-// function resolveCoopType(type, coopName) {
-//   const coopTypeMap = [
-//     {
-//       id: "1a869d61-bc9e-4f84-b96f-1dd71103e66c",
-//       name: "Advocacy",
-//       category: ["primary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "e8e1a2a3-5d32-45b3-bd5f-280b3025f2ce",
-//       name: "Agrarian Reform",
-//       category: ["primary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "c6f3c80e-0a38-4054-a90d-e140eaeff7ee",
-//       name: "Agriculture",
-//       category: ["primary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "81f77162-318e-4e0f-9c47-f5c4e6cbf6e6",
-//       name: "Consumers",
-//       category: ["primary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "6d4600f5-b816-4f85-b89c-ea1ec81c6d90",
-//       name: "Credit",
-//       category: ["primary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "be9c37d5-3e3e-498b-bf1b-1b8f5fd29435",
-//       name: "Dairy",
-//       category: ["primary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "eb3e11de-bbf2-44f5-bf57-e6d2266de48c",
-//       name: "Education",
-//       category: ["primary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "e61ad64a-1c22-4cd6-b994-ff68b47c07de",
-//       name: "Electric",
-//       category: ["primary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "c9ceea96-c0e7-435c-89c0-c55d8f49a314",
-//       name: "Financial Service",
-//       category: ["primary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "f536c132-45a6-4bfb-9d82-1b54a40f24c5",
-//       name: "Fishermen",
-//       category: ["primary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "678891de-d783-4d00-b2e6-26d882aa340b",
-//       name: "Health Service",
-//       category: ["primary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "3e826b2c-b1db-4d51-810e-fb8b66efbfeb",
-//       name: "Housing",
-//       category: ["primary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "57b19c89-c004-42e5-87a7-8b2b2f8bcad1",
-//       name: "Labor Service",
-//       category: ["primary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "f2e7a8c3-9b4d-4e2a-8c1a-7e3b2d4f5a6b",
-//       name: "Logistics Service",
-//       category: ["primary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "d307e98b-08f5-4518-bd2c-e2bfb24d2335",
-//       name: "Marketing",
-//       category: ["primary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "5a1f4c7e-83b3-4e73-8b6b-2c8e4d0bb08c",
-//       name: "Multipurpose",
-//       category: ["primary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "acc2055e-1b01-4e3c-a2b1-b14646aa8224",
-//       name: "Producers",
-//       category: ["primary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "9b9c66ef-0f58-498b-9384-6c826961d75f",
-//       name: "Professionals",
-//       category: ["primary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "d38d7c63-086d-47a4-871e-7c9e4e6b3bd4",
-//       name: "Small Scale Mining",
-//       category: ["primary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "2e7cb8a9-4b13-47c7-843f-d01a88969e63",
-//       name: "Service",
-//       category: ["primary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "ccf7fce3-bf80-4bc7-8a48-94ea03faef7e",
-//       name: "Transport",
-//       category: ["primary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "f6fae7b4-8b37-4f8b-810e-32ac5104cf47",
-//       name: "Technology Service",
-//       category: ["primary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "f74db779-b4ee-4295-8d1b-4c2b715e63f3",
-//       name: "Water Service",
-//       category: ["primary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "ef8eb865-cb11-421b-921b-e2f46b31b0a0",
-//       name: "Workers",
-//       category: ["primary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "c464a3d0-5ff1-4dbb-a77f-dcdfd1c25c1a",
-//       name: "Cooperative Bank",
-//       category: ["secondary", "tertiary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "6d4c0a7f-5f18-4e1d-a456-2a7f3f7c6d98",
-//       name: "Insurance",
-//       category: ["special"],
-//       isActive: false,
-//     },
-//     {
-//       id: "b1e7c2d4-3a5f-4e2b-9c8a-7f6e5d4c3b2a",
-//       name: "Memorial Service",
-//       category: ["secondary", "tertiary"],
-//       isActive: false,
-//     },
-//     {
-//       id: "b2e1f7c3-6a4d-4e2b-9c1a-8f7e5d4c3b2a",
-//       name: "Federation",
-//       category: ["secondary", "tertiary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "c3d2e1f7-5a6b-4c2d-8e1a-7f6e5d4c3b2a",
-//       name: "Union",
-//       category: ["secondary", "tertiary"],
-//       isActive: true,
-//     },
-//     {
-//       id: "d4c3b2a1-7e6f-4d2c-9b1a-6e5d4c3b2a1f",
-//       name: "Credit Surety Fund",
-//       category: ["special"],
-//       isActive: true,
-//     },
-//   ];
-
-//   const multipurposeType = coopTypeMap.find(
-//     (t) => t.name.toLowerCase() === "multipurpose",
-//   );
-
-//   const federationType = coopTypeMap.find(
-//     (t) => t.name.toLowerCase() === "federation",
-//   );
-
-//   const cooperativeBankType = coopTypeMap.find(
-//     (t) => t.name.toLowerCase() === "cooperative bank",
-//   );
-
-//   const nameLower = coopName?.toLowerCase() || "";
-
-//   // Set type immediately as Cooperative Bank before it reaches Federation
-//   if (type?.toLowerCase().includes("cooperative bank")) {
-//     return {
-//       id: cooperativeBankType.id,
-//       coopTypeList: [],
-//     };
-//   }
-
-//   // ✅ Detect "federation" in coop name first
-//   if (nameLower.includes("federation")) {
-//     return {
-//       id: federationType.id,
-//       coopTypeList: [],
-//     };
-//   }
-
-//   // Handle empty or null type
-//   // if (!type || !type?.trim()) {
-//   if (!type?.trim()) {
-//     return {
-//       id: null,
-//       coopTypeList: [],
-//       type: "unknown",
-//     };
-//   }
-
-//   // Normalize raw types
-//   const rawTypes = type
-//     ? type
-//         .split(",")
-//         .map((t) => t.trim())
-//         .filter(Boolean)
-//     : [];
-
-//   // Detect explicit multipurpose in rawTypes
-//   const hasMultipurposeRawType = rawTypes.some((t) =>
-//     /multi[\s-]?purpose/i.test(t),
-//   );
-
-//   const matchedTypes = rawTypes
-//     .map((raw) =>
-//       coopTypeMap.find((t) => t.name.toLowerCase() === raw.toLowerCase()),
-//     )
-//     .filter(Boolean);
-
-//   const isMultipurpose =
-//     hasMultipurposeRawType ||
-//     /multi[\s-]?purpose/i.test(coopName) ||
-//     matchedTypes.length > 1;
-
-//   // ✅ Multipurpose
-//   if (isMultipurpose) {
-//     return {
-//       id: multipurposeType.id,
-//       coopTypeList: hasMultipurposeRawType
-//         ? []
-//         : matchedTypes.map((t) => ({
-//             id: t.id,
-//             type: t.name,
-//           })),
-//     };
-//   }
-
-//   // ✅ Single type
-//   return {
-//     id: matchedTypes[0]?.id || multipurposeType.id,
-//     coopTypeList: [],
-//   };
-// }
 
 function resolveCoopType(type, coopName) {
   type = (type || "").trim();
@@ -1521,50 +1175,6 @@ function resolveCoopType(type, coopName) {
   };
 }
 
-// function normalizeDate(dateStr) {
-//   if (!dateStr) return null;
-
-//   const value = String(dateStr?.trim());
-
-//   // empty / whitespace
-//   if (!value) return null;
-
-//   // all-zero or invalid placeholders
-//   if (/^(0+[-/]?){2,3}0+$/.test(value)) return null;
-
-//   let day, month, year;
-
-//   // YYYY-MM-DD or YYYY/MM/DD
-//   if (/^\d{4}[-/]\d{2}[-/]\d{2}$/.test(value)) {
-//     [year, month, day] = value.split(/[-/]/);
-//   }
-
-//   // M/D/YYYY or MM-DD-YYYY
-//   else if (/^\d{1,2}[-/]\d{1,2}[-/]\d{4}$/.test(value)) {
-//     [month, day, year] = value.split(/[-/]/);
-//   }
-
-//   // DD-MM-YY
-//   else if (/^\d{2}-\d{2}-\d{2}$/.test(value)) {
-//     [day, month, year] = value.split("-");
-//     year = Number(year) < 50 ? `20${year}` : `19${year}`;
-//   }
-
-//   // unsupported format
-//   else {
-//     return null;
-//   }
-
-//   const isoDate = `${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`;
-
-//   const date = new Date(isoDate);
-
-//   // final guard (invalid calendar dates)
-//   if (isNaN(date.getTime())) return null;
-
-//   return date;
-// }
-
 function normalizeDate(dateStr) {
   if (dateStr == null) return null; // covers null and undefined
 
@@ -1647,3 +1257,5 @@ function normalizeCategory(category) {
     ? "secondary"
     : category?.toLowerCase().trim();
 }
+
+// function createCooperativeApplication() {}
