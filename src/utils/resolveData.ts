@@ -1,4 +1,4 @@
-export function resolveCompliance(compliant) {
+export function resolveCompliance(compliant: string) {
   const complianceMap = [
     { match: "compliant: issued with coc", statusId: 1, categoryId: 2 },
     { match: "compliant", statusId: 1, categoryId: 2 },
@@ -78,7 +78,7 @@ export function resolveCompliance(compliant) {
   };
 }
 
-export function resolveCoopType(type, coopName) {
+export function resolveCoopType(type: string, coopName: string) {
   type = (type || "").trim();
 
   const coopTypeMap = [
@@ -279,7 +279,7 @@ export function resolveCoopType(type, coopName) {
   // Cooperative Bank
   if (type.toLowerCase().includes("cooperative bank")) {
     return {
-      id: cooperativeBankType.id,
+      id: cooperativeBankType?.id,
       type: "Cooperative Bank",
       coopTypeList: [],
     };
@@ -287,7 +287,7 @@ export function resolveCoopType(type, coopName) {
 
   // Federation in name
   if (nameLower.includes("federation")) {
-    return { id: federationType.id, type: "Federation", coopTypeList: [] };
+    return { id: federationType?.id, type: "Federation", coopTypeList: [] };
   }
 
   // Empty type
@@ -318,23 +318,23 @@ export function resolveCoopType(type, coopName) {
 
   if (isMultipurpose) {
     return {
-      id: multipurposeType.id,
+      id: multipurposeType?.id,
       type: "Multipurpose",
       coopTypeList: hasMultipurposeRawType
         ? []
-        : matchedTypes.map((t) => ({ id: t.id, type: t.name })),
+        : matchedTypes.map((t) => ({ id: t?.id, type: t?.name })),
     };
   }
 
   // Single type fallback
   return {
-    id: matchedTypes[0]?.id || multipurposeType.id,
+    id: matchedTypes[0]?.id || multipurposeType?.id,
     type: matchedTypes[0]?.name || "Multipurpose",
     coopTypeList: [],
   };
 }
 
-export function normalizeDate(dateStr) {
+export function normalizeDate(dateStr: string) {
   if (dateStr == null) return null; // covers null and undefined
 
   const value = String(dateStr).trim(); // <-- convert first, then trim
@@ -371,7 +371,7 @@ export function normalizeDate(dateStr) {
   return date;
 }
 
-export function normalizeAddress(addrCode) {
+export function normalizeAddress(addrCode: string) {
   addrCode = addrCode?.toString().trim() || "";
 
   // Remove non-digits (/n, /r, hidden chars, etc.)
@@ -411,7 +411,7 @@ export function normalizeAddress(addrCode) {
   };
 }
 
-export function normalizeCategory(category) {
+export function normalizeCategory(category: string) {
   return category?.toLowerCase().trim() === "others"
     ? "secondary"
     : category?.toLowerCase().trim();
