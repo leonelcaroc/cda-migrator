@@ -17,8 +17,7 @@ export default async function runAddCsfCoops() {
   // const csfCoops = loadJSON("csf_migration.json");
 
   // 3 CSF Coops Only
-  const csfCoops = loadJSON("csf_migration.json");
-  // .slice(0, 1);
+  const csfCoops = loadJSON("csf_migration.json").slice(0, 1);
 
   const cooperators = loadJSON("csf_cooperators.json");
   // console.log("CSF Cooperators: ", cooperators);
@@ -50,8 +49,8 @@ export default async function runAddCsfCoops() {
       const brgyCode = row.brgyCode; // Barangay Code
 
       const cooperatorList = cooperators
-        .filter((item) => item.csfRegNo === registrationNo)
-        .map((item) => ({
+        .filter((item: any) => item.csfRegNo === registrationNo)
+        .map((item: any) => ({
           id: uuid(),
           coopId: "",
           name: item.name.trim(),
@@ -85,7 +84,9 @@ export default async function runAddCsfCoops() {
 
       console.log("cooperatorList: ", cooperatorList);
 
-      const treasurer = cooperatorList?.find((item) => item.isTreasurer === 1);
+      const treasurer = cooperatorList?.find(
+        (item: any) => item.isTreasurer === 1,
+      );
 
       const treasurerFullName = treasurer
         ? `${treasurer.lastName ?? ""}, ${treasurer.firstName ?? ""} ${treasurer.middleName ?? ""}`
@@ -132,7 +133,7 @@ export default async function runAddCsfCoops() {
       const loggedUsers = new Set();
 
       // Transaction: user + cooperative
-      await prismaAuth.$transaction(async (txAuth) => {
+      await prismaAuth.$transaction(async (txAuth: any) => {
         const user = await txAuth.user.create({
           data: {
             email,
