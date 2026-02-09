@@ -1,0 +1,128 @@
+[
+  {
+    "id": "d7c63965-7c61-4e8d-a7c5-3cf3b86f6d6b",
+    "psgcCode": "010000000",
+    "regDesc": "Region I",
+    "regCode": "01",
+    "label": "(Ilocos Region)"
+  },
+  {
+    "id": "a7f2938f-dc7f-4c5a-b9a2-1f804ee36a76",
+    "psgcCode": "020000000",
+    "regDesc": "Region II",
+    "regCode": "02",
+    "label": "(Cagayan Valley)"
+  },
+  {
+    "id": "1c4c03ec-70ab-4c20-8bb9-6013c462b423",
+    "psgcCode": "030000000",
+    "regDesc": "Region III",
+    "regCode": "03",
+    "label": "(Central Luzon)"
+  },
+  {
+    "id": "19c91eb2-9d2d-4b62-8ab6-42e6a29dc0ac",
+    "psgcCode": "040000000",
+    "regDesc": "Region IV-A",
+    "regCode": "04",
+    "label": "(CALABARZON)"
+  },
+  {
+    "id": "41c0cf14-7b98-4a24-b163-629d6e0b81d3",
+    "psgcCode": "170000000",
+    "regDesc": "Region IV-B",
+    "regCode": "17",
+    "label": "(MIMAROPA)"
+  },
+  {
+    "id": "cbf38b83-9791-4b91-9fa2-27b6f7c805d2",
+    "psgcCode": "050000000",
+    "regDesc": "Region V",
+    "regCode": "05",
+    "label": "(Bicol Region)"
+  },
+  {
+    "id": "4a0f268b-6d52-404f-8f3d-146d4b88ed41",
+    "psgcCode": "060000000",
+    "regDesc": "Region VI",
+    "regCode": "06",
+    "label": "(Western Visayas)"
+  },
+  {
+    "id": "4f139317-8165-4db2-a4a7-1b7798eabf90",
+    "psgcCode": "070000000",
+    "regDesc": "Region VII",
+    "regCode": "07",
+    "label": "(Central Visayas)"
+  },
+  {
+    "id": "84601f74-cb55-44d2-bf42-268b78095f97",
+    "psgcCode": "080000000",
+    "regDesc": "Region VIII",
+    "regCode": "08",
+    "label": "(Eastern Visayas)"
+  },
+  {
+    "id": "e5f7f54b-7c12-4dc9-88d4-2467af9f8b0b",
+    "psgcCode": "090000000",
+    "regDesc": "Region IX",
+    "regCode": "09",
+    "label": "(Zamboanga Peninsula)"
+  },
+  {
+    "id": "33a629b6-d307-466d-82a6-25ed3d21ff38",
+    "psgcCode": "100000000",
+    "regDesc": "Region X",
+    "regCode": "10",
+    "label": "(Northern Mindanao)"
+  },
+  {
+    "id": "7fdb7d2f-39a2-4e20-bd24-bd0e3eac8dc7",
+    "psgcCode": "110000000",
+    "regDesc": "Region XI",
+    "regCode": "11",
+    "label": "(Davao Region)"
+  },
+  {
+    "id": "9c8942b0-8b24-4c44-9ac9-0245a17a6d12",
+    "psgcCode": "120000000",
+    "regDesc": "Region XII",
+    "regCode": "12",
+    "label": "(SOCCSKSARGEN)"
+  },
+  {
+    "id": "c0acde71-bc69-471d-9cf5-f6f985d12c76",
+    "psgcCode": "130000000",
+    "regDesc": "National Capital Region",
+    "regCode": "13",
+    "label": "(NCR)"
+  },
+  {
+    "id": "e0d4d414-1737-4c1c-9c52-8af8a6d22f59",
+    "psgcCode": "140000000",
+    "regDesc": "Cordillera Administrative Region",
+    "regCode": "14",
+    "label": "(CAR)"
+  },
+  {
+    "id": "97b0c7d3-96b8-4900-94af-74f28c0dc3e8",
+    "psgcCode": "150000000",
+    "regDesc": "BANGSAMORO Autonomous Region In Muslim Mindanao",
+    "regCode": "15",
+    "label": "(BARMM)"
+  },
+  {
+    "id": "0a2d4486-68e6-4e5f-bcf5-403fc79c65e2",
+    "psgcCode": "160000000",
+    "regDesc": "Region XIII",
+    "regCode": "16",
+    "label": "(CARAGA)"
+  },
+  {
+    "id": "fb5382cf-f456-41ae-9cf2-8c554353d833",
+    "psgcCode": "000000000",
+    "regDesc": "Main Office",
+    "regCode": "00",
+    "label": "(Main Office)"
+  }
+]

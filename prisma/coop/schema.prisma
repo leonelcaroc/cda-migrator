@@ -63,8 +63,6 @@ model Cooperatives {
   isYouthCooperative                  Boolean?                   @default(false)
   isGuardianCooperative               Boolean?                   @default(false)
   regularAndAssociate                 String?
-  regularMemberQualifications         Json?
-  associateMemberQualifications       Json?
   validator_question_id               String?
   cooperativeCategory                 String?
   cooperativeTypeId                   String?

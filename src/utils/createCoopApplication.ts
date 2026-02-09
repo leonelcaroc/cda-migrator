@@ -61,7 +61,7 @@ export type TCompositionOfMembers = {
 //   parentCoop: MergingConsolidationParentCoops | null;
 // };
 
-export type TCooperativeApplication = {
+export type TCoopApplication = {
   isAmendment?: boolean;
   amendmentNo?: number | null;
 
@@ -251,16 +251,16 @@ export type TCooperativeApplication = {
   migrated?: number;
 };
 
-export function createCooperativeApplication(row: any) {}
+export function createCoopApplication(row: any) {}
 
 // export function createCooperativeApplication(
 //   // cooperativeData: CooperativeApplication,
-//   cooperativeData: TCooperativeApplication,
+//   cooperativeData: TCoopApplication,
 // ) {
-//   //  TCooperativeApplication
+//   //  TCoopApplication
 //   // const newRegRefId = generateReferenceId();
 
-//   // TCooperativeApplication
+//   // TCoopApplication
 //   const application = {
 //     //   cooperativeOrgId            //  String?
 //     //   cooperativeOrg              //  CooperativeOrg? @relation(name: "OrgApplications", fields: [cooperativeOrgId], references: [id])

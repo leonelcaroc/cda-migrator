@@ -2,7 +2,9 @@ import "dotenv/config";
 import express from "express";
 // import thirdTestMigration from "./thirdTestMigration";
 // import thirdTestMigration from "./thirdTestMigration.js";
-import fourthTestMigration from "./fourthTestMigration.js";
+// import fourthTestMigration from "./fourthTestMigration.js";
+// import fifthTestMigration from "./fifthTestMigration.js";
+import sixthTestMigration from "./sixthTestMigration.js";
 import runAddCsfCoops from "./addCsfCoops.js";
 
 const app = express();
@@ -17,7 +19,9 @@ async function main() {
 
     // Run migrations safely
     // await thirdTestMigration();
-    await fourthTestMigration();
+    // await fourthTestMigration();
+    // await fifthTestMigration();
+    await sixthTestMigration();
     // await runAddCsfCoops();
 
     const PORT = 6000;

@@ -7,6 +7,9 @@ import path from "path";
 import fs from "fs";
 import { v4 as uuid } from "uuid";
 import { generateReferenceId } from "./utils/generateReferenceId.js";
+import csf_coops_items from "./data/csf_migration_copy.json" with { type: "json" };
+// import csf_cooperators from "./data/csf_cooperators.json" with { type: "json" };
+import refregions from "./data/refregion.json" with { type: "json" };
 
 const logFilePath = path.join(process.cwd(), "csf_credential_logs.txt");
 
@@ -17,9 +20,14 @@ export default async function runAddCsfCoops() {
   // const csfCoops = loadJSON("csf_migration.json");
 
   // 3 CSF Coops Only
-  const csfCoops = loadJSON("csf_migration.json").slice(0, 1);
+  // const csfCoops = loadJSON("csf_migration.json").slice(0, 1);
+  // const csfCoops = loadJSON("csf_migration.json").slice(3, 3 + 10);
+
+  const csfCoops = csf_coops_items.slice(13, 23);
+  // const csfCoops = csf_coops_items.slice(3, 13);
 
   const cooperators = loadJSON("csf_cooperators.json");
+
   // console.log("CSF Cooperators: ", cooperators);
 
   let successCount = 0;
@@ -47,6 +55,11 @@ export default async function runAddCsfCoops() {
       const provCode = row.provCode; // Province Code
       const citymunCode = row.citymunCode; // City/Municipality Code
       const brgyCode = row.brgyCode; // Barangay Code
+
+      const region = refregions.find(
+        (item: { regCode: string; regDesc: string }) =>
+          item.regCode === regCode,
+      );
 
       const cooperatorList = cooperators
         .filter((item: any) => item.csfRegNo === registrationNo)
@@ -82,7 +95,7 @@ export default async function runAddCsfCoops() {
               : Number(item.contribution) * 0.99, // Multiply into 99% if contributionType is investment
         }));
 
-      console.log("cooperatorList: ", cooperatorList);
+      // console.log("cooperatorList: ", cooperatorList);
 
       const treasurer = cooperatorList?.find(
         (item: any) => item.isTreasurer === 1,
@@ -112,6 +125,7 @@ export default async function runAddCsfCoops() {
       if (existingCoop) {
         console.log(`[SKIP] Cooperative already exists: ${registrationNo}`);
         skipCount++;
+        console.log("Skipped: ", registrationNo, cooperativeName);
         continue;
       }
 
@@ -124,6 +138,7 @@ export default async function runAddCsfCoops() {
       if (existingUser) {
         console.log(`[SKIP] User already exists: ${email}`);
         skipCount++;
+        console.log("Skipped: ", registrationNo, cooperativeName);
         continue;
       }
 
@@ -149,7 +164,7 @@ export default async function runAddCsfCoops() {
         if (!loggedUsers.has(email)) {
           fs.appendFileSync(
             logFilePath,
-            `${cooperativeName}, ${registrationNo}, ${email}, ${plainPassword}\n`,
+            `${registrationNo}, ${cooperativeName}, Region: ${regCode}, ${region?.regDesc}, ${email}, ${plainPassword}\n`,
           );
           loggedUsers.add(email);
         }

@@ -1,0 +1,330 @@
+[
+ {
+   "id": 1,
+   "description": "Crop and animal production, hunting and related service activities"
+ },
+ {
+   "id": 2,
+   "description": "Forestry and logging"
+ },
+ {
+   "id": 3,
+   "description": "Fishing and aquaculture"
+ },
+ {
+   "id": 5,
+   "description": "Mining of coal and lignite"
+ },
+ {
+   "id": 6,
+   "description": "Extraction of crude petroleum and natural gas"
+ },
+ {
+   "id": 7,
+   "description": "Mining of metal ores"
+ },
+ {
+   "id": 8,
+   "description": "Other mining and quarrying"
+ },
+ {
+   "id": 9,
+   "description": "Mining support service activities"
+ },
+ {
+   "id": 10,
+   "description": "Manufacture of food products"
+ },
+ {
+   "id": 11,
+   "description": "Manufacture of beverages"
+ },
+ {
+   "id": 12,
+   "description": "Manufacture of tabacco products"
+ },
+ {
+   "id": 13,
+   "description": "Manufacture of textiles"
+ },
+ {
+   "id": 14,
+   "description": "Manufacture of wearing apparel"
+ },
+ {
+   "id": 15,
+   "description": "Manufacture of leather and related products"
+ },
+ {
+   "id": 16,
+   "description": "Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of bamboo,cane, rattan and the like"
+ },
+ {
+   "id": 17,
+   "description": "Manufacture of paper and paper products"
+ },
+ {
+   "id": 18,
+   "description": "Printing and reproduction of recorded media"
+ },
+ {
+   "id": 19,
+   "description": "Manufacture of coke and refined petroleum products"
+ },
+ {
+   "id": 20,
+   "description": "Manufacture of chemicals and chemical products"
+ },
+ {
+   "id": 21,
+   "description": "Manufacture of basic pharmaceutical products and pharmaceutical preparations"
+ },
+ {
+   "id": 23,
+   "description": "Manufacture of other non-metallic mineral products"
+ },
+ {
+   "id": 24,
+   "description": "Manufacture of basic metals"
+ },
+ {
+   "id": 25,
+   "description": "Manufacture of Fabricated metal products, except machinery and equipment"
+ },
+ {
+   "id": 26,
+   "description": "Manufacture of computer, electronic and optical products"
+ },
+ {
+   "id": 27,
+   "description": "Manufacture of electrical equipment"
+ },
+ {
+   "id": 28,
+   "description": "Manufacture of machinery and equipment, n.e.c."
+ },
+ {
+   "id": 29,
+   "description": "Manufacture of motor vehicles, trailers and semi-trailers"
+ },
+ {
+   "id": 30,
+   "description": "Manufacture of other transport equipment"
+ },
+ {
+   "id": 31,
+   "description": "Manufacture of furniture"
+ },
+ {
+   "id": 32,
+   "description": "Other manufacturing"
+ },
+ {
+   "id": 33,
+   "description": "Repair and installation of machinery and equipment"
+ },
+ {
+   "id": 35,
+   "description": "Electricity, gas, steam and air conditioning supply "
+ },
+ {
+   "id": 36,
+   "description": "Water collection, treatment and supply"
+ },
+ {
+   "id": 37,
+   "description": "Sewerage"
+ },
+ {
+   "id": 38,
+   "description": "Waste collection, treatment and disposal activities; materials recovery"
+ },
+ {
+   "id": 39,
+   "description": "Remediation activities and other waste management services"
+ },
+ {
+   "id": 41,
+   "description": "Construction of buildings"
+ },
+ {
+   "id": 42,
+   "description": "Civil engineering"
+ },
+ {
+   "id": 43,
+   "description": "Specialized construction activities"
+ },
+ {
+   "id": 45,
+   "description": "Wholesale and retail trade and repair of motor vehicles and motorcycles"
+ },
+ {
+   "id": 46,
+   "description": "Wholesale trade, except of motor vehicles and motorcycles"
+ },
+ {
+   "id": 47,
+   "description": "Retail trade, except of motor vehicles and motorcycles"
+ },
+ {
+   "id": 49,
+   "description": "Land transport and Transport via pipelines"
+ },
+ {
+   "id": 50,
+   "description": "Water transport"
+ },
+ {
+   "id": 52,
+   "description": "Warehousing and support activities for transportation"
+ },
+ {
+   "id": 53,
+   "description": "Postal and courier activities"
+ },
+ {
+   "id": 55,
+   "description": "Accommodation"
+ },
+ {
+   "id": 56,
+   "description": "Food and beverage service activities"
+ },
+ {
+   "id": 58,
+   "description": "Publishing activities"
+ },
+ {
+   "id": 59,
+   "description": "Motion picture, video and television programme production, sound recording and music publishing activities"
+ },
+ {
+   "id": 60,
+   "description": "Programming and broadcasting activities"
+ },
+ {
+   "id": 61,
+   "description": "Telecommunications"
+ },
+ {
+   "id": 62,
+   "description": "Computer programming, consultancy and related activities"
+ },
+ {
+   "id": 63,
+   "description": "Information service activities"
+ },
+ {
+   "id": 64,
+   "description": "Financial service activities, except insurance"
+ },
+ {
+   "id": 65,
+   "description": "Insurance, reinsurance and pension funding, except compulsory social security"
+ },
+ {
+   "id": 66,
+   "description": "Activities auxiliary to financial service and insurance activities"
+ },
+ {
+   "id": 68,
+   "description": "Real estate activities"
+ },
+ {
+   "id": 69,
+   "description": "Legal and accounting activities"
+ },
+ {
+   "id": 71,
+   "description": "Architecture and engineering activities; technical testing and analysis"
+ },
+ {
+   "id": 72,
+   "description": "Scientific research development"
+ },
+ {
+   "id": 73,
+   "description": "Advertising and market research\n"
+ },
+ {
+   "id": 74,
+   "description": "Other professional, scientific and technical activities\n"
+ },
+ {
+   "id": 75,
+   "description": "Veterinary activities"
+ },
+ {
+   "id": 77,
+   "description": "Rental and leasing activities\n\n"
+ },
+ {
+   "id": 78,
+   "description": "Employment activities"
+ },
+ {
+   "id": 79,
+   "description": "Travel agency, tour operator, reservation service and related activites\n"
+ },
+ {
+   "id": 80,
+   "description": "Security and investigation activities\n"
+ },
+ {
+   "id": 81,
+   "description": "Services to buildings and landscape activities\n"
+ },
+ {
+   "id": 82,
+   "description": "Office administrative, office support and other business support activities\n"
+ },
+ {
+   "id": 85,
+   "description": "Education"
+ },
+ {
+   "id": 86,
+   "description": "Human health activities"
+ },
+ {
+   "id": 87,
+   "description": "Residential care activities\n"
+ },
+ {
+   "id": 90,
+   "description": "Creative, arts and entertainment activities"
+ },
+ {
+   "id": 91,
+   "description": "Libraries, archives, museums and other cultural activities\n"
+ },
+ {
+   "id": 92,
+   "description": "Gambling and betting activities\n"
+ },
+ {
+   "id": 93,
+   "description": "Sports activities and amusement and recreation activities\n"
+ },
+ {
+   "id": 94,
+   "description": "Activities of membership organizations\n"
+ },
+ {
+   "id": 95,
+   "description": "Repair of computers and personal and household goods\n\n"
+ },
+ {
+   "id": 96,
+   "description": "Other personal service activities\n"
+ },
+ {
+   "id": 97,
+   "description": "Crop and animal production, hunting and related service activities"
+ },
+ {
+   "id": 98,
+   "description": "Manufacture of cordage, rope, twine and netting"
+ }
+]

@@ -20,21 +20,15 @@ import { RowDataPacket } from "mysql2";
 import { ApplicationStatus } from "@prisma/client/coop/index.js";
 import { generateUuid } from "./utils/generateUuid.js";
 import ref_regions from "./data/refregion.json" with { type: "json" };
+import { createCooperativeApplication } from "./utils/createCooperativeApplication.js";
 
 import {
-  // createCooperativeApplication,
   TCoopCategory,
   TCooperativeApplication,
 } from "./utils/createCooperativeApplication.js";
 
 const LIMIT = 5000;
 const OFFSET = 0;
-
-// Tables 'staff', 'business_activities_cooperative' and 'purposes' not yet included
-
-// LIMIT 5000
-
-// LIMIT ${LIMIT} OFFSET ${OFFSET};
 
 const getAllCoops = `SELECT
   rc.*,
@@ -242,29 +236,9 @@ LEFT JOIN capitalization am_cap
 
 
 
-LIMIT 100 OFFSET 100;
+LIMIT 100 OFFSET 200;
 
 `;
-
-//  bac.industry_subclass_by_coop_type_id     AS bac_industry_class,
-
-const getIndustryClassifications = `SELECT 
-* FROM 
-`;
-
-// comp.composition                  AS comp_composition_of_members,
-
-// LEFT JOIN members_composition_of_cooperative comp
-//  ON rc.application_id = comp.coop_id
-
-// LEFT JOIN composition_of_members cm
-//   ON comp.composition = cm.id
-
-// LEFT JOIN industry_subclass_by_coop_type
-//   ON rc.application_id = bac.cooperatives_id
-
-// LEFT JOIN ca_user ca
-//   ON rc.regNo = ca.regNo
 
 let mockEmailCounter = 1000;
 
@@ -278,7 +252,7 @@ const logFilePath = path.join(process.cwd(), "user_credentials_log.txt");
  */
 fs.writeFileSync(logFilePath, "Cooperatives Credentials\n");
 
-export default function fourthTestMigration() {
+export default function fifthTestMigration() {
   connection.query<RowDataPacket[]>(getAllCoops, async (err, results) => {
     if (err) throw err;
 
@@ -289,66 +263,32 @@ export default function fourthTestMigration() {
     let duplicateCount = 0;
     let errorCount = 0;
 
-    // console.log(`Starting migration of ${results.length} cooperatives...`);
-    console.log(
-      // `Starting migration of ${results.length} cooperatives from record ${OFFSET + 1}...`,
-      `Starting migration of ${results.length} cooperatives...`,
-    );
+    console.log(`Starting migration of ${results.length} cooperatives...`);
 
     for (const [index, row] of results.entries()) {
-      // const recordNumber = OFFSET + index + 1;
       const recordNumber = index + 1;
 
       let coopName = row.coopName?.trim();
       const regNo = row.regNo.trim();
 
       try {
-        // if ((index + 1) % 100 === 0 || index === results.length - 1) {
-        // console.log(
-        //   `Processing record ${recordNumber} of ${OFFSET + results.length}...`,
-        // );
-        // }
-
         if (recordNumber % 100 === 0 || recordNumber === results.length) {
           console.log(
             `Processing record ${recordNumber} of ${results.length}...`,
           );
         }
 
-        // console.log("Cooperators: ", row.d);
-
-        // console.log(regNo);
-
-        // console.log(coopName);
-
-        // console.log("CA User Email: ", row.ca_user_email);
-
-        const streetName = row.Street?.trim() || "";
-
-        // console.log("Coop: ", regNo, coopName);
-
-        const areaOfOperation_reg = row.areaOfOperation?.trim()?.toLowerCase();
+        if (!regNo) {
+          skipCount++;
+          noRegNoCount++;
+          console.log("No Reg Number: ", coopName);
+          continue;
+        }
 
         const newReferenceId = generateReferenceId();
-
-        // const composition_uuid = generateUuid();
-
-        // const composition = row.comp_composition_of_members?.trim()
-        //   ? [
-        //       {
-        //         id: composition_uuid,
-        //         name: row.comp_composition_of_members?.trim(),
-        //       },
-        //     ]
-        //   : [];
-
-        // console.log("Business Activities: ", row.business_activities);
-
+        const streetName = row.Street?.trim() || "";
+        const areaOfOperation_reg = row.areaOfOperation?.trim()?.toLowerCase();
         const dateOfRegistration = normalizeDate(row.dateRegistered);
-        // const recentAmendmentDateRegistration = new Date(
-        //   normalizeDate(registeredAmendment.dateRegistered),
-        // );
-
         const registeredAmendment = {
           id: row.ra_id,
           // regNo: row.ra_cooperative_id,
@@ -382,19 +322,9 @@ export default function fourthTestMigration() {
           totalPaidUpCapital: Number(row.amcap_totalAmountOfPaidUpCapital || 0),
         };
 
-        // console.log("am: ", row.am_field);
-        // console.log("latestAmendment: ", latestAmendment);
-
         const recentAmendmentDateRegistration = new Date(
           normalizeDate(registeredAmendment.dateRegistered) || 0,
         );
-
-        if (!regNo) {
-          skipCount++;
-          noRegNoCount++;
-          console.log("No Reg Number: ", coopName);
-          continue;
-        }
 
         if (row.content && row.content.trim() !== "") {
           console.log(`Coop Name: ${coopName} | RegNo: ${regNo}`);
@@ -411,14 +341,6 @@ export default function fourthTestMigration() {
           registeredAmendment.addrCode,
         );
 
-        // console.log("addressCodes: ", addressCodes);
-
-        // const coopType = resolveCoopType(row?.type, row.cooperativeName);
-        // const application_coopType = resolveCoopType(
-        //   row?.c_coop_type,
-        //   row.cooperativeName,
-        // );
-
         const typeOfCoop = row?.type || row?.c_coop_type;
 
         const finalCoopType = resolveCoopType(
@@ -431,10 +353,6 @@ export default function fourthTestMigration() {
           registeredAmendment.coopName,
         );
 
-        // console.log("Category: ", coopCategory);
-        // console.log("Type: ", finalCoopType.type);
-        // resolveCoopType(row?.c_coop_type, row.cooperativeName);
-
         if (!finalCoopType) {
           console.error(
             "Cannot resolve cooperative type for:",
@@ -445,10 +363,7 @@ export default function fourthTestMigration() {
           );
         }
 
-        // if (coopType.type === "unknown") {
         if (finalCoopType.type === "unknown") {
-          // console.log("coopType: ", coopType.id);
-          // console.log("application_coopType: ", application_coopType.id);
           console.log("finalCoopType.type: ", finalCoopType.type.id);
 
           skipCount++;
@@ -740,20 +655,6 @@ export default function fourthTestMigration() {
           mockEmailCounter++;
         }
 
-        // let userName = {
-        //   firstName: row.user_first_name?.trim(),
-        //   middleName: row.user_last_name?.trim(),
-        //   lastName: row.user_middle_name?.trim(),
-        // };
-
-        // let fullName = row.ca_user_fullname.split(",");
-
-        // let ca_userName = {
-        //   firstName: fullName[0],
-        //   middleName: fullName[1],
-        //   lastName: fullName[2] || "",
-        // };
-
         let finalName;
 
         if (row?.ca_user_fullname) {
@@ -820,15 +721,12 @@ export default function fourthTestMigration() {
         try {
           // 1. Create the initial registration
           const initial = await prismaCoop.cooperatives.create({
-            // data: initialRegistrationApplication,
-            // data: createPrimaryCoop,
             data: initialRegistrationApplication,
           });
 
           let approvedCoopData = initial; // By default, initial is approved if no amendments
 
           // 2. If there is an amendment, create it
-          // let amendment;
           let amendment;
           if (registeredAmendment.totalAmendments > 0) {
             amendment = await prismaCoop.cooperatives.create({

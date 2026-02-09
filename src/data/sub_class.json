@@ -1,0 +1,7298 @@
+[
+ {
+   "id": 1111,
+   "description": "Growing of leguminous crops such as: mongo, string beans  (sitao),  pigeon  peas,  gisantes,  garbanzos, bountiful beans (habichuelas), peas (sitsaro)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1112,
+   "description": "Growing of ground nuts",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1113,
+   "description": "Growing of oil seeds (except ground nuts) such as soya  beans,  sunflower  and  growing  of  other  oil seeds, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1114,
+   "description": "Growing of sorghum, wheat",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1119,
+   "description": "Growing of other cereals (except rice and corn), leguminous crops and oil seeds, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1121,
+   "description": "Growing of paddy rice, lowland, irrigated",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1122,
+   "description": "Growing of paddy rice, lowland, rainfed",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1123,
+   "description": "Growing of paddy rice, upland/kaingin",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1130,
+   "description": "Growing of corn, except young corn (vegetable)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1140,
+   "description": "Growing of sugarcane including muscovado sugar-making in the farm",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1151,
+   "description": "Growing of virginia tobacco including flue-curing done in the farm",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1152,
+   "description": "Growing of native tobacco including flue-curing done in the farm",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1161,
+   "description": "Growing of abaca",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1162,
+   "description": "Growing of cotton",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1163,
+   "description": "Growing of kapok",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1164,
+   "description": "Growing of maguey",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1165,
+   "description": "Growing of ramie",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1166,
+   "description": "Growing of pi-na",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1167,
+   "description": "Growing of jute",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1168,
+   "description": "Growing of kenaf",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1169,
+   "description": "Growing of other fiber crops, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1171,
+   "description": "Growing of leafy and stem vegetables such as : cabbage, broccoli, cauliflower,  lettuce, asparagus, pechay, kangkong and other leafy or stem vegetables",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1172,
+   "description": "Growing of fruit bearing vegetables such as: tomato, eggplant, cucumber, amplaya, squash, gourd and other fruit bearing vegetables, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1179,
+   "description": "Growing of other leafy and fruit bearing vegetables, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1181,
+   "description": "Growing of onion",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1182,
+   "description": "Growing of garlic",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1183,
+   "description": "Growing of carrot",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1184,
+   "description": "Growing of potato",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1185,
+   "description": "Growing of cassava",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1186,
+   "description": "Growing of sweet potato(camote)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1187,
+   "description": "Growing of melons and watermelons",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1188,
+   "description": "Growing of yams (ube)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1189,
+   "description": "Growing of other  roots, bulbs, tuberous crops and vegetables",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1191,
+   "description": "Growing of orchids",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1192,
+   "description": "Growing of flowers or flower buds, (except orchids)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1193,
+   "description": "Production or growing of horticultural specialties and nursery products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1194,
+   "description": "Growing of plant materials used chiefly in medicinal/pharmaceutical or for insecticidal, fungicidal or similar purposes",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1195,
+   "description": "Growing of crops chiefly for construction purposes (e.g., nipa, bamboo, buri, etc.)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1196,
+   "description": "Growing of forage crops and other grasses",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1199,
+   "description": "Growing of other non-perennial crops, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1211,
+   "description": "Growing of banana, cavendish",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1212,
+   "description": "Growing of other banana",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1220,
+   "description": "Growing of pineapple",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1231,
+   "description": "Growing of calamansi",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1232,
+   "description": "Growing of dalandan",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1233,
+   "description": "Growing of mandarin (dalanghita)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1234,
+   "description": "Growing of pomelo (suha)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1235,
+   "description": "Growing of citrus fruits, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1240,
+   "description": "Growing of mango",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1250,
+   "description": "Growing of papaya",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1260,
+   "description": "Growing of coconut, including copra-making, tuba gathering and coco-shell charcoal making in the farm",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1271,
+   "description": "Growing of coffee",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1272,
+   "description": "Growing of cocoa",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1273,
+   "description": "Growing of tea",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1279,
+   "description": "Growing of other beverage crops",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1281,
+   "description": "Growing of perrenial spices and aromatic crops such as: ginger, pepper, chile, achuete, laurel, etc.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1282,
+   "description": "Growing  of plants used primarily in medical/pharmaceutical purposes such as : lagundi, banaba, ginseng, oregano, etc.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1283,
+   "description": "Growing of plants for insecticidal, fungicidal or similar purposes",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1284,
+   "description": "Growing of crops used primarily in perfumery or similar purposes",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1289,
+   "description": "Growing of other spices, aromatic, drug and pharmaceutical crops, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1291,
+   "description": "Growing  of  other  tropical  fruits, e.g. jackfruit, guavas,  avocados,  lanzones,  durian,  rambutan, chico, atis, mangosteen, makopa, etc.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1292,
+   "description": "Growing of perennial trees with edible nuts, e.g. pili nuts, cashew nuts, etc",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1293,
+   "description": "Growing of rubber tree",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1294,
+   "description": "Growing of jathropa tree",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1295,
+   "description": "Growing of ornamental or decorative trees such as Christmas or pine trees, fire trees, etc.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1299,
+   "description": "Growing of other fruits and perennial crops, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1300,
+   "description": "Plant propagation",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1411,
+   "description": "Beef cattle farming (including feed lot fattening)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1412,
+   "description": "Carabao farming",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1420,
+   "description": "Raising of horses and other equines ",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1430,
+   "description": "Dairy farming ",
+   "baseVolBus": "Gross Service Revenue /Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 1441,
+   "description": "Sheep farming including sheep shearing by the owner",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1442,
+   "description": "Goat farming",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1443,
+   "description": "Deer faming",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1450,
+   "description": "Hog farming",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1461,
+   "description": "Chicken production, broiler",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1462,
+   "description": "Chicken production, layer",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1463,
+   "description": "Chicken production, native",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1471,
+   "description": "Raising of duck broiler",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1472,
+   "description": "Raising of quail",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1473,
+   "description": "Raising of turkey",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1474,
+   "description": "Rasing of pigeon",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1475,
+   "description": "Raising of game fowl",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1479,
+   "description": "Raising of poultry (except chicken), n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1481,
+   "description": "Chicken egg production",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1482,
+   "description": "Duck egg production",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1483,
+   "description": "Quail egg production",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1489,
+   "description": "Production of eggs, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1491,
+   "description": "Sericulture (silkworm culture for the production of cocoon)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1492,
+   "description": "Apiary (bee culture for the production of honey)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1493,
+   "description": "Vermiculture",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1494,
+   "description": "Crocodile/alligator farming",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1495,
+   "description": "Rabbit farming",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1496,
+   "description": "Raising of semi-domesticated or wild animals including birds, reptiles, insects (e.g. butterfly) and turtles",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1497,
+   "description": "Raising and breeding of cats and dogs",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1498,
+   "description": "Game propagation and breeding activities",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1499,
+   "description": "Raising of other animals, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1511,
+   "description": "Operation of irrigation systems through cooperatives",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 1512,
+   "description": "Operation of irrigation systems through non-cooperatives",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 1520,
+   "description": "Planting, transplanting and other related activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 1531,
+   "description": "Plowing, seeding, weeding, thinning, pruning and similar services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 1532,
+   "description": "Fertilizer applications",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 1533,
+   "description": "Chemical and mechanical weed control, disease and pest control services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 1534,
+   "description": "Services to establish crops, promote their growth and protect them from pests and diseases, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 1540,
+   "description": "Harvesting, threshing, grading, bailing and related services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 1550,
+   "description": "Rental of farm machinery with drivers and crew",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 1561,
+   "description": "Artificial insemination services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 1562,
+   "description": "Contract animal growing services on a fee basis",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 1563,
+   "description": "Egg-hatching, sex determination and other poultry services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 1564,
+   "description": "Services to promote propagation, growth and output of animals",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 1565,
+   "description": "Farm management services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 1569,
+   "description": "Other support activities for animal production, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 1571,
+   "description": "Preparation  of  crops  for  primary  markets,  i.e. cleaning, trimming, grading, disinfecting",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 1572,
+   "description": "Cotton ginning",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 1573,
+   "description": "Preparation of tobacco leaves",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 1574,
+   "description": "Preparation of coffee, cacao and cocoa beans",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 1581,
+   "description": "Growing of paddy rice for seed purposes",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1582,
+   "description": "Growing of seedlings for reforestation",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1701,
+   "description": "Hunting and trapping wild animals in the forest",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 1702,
+   "description": "Production of reptile skins or bird skins and other animal skins from hunting activities",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1709,
+   "description": "Hunting, trapping and other related activities, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 2110,
+   "description": "Growing of timber forest species (e.g. Gemelina, Eucalyptus, etc.), planting, replanting, transplanting, thinning and conserving of forest and timber tracts",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 2120,
+   "description": "Operation of forest tree nurseries",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 2201,
+   "description": "Production of roundwood for forest-based manufacturing industries",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 2202,
+   "description": "Production of roundwood used in an unprocessed form such as pit-props, fence posts and utility poles",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 2203,
+   "description": "Firewood cutting & charcoal making in the forest",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 2300,
+   "description": "Gathering of non-wood forest products ",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 2400,
+   "description": "Support services to forestry ",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 3111,
+   "description": "Ocean fishing, commercial (using vessels over 3 tons)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3112,
+   "description": "Coastal fishing, municipal (using vessels of less than 3 tons)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3113,
+   "description": "Fish corral fishing",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3121,
+   "description": "Catching fish, crabs and crustaceans in inland waters",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3122,
+   "description": "Gathering shells and clams, edible, in inland waters",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3129,
+   "description": "Other freshwater fishing activities, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3211,
+   "description": "Operation of freshwater fishpond, except fish breeding farms and nurseries",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3212,
+   "description": "Operation of freshwater fish pens and fish cage",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3213,
+   "description": "Operation of freshwater fish breeding farms and nurseries",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3214,
+   "description": "Culture of freshwater ornamental fish",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3219,
+   "description": "Other freshwater fish farming activities",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3221,
+   "description": "Operation of marine fish tanks, pens, cage except fish breeding farms and nurseries in sea water",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3222,
+   "description": "Operation of freshwater fish breeding farms and nurseries",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3223,
+   "description": "Catching and culturing ornamental (aquarium) fish",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3224,
+   "description": "Gathering of fry",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3229,
+   "description": "Other marine fish farming activities",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3230,
+   "description": "Operation of marine sport fishing preserves",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3240,
+   "description": "Prawn culture in brackish water",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3251,
+   "description": "Culture of freshwater crustaceans (except prawns), bivalves, and other mollusks",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3252,
+   "description": "Culture of oysters, other bivalves and other mollusks in sea water",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3261,
+   "description": "Pearl culture",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3262,
+   "description": "Pearl shell gathering",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3270,
+   "description": "Gathering of laver and other edible seaweeds",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3280,
+   "description": "Support service activities incidental to aquaculture",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3291,
+   "description": "Frog farming",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3292,
+   "description": "Operation of marine worm farms",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 3299,
+   "description": "Other aquaculture activities, n.e.c",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 5100,
+   "description": "Mining of hard coal",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 5200,
+   "description": "Mining of lignite",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 6200,
+   "description": "Extraction of natural gas",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 7100,
+   "description": "Mining of iron ores",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 7210,
+   "description": "Mining of uranium and thorium ores",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 7221,
+   "description": "Gold ore mining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 7222,
+   "description": "Silver ore mining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 7291,
+   "description": "Copper ore mining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 7292,
+   "description": "Chromite ore mining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 7293,
+   "description": "Manganese ore mining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 7294,
+   "description": "Nickel ore mining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8101,
+   "description": "Marble quarrying",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8102,
+   "description": "Limestone quarrying",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8103,
+   "description": "Stone quarrying, except limestone and marble",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8104,
+   "description": "Clay quarrying",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8105,
+   "description": "Sand and gravel quarrying",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8106,
+   "description": "Silica sand and silica stone quarrying",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8109,
+   "description": "Stone quarrying, clay and sand pits, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8911,
+   "description": "Baryte mining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8912,
+   "description": "Guano gathering",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8913,
+   "description": "Pyrite mining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8914,
+   "description": "Rock phosphate mining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8915,
+   "description": "Sulphur mining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8919,
+   "description": "Other chemical and fertilizer mineral mining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8920,
+   "description": "Extraction of peat",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8930,
+   "description": "Extraction of salt",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8990,
+   "description": "Other mining and quarrying, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 9101,
+   "description": "Oil and gas extraction activities on a fee or contract basis",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 9102,
+   "description": "Oil and gas extraction activities not performed on a fee or contract basis",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 9900,
+   "description": "Support activities for other mining and quarrying",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 10110,
+   "description": "Slaughtering and meat packing",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10120,
+   "description": "Production processing and preserving of meat and meat products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10201,
+   "description": "Canning/packing of fish and other marine products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10202,
+   "description": "Drying of fish and other marine products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10203,
+   "description": "Smoking of fish and other marine products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10204,
+   "description": "Manufacture of fish paste (bagoong) and fish sauce(patis)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10205,
+   "description": "Processing of seaweeds; manufacture of agar-agar or carageenan",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10206,
+   "description": "Production of fishmeal/prawn feeds",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10207,
+   "description": "Manufacture of unprepared animal feeds from fish, crustaceans and mollusks and other aquatic animals",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10209,
+   "description": "Processing, preserving and canning of fish, crustacean and mollusks, n.e.c. Manufacture of fishball, etc.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10301,
+   "description": "Canning/packing and preserving of fruits and fruit juices",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10302,
+   "description": "Canning/packing and preserving of vegetables and vegetable juices",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10303,
+   "description": "Manufacture  of  fruit  and  vegetable  sauces  (e.g. tomato sauce and paste)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10304,
+   "description": "Quick-freezing of fruits and vegetables",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10305,
+   "description": "Manufacture of potato flour and meal",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10306,
+   "description": "Roasting of nut or manufacture of nut foods and pastes",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10307,
+   "description": "Manufacture of perishable prepared foods of fruit and vegetables, such as: salad, peeled or cut vegetables, tofu (bean curd)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10309,
+   "description": "Processing and preserving of fruits and vegetables, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10410,
+   "description": "Manufacture of virgin coconut oil",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10420,
+   "description": "Manufacture of dessicated coconut",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10430,
+   "description": "Manufacture of nata de coco",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10440,
+   "description": "Production of crude vegetable oil, cake and meals, other than virgin coconut oil (see class 1041)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10450,
+   "description": "Manufacture of refined coconut and other vegetable oil (including corn oil) and margarine",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10460,
+   "description": "Manufacture of fish oil and other marine animal oils",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10470,
+   "description": "Manufacture  of  unprepared  animal  feeds  from vegetable, animal oils and fats",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10490,
+   "description": "Manufacture of vegetable and animal oil and fats, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10510,
+   "description": "Processing of fresh milk and cream",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10520,
+   "description": "Manufacture of powdered milk (except for infants) and condensed or evaporated milk (filled, combined or reconstituted)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10530,
+   "description": "Manufacture of infants' powdered milk",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10540,
+   "description": "Manufacture of butter, cheese and curd",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10550,
+   "description": "Manufacture of ice cream and sherbet, ice drop, ice candy and other flavored ices",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10560,
+   "description": "Manufacture of milk-based infants' and dietetic foods",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10570,
+   "description": "Manufacture of yoghurt",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10580,
+   "description": "Manufacture of whey",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10590,
+   "description": "Manufacture of dairy products, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10610,
+   "description": "Rice/corn milling",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10621,
+   "description": "Cassava flour milling",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10622,
+   "description": "Flour milling except cassava flour milling",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10623,
+   "description": "Manufacture of cereal breakfast foods obtained by roasting or swelling, etc.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10624,
+   "description": "Manufacture of unprepared animal feeds from grain milling residues",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10625,
+   "description": "Manufacture of flour mixes and prepared blended flour and dough for bread, cakes, biscuits or",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10629,
+   "description": "Manufacture of grain and vegetable mill products, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10630,
+   "description": "Manufacture of starches and starch products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10711,
+   "description": "Baking of bread, cakes, pastries, pies and similar ",
+   "baseVolBus": " including hopia and doughnut making\"",
+   "FIELD4": "Gross Sales"
+ },
+ {
+   "id": 10712,
+   "description": "Baking of biscuits cookies, crackers, pretzels and similar dry bakery products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10713,
+   "description": "Manufacture of ice cream cones (apa) and wafers (barquillos)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10714,
+   "description": "Manufacture of snack products such as corn curls, wheat crunchies and similar products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10721,
+   "description": "Sugarcane milling",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10722,
+   "description": "Sugar refining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10723,
+   "description": "Manufacture of muscovado sugar not carried on in the farm",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10724,
+   "description": "Manufacture of molasses",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10729,
+   "description": "Manufacture of sugar, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10731,
+   "description": "Manufacture of chocolateand cocoa products including chocolate candies",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10732,
+   "description": "Manufacture of candies (excluding   chocolate candies) and chewing gum",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10733,
+   "description": "Manufacture of popcorn and poprice",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10739,
+   "description": "Manufacture of chocolate and sugar confectionery products, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10740,
+   "description": "Manufacture of macaroni, noodles, couscous and similar farinaceous products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10750,
+   "description": "Manufactured of prepared meals and dishes",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10760,
+   "description": "Manufacture of food supplements from herbs and other plants",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10770,
+   "description": "Coffee roasting and processing",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10791,
+   "description": "Manufacture of herb from drying and further extraction (e.g.  banaba,  ampalaya,  moringa (malunggay), sambong, lagundi etc.)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10792,
+   "description": "Manufacture of ice, except dry ice",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10793,
+   "description": "Manufacture of soup containing meat, fish, crustaceans, mollusks or pasta",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10794,
+   "description": "Manufature of infant or dietetic foods containing homogenized ingredients",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10795,
+   "description": "Egg processing including fertilized egg (balut) and salted eggs",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10796,
+   "description": "Manufacture of flavoring extracts and food coloring",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10797,
+   "description": "Manufacture of mayonnaise,  salad dressing, sandwich spread and similar products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10798,
+   "description": "Manufacture of vinegar",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10799,
+   "description": "Manufacture of food products, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 10800,
+   "description": "Manufacture of prepared animal feeds",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 11010,
+   "description": "Distilling, rectifying and blending of spirits",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 11021,
+   "description": "Fruit wine manufacturing",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 11029,
+   "description": "Wine manufacturing, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 11030,
+   "description": "Manufacture of malt liquors and malt",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 11041,
+   "description": "Manufacture of soft drinks except drinks flavored with fruit juices, syrups or other materials",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 11042,
+   "description": "Manufacture of drinks flavored with fruit juices, syrups or other materials",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 11051,
+   "description": "Manufacture of bottled water",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 11052,
+   "description": "Manufacture of carbonated water",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 11060,
+   "description": "Manufacture of sports and energy drink",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 11090,
+   "description": "Manufacture of other beverages, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 12010,
+   "description": "Manufacture of cigarettes",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 12020,
+   "description": "Manufacture of cigars",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 12030,
+   "description": "Manufacture of chewing and smoking tobacco, snuff",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 12040,
+   "description": "Curing and redrying tobacco leaves",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 12090,
+   "description": "Tobacco manufacturing, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13111,
+   "description": "Spinning",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13112,
+   "description": "Texturizing",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13113,
+   "description": "Manufacture of paper yarn",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13119,
+   "description": "Preparation of textiles, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13120,
+   "description": "Weaving of textiles",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13130,
+   "description": "Finishing of textiles",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13140,
+   "description": "Preparation and finishing of textiles (integrated)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13910,
+   "description": "Manufacture of knitted and crocheted fabrics",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13921,
+   "description": "Manufacture of textile industrial bags",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13922,
+   "description": "Manufacture of made-up textile goods for house furnishings",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13923,
+   "description": "Manufacture of canvas products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13929,
+   "description": "Manufacture of made-up textile articles, except wearing apparel, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13931,
+   "description": "Manufacture of carpets and rugs, except mats of textile materials",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13932,
+   "description": "Manufacture of mats (including mattings) of textile materials",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13941,
+   "description": "Manufacture of cordage, rope, and twine",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13942,
+   "description": "Manufacture of fishing nets and other nettings, (excluding mosquito and hairnets)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13943,
+   "description": "Manufacture of products of cordage, rope and twine products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13950,
+   "description": "Manufacture of embroidered fabrics",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13991,
+   "description": "Manufacture of narrow fabrics, laces, tulles and other net fabrics",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13992,
+   "description": "Manufacture of felt and non-woven fabrics",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13993,
+   "description": "Manufacture of fabrics, impregnated, coated, covered or laminated with plastic",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13994,
+   "description": "Manufacture of fabrics, impregnated, coated, covered or laminated other than with plastic and rubber",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13995,
+   "description": "Manufacture of fabrics for industrial use (wicks and gas mantles)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13996,
+   "description": "Manufacture of fiber batting, padding and upholstery filling including coir",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 13999,
+   "description": "Manufacture of miscellaneous textiles, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 14110,
+   "description": "Men's and boys' garment manufacturing",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 14120,
+   "description": "Women's and girls' and babies' garment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 14130,
+   "description": "Ready-made embroidered garments manufacturing",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 14191,
+   "description": "Manufacture of raincoats by cutting or sewing except rubber or plastics",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 14192,
+   "description": "Manufacture of hats, gloves, handkerchiefs, neckwear and belts regardless of material",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 14199,
+   "description": "Manufacture of wearing apparel, n.e.c",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 14210,
+   "description": "Custom tailoring",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 14220,
+   "description": "Custom dressmaking",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 14301,
+   "description": "Manufacture of knitted and crocheted apparel",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 14302,
+   "description": "Manufacture of knitted or crocheted hosiery, underwear and outerwear when knitted or crocheted directly into shape",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 14309,
+   "description": "Manufacture of knitted and crocheted articles, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 15110,
+   "description": "Tanning and dressing of leather",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 15121,
+   "description": "Manufacture of luggage, handbags and wallets of leather and imitation leather",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 15129,
+   "description": "Manufature of products of leather and imitation leather, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 15210,
+   "description": "Manufacture of leather shoes",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 15220,
+   "description": "Manufacture of rubber shoes",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 15230,
+   "description": "Manufacture of plastic shoes",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 15240,
+   "description": "Manufacture of shoes made of textile materials with applied soles",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 15250,
+   "description": "Manufacture of wooden footwear and accessories",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 15291,
+   "description": "Manufacture of rubber slippers",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 15292,
+   "description": "Manufacture of slippers and sandals, other than rubber",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 15293,
+   "description": "Manufacture of leather parts of footwear",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 15299,
+   "description": "Manufacture of other footwear, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 16101,
+   "description": "Manufacture of rough lumber",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 16102,
+   "description": "Manufacture of worked lumber",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 16103,
+   "description": "Wood preserving and drying",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 16109,
+   "description": "Sawmilling and planing of wood products, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 16211,
+   "description": "Manufacture of veneer sheets and plywood",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 16212,
+   "description": "Manufacture of laminboard, particle board and other panels and board",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 16220,
+   "description": "Manufacture of wooden window and door screens, shades and venetian blinds",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 16230,
+   "description": "Manufacture of other builders' carpentry and joinery; millworking",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 16240,
+   "description": "Manufacture of wooden containers",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 16250,
+   "description": "Manufacture of wood carvings",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 16260,
+   "description": "Manufacture of charcoal outside the forest",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 16270,
+   "description": "Manufacture of wooden wares",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 16281,
+   "description": "Manufacture of rattan and cane containers",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 16282,
+   "description": "Manufacture of sawali, nipa and split canes",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 16283,
+   "description": "Manufacture of mats, matting or screen",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 16284,
+   "description": "Manufacture of small cane wares",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 16285,
+   "description": "Manufacture of articles of cork, straw and plaiting materials",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 16289,
+   "description": "Manufacture other products of bamboo, cane, rattan and the like, and plaiting materials except furniture, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 16290,
+   "description": "Manufacture of other products of wood; manufacture of articles of cork and plaiting materials, except furniture, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 17011,
+   "description": "Integrated pulp,paper and paperboard milling",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 17012,
+   "description": "Pulp milling",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 17013,
+   "description": "Paper and paperboard milling",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 17014,
+   "description": "Manufacture of hand-made paper",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 17019,
+   "description": "Manufacture of pulp, paper and paperboard, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 1702,
+   "description": "Production of reptile skins or bird skins and other animal skins from hunting activities",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 17020,
+   "description": "Manufacture of corrugated paper and paperboard and of containers of paper and paperboard",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 17091,
+   "description": "Manufacture of household and personal hygiene paper and cellulose wadding products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 17092,
+   "description": "Manufacture  of  wadding  of  textile  materials  and articles of wadding (e.g. sanitary towels, tampons, etc.)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 17093,
+   "description": "Manufacture of other articles of paper",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 17099,
+   "description": "Manufacture of other articles of paperboard",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 18110,
+   "description": "Printing",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 18121,
+   "description": "Electrotyping, stereotyping and photoengraving",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 18122,
+   "description": "Bookbinding and related work",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 18129,
+   "description": "Service activities related to printing, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 18201,
+   "description": "Reproduction of video and computer tapes from mastercopies",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 18202,
+   "description": "Reproduction of floppy, hard or compact disks",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 18203,
+   "description": "Film and video reproduction",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 19100,
+   "description": "Manufacture of coke oven products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 19200,
+   "description": "Manufacture of refined petroleum products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 19900,
+   "description": "Manufacture of other fuel products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20111,
+   "description": "Manufacture of ethanol",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20112,
+   "description": "Manufacture of industrial (compressed and liquefied) gases",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20113,
+   "description": "Manufacture of inorganic salts and compounds",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20114,
+   "description": "Manufacture of ethyl alcohol",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20115,
+   "description": "Manufacture of alcohol except ethyl",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20116,
+   "description": "Manufacture of inorganic acids, alkalis and chlorine",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20117,
+   "description": "Manufacture of organic acids and organic compounds",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20119,
+   "description": "Manufacture of basic chemicals, except fertilizers and nitrogen compounds, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20120,
+   "description": "Manufacture of fertilizers and nitrogen compounds",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20131,
+   "description": "Manufacture of synthetic rubber and factice derived from oils, in primary forms",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20132,
+   "description": "Production of mixtures of synthetic rubber and natural rubber or rubber-like gums (e.g., balata), in primary forms",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20133,
+   "description": "Manufacture of plastic synthetic resins",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20134,
+   "description": "Manufacture of plastic materials except man-made fiber and glass fiber",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20210,
+   "description": "Manufacture of pesticides and other agro-chemical products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20221,
+   "description": "Manufacture of paints",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20222,
+   "description": "Manufacture of varnishes, lacquers, shellac and stains",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20223,
+   "description": "Manufacture of paint removers, thinners, and brush cleaners",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20224,
+   "description": "Manufacture of pigments and other coloring matter of a kind used in the manufacture of paints or by artists or other painters",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20225,
+   "description": "Manufacture of printing ink",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20229,
+   "description": "Manufacture of paint products, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20231,
+   "description": "Manufacture of soap and detergents",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20232,
+   "description": "Manufacture of cleaning preparations, except soap and detergents",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20233,
+   "description": "Manufacture of waxes and polishing preparations",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20234,
+   "description": "Manufacture of perfumes, cosmetics and other toilet",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20291,
+   "description": "Manufacture of explosives, fireworks and firecrakers",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20292,
+   "description": "Manufacture of matches",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20293,
+   "description": "Manufacture of writing and drawing ink",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20294,
+   "description": "Manufacture of glues and adhesives",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20295,
+   "description": "Manufacture of activated carbon",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 20299,
+   "description": "Manufacture of miscellaneous chemical products, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 21001,
+   "description": "Manufacture of drugs and medicines including biological products such as bacterial and virus vaccines, sera and plasma",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 21002,
+   "description": "Manufacture of surgical dressings, medicated wadding , fracture bandages, catgut, and other prepared sutures",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 22111,
+   "description": "Manufacture of rubber tires (including parts) and tubes",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 22112,
+   "description": "Retreading and rebuilding of tires",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 22191,
+   "description": "Manufacture of rubber garments",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 22192,
+   "description": "Manufacture of industrial and other molded rubber products, excluding tires and tubes",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 22199,
+   "description": "Manufacture of other rubber products, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 22201,
+   "description": "Manufacture of plastic articles for packing goods (e.g. boxes, bags, sacks, etc)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 22202,
+   "description": "Manufacture of plastic household wares",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 22203,
+   "description": "Manufacture of plastic furniture fittings",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 22204,
+   "description": "Manufacture of plastic pipes and tubes",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 22205,
+   "description": "Manufacture of other plastic, industrial /office/school supplies",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 22206,
+   "description": "Manufacture of primary plastic products (e.g. sheets, film, plates, etc.)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 22207,
+   "description": "Manufacture  of  linoleum  and  hard  surface  floor coverings",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 22208,
+   "description": "Manufacture  of  plastic  window  and  doorscreen, shades and venetian blinds",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 22209,
+   "description": "Manufacture of plastics products, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 23101,
+   "description": "Manufacture of flat glass (including float glass)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 23102,
+   "description": "Manufacture of glass containers",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 23103,
+   "description": "Manufacture of glass fibers (including glass wool) and yarn of glass fibers",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 23109,
+   "description": "Manufacture of glass and glass products, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 23910,
+   "description": "Manufacture of refractory products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 23920,
+   "description": "Manufacture of clay building materials",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 23931,
+   "description": "Manufacture of vitreous china tableware and other kitchen articles of a kind commonly used for domestic",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 23932,
+   "description": "Manufacture of articles of porcelain  or china, stoneware, earthenware, imitation porcelain  or common pottery",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 23933,
+   "description": "Manufacture of coarse clay products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 23934,
+   "description": "Manufacture of sanitary  ware, vitreous  china plumbing fittings and fixtures ",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 23939,
+   "description": "Manufacture of other porcelain and ceramic products, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 23940,
+   "description": "Manufacture of cement",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 23951,
+   "description": "Manufacture of lime",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 23952,
+   "description": "Manufacture of plaster ",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 23961,
+   "description": "Manufacture of structural concrete products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 23969,
+   "description": "Manufacture of articles of concrete, cement and plaster, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 23970,
+   "description": "Cutting, shaping and finishing of stone",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 23991,
+   "description": "Manufacture of asphalt products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 23992,
+   "description": "Manufacture of asbestos products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 23993,
+   "description": "Manufacture of marble products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 23994,
+   "description": "Manufacture of abrasive products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 23999,
+   "description": "Manufacture of miscellaneous non-metallic mineral products, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 24110,
+   "description": "Operation of blast furnaces and steel making furnaces",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 24121,
+   "description": "Operation of rolling mills",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 24122,
+   "description": "Pipes and tubes manufacturing, iron or steel",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 24123,
+   "description": "Manufacture of pipe fittings of iron or steel",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 24124,
+   "description": "Manufacture of galvanized steel sheets, tinplates and other coated metal products made in steel works of rolling mills",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 24129,
+   "description": "Operation of steel works and rolling mills, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 24210,
+   "description": "Gold and other precious metal refining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 24220,
+   "description": "Non-ferrous smelting and refining , except precious metals",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 24230,
+   "description": "Non-ferrous rolling, drawing and extrusion mills",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 24240,
+   "description": "Manufacture of pipe fittings of non-ferrous metals",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 24290,
+   "description": "Manufacture of basic precious and other non-ferrous metals, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 24311,
+   "description": "Casting/foundry of iron",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 24312,
+   "description": "Casting/foundry of steel",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 24321,
+   "description": "Aluminum and aluminum base alloy casting",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 24322,
+   "description": "Copper and copper base alloy (brass, bronze) casting",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 24323,
+   "description": "Zinc and zinc alloy casting",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 24329,
+   "description": "Casting of non-ferrous metal, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 25111,
+   "description": "Manufacture of structural steel products and metal components of bridges, smoke stacks and buildings",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 25112,
+   "description": "Manufacture of other architectural and related metal work (e.g., doors, windows, shutters, gates, etc.)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 25119,
+   "description": "Manufacture of structural metal products, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 25120,
+   "description": "Manufacture of tanks, reservoirs and containers of metal",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 25130,
+   "description": "Manufacture  of  steam  generators, except central heating hot water boilers",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 25201,
+   "description": "Manufacture of small arms and accessories",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 25209,
+   "description": "Manufacture of weapons and ammunitions, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 25911,
+   "description": "Forging, pressing, stamping and roll-forming of metal products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 25912,
+   "description": "Powder metallurgy",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 25920,
+   "description": "Treatment and coating of metals; machining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 25931,
+   "description": "Manufacture of cutlery",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 25932,
+   "description": "Manufacture of handtools",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 25933,
+   "description": "Manufacture of general hardware",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 25934,
+   "description": "Manufacture of blacksmithing tools and welding shop operation",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 25991,
+   "description": "Manufacture of metal containers used for the packing or conveyance of goods",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 25992,
+   "description": "Manufacture of wire nails, not in steel rolling",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 25993,
+   "description": "Manufacture of fabricated wire products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 25994,
+   "description": "Manufacture of small hand-operated kitchen appliances",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 25995,
+   "description": "Manufacture of metal sanitary ware and plumbing fixtures",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 25996,
+   "description": "Manufacture  of  needles  (except  for  knitting  and sewing  machines),  pins  and  fasteners  including zippers",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 25997,
+   "description": "Manufacture of aluminum window and door screens, shades and venetian blinds",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 25999,
+   "description": "Manufacture of miscellaneous fabricated metal products, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26110,
+   "description": "Manufacture of electronic valves and tubes",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26120,
+   "description": "Manufacture of semi-conductor devices and other electronic components",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26200,
+   "description": "Manufacture of computers and peripheral equipment and accessories",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26300,
+   "description": "Manufacture of communication equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26400,
+   "description": "Manufacture of consumer electronics",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26511,
+   "description": "Manufacture of radar equipment, radio remote control apparatus",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26512,
+   "description": "Manufacture of electrical quantities measuring and controlling instruments",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26513,
+   "description": "Manufacture of temperature measuring and controlling hygrometric instruments",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26514,
+   "description": "Manufacture of pressure measuring and controlling instruments and gauges",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26515,
+   "description": "Manufacture of flow of liquids or gases measuring and controlling instruments",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26516,
+   "description": "Manufacture of mechanical motion, measuring and controlling, timing and cycle instruments",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26517,
+   "description": "Manufacture of industrial process control equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26519,
+   "description": "Manufacture of professional and scientific and measuring and controlling equipment, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26521,
+   "description": "Manufacture of watches and clocks of all kinds including cases of precious metals",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26522,
+   "description": "Manufacture of watch bands and bracelets of precious metals",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26529,
+   "description": "Manufacture of other watch and clocks parts, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26601,
+   "description": "Manufacture of X-ray apparatus",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26602,
+   "description": "Manufacture of electrotherapeutic apparatus",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26603,
+   "description": "Manufacture of medical laser equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26604,
+   "description": "Manufacture of Computerized Tomography (CT) scanner, Positron Emission Tomography (PET) scanner",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26605,
+   "description": "Manufacture of MRI equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26606,
+   "description": "Manufacture of medical ultrasound equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26609,
+   "description": "Manufacture of other irradiation, electromedical and electrotherapeutic equipment, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26701,
+   "description": "Manufacture of optical instruments and lenses",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26702,
+   "description": "Manufacture of photographic equipment and accessories",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 26800,
+   "description": "Manufacture of magnetic and optical media",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27111,
+   "description": "Manufacture of electric motors and generators",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27112,
+   "description": "Manufacture of electrical transformers",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27113,
+   "description": "Manufacture of electric generating sets",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27121,
+   "description": "Manufacture of switch gear and switchboard apparatus",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27122,
+   "description": "Manufacture of electricity distribution equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27123,
+   "description": "Manufacture of switches, fuses, sockets, plugs, conductors and lightning arresters and other control apparatus",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27201,
+   "description": "Manufacture of accumulators (storage batteries) including parts",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27202,
+   "description": "Manufacture of primary cells and batteries",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27310,
+   "description": "Manufacture of fiber optic cables",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27320,
+   "description": "Manufacture of other electronic and electric wires and cables",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27330,
+   "description": "Manufacture of wiring devices",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27401,
+   "description": "Manufacture of electric lamps fluorescent and fixtures",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27402,
+   "description": "Manufacture of lighting equipment and parts except for use on cycle and motor equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27403,
+   "description": "Manufacture of motor vehicle lighting equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27404,
+   "description": "Manufacture of bicycle lighting equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27405,
+   "description": "Manufacture of lighting sets used for Christmas trees",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27501,
+   "description": "Manufacture of domestic electric fans",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27502,
+   "description": "Manufacture of domestic-type refrigerators and laundry equipment (e.g. clothes washers, washer-dryers, dryers)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27503,
+   "description": "Manufacture of domestic cooking appliances (e.g. ovens, ranges, cookers, stoves, grillers, etc.)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27504,
+   "description": "Manufacture of electrothermic domestic appliances (e.g. hair dressing appliances, electric instantaneous storage, heaters, flat-irons, plate warmers, coffee or teamakers)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27505,
+   "description": "Manufacture of domestic-type water filters and/or purifiers",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27509,
+   "description": "Manufacture of domestic appliances, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27904,
+   "description": "Manufacture of accelerators (cyclotrons, betatrons)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27905,
+   "description": "Manufacture of electrical signalling equipment such as traffic lights and pedestrical signalling equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 27909,
+   "description": "Manufacture of other electrical equipment, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28111,
+   "description": "Manufacture of internal combustion engines (gas and diesel)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28112,
+   "description": "Manufacture of engines and turbines for marine propulsion",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28113,
+   "description": "Manufacture of parts of engines and turbines, except for aircraft, vehicle and cycle engines",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28119,
+   "description": "Manufacture of engines and turbines, except for transport, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28120,
+   "description": "Manufacture of fluid power equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28131,
+   "description": "Manufacture of pumps for liquids, vacuum pumps, air or other gas compressors",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28132,
+   "description": "Manufacture of taps, cocks, valves and similar appliances for pipes, boiler shells, tanks, vats or the like",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28140,
+   "description": "Manufacture of bearings, gears and driving elements",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28150,
+   "description": "Manufacture of ovens, furnaces and furnace burners",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28161,
+   "description": "Manufacture of lifting and hoisting machinery, cranes, elevators  ,  industrial  trucks,  tractors,  stackers, specialized ports for lifting and handling equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28162,
+   "description": "Manufacture of derricks,  lifting and handling equipment for contruction and mining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28163,
+   "description": "Manufacture of marine capstans, pulley tackel and hoists, etc.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28169,
+   "description": "Manufacture of other lifting and handling equipment, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28171,
+   "description": "Manufacture of calculating machines, adding machines, cash registers, calculators",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28172,
+   "description": "Manufacture of bills/coin counting and coin wrapping",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28173,
+   "description": "Manufacture of postage meters, mail handling machines (envelope stuffing, sealing and addressing machinery, opening, sorting, scanning), collating",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28174,
+   "description": "Manufacture of typewriters",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28175,
+   "description": "Manufacture of duplicating machines",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28176,
+   "description": "Manufacture of photo-copying apparatus incorporating an optical system or of the contact type",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28179,
+   "description": "Manufacture of other office machinery and equipment (except computers and peripheral equipment), n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28180,
+   "description": "Manufacture of power-driven hand tools",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28191,
+   "description": "Manufacture of weighing machines except scientific weighing apparatus used for laboratories",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28192,
+   "description": "Manufacture of refrigerating or freezing equipment for commercial purposes",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28193,
+   "description": "Manufacture of unit air-conditioners",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28194,
+   "description": "Manufacture of packing and wrapping machinery",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28195,
+   "description": "Manufacture  of  machinery  for  cleaning  or  drying bottles or other containers or for aerating beverages",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28196,
+   "description": "Manufacture of fans intended for industrial applications,   exhaust hoods for commercial, laboratory or industrial use",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28197,
+   "description": "Manufacture of calendering or other rolling machines other than for metals or glass",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28199,
+   "description": "Manufacture  of  other  general-purpose machinery, n.e.c. (including manufacture of specialized parts for general purpose machinery and equipment)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28211,
+   "description": "Manufacture of farm tractors",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28212,
+   "description": "Manufacture of mechanical implements for crop production",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28213,
+   "description": "Manufacture of animal  husbandry machinery and equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28219,
+   "description": "Manufacture of agricultural and forestry machinery and equipment, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28221,
+   "description": "Manufacture of machine tools for working metal",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28222,
+   "description": "Manufacture  of  machine  tools  and  accessories including precision measuring tools",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28223,
+   "description": "Parts and accessories for the machine tools classified in this group",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28224,
+   "description": "Manufacture of apparatus for   electroplating, electrolysis and electrophoresis",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28229,
+   "description": "Manufacture of metal-forming machinery and machine tools, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28230,
+   "description": "Manufacture of machinery for metallurgy",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28241,
+   "description": "Manufacture of heavy machinery and equipment used for mining and quarrying",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28242,
+   "description": "Manufacture  of  heavy  machinery and equipment used for construction",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28251,
+   "description": "Manufacture of machinery for food processing",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28252,
+   "description": "Manufacture of presses, crushers and similar machinery used to make wine, cider, fruit juices or similar beverages",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28253,
+   "description": "Manufacture of machinery for the  preparation  of tobacco and for the making of cigarettes or cigars, or pipe or chewing tobacco or snuff",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28261,
+   "description": "Manufacture of textile machinery",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28262,
+   "description": "Manufacture of  machineries for  man-made textile fibers or yarns",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28263,
+   "description": "Manufacture of sewing machines",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28264,
+   "description": "Manufacture of washing, laundry, dry-cleaning and pressing machines",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28265,
+   "description": "Manufacture of needles for knitting, sewing machines",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28269,
+   "description": "Manufacture of  machinery for  textile apparel and leather production, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28291,
+   "description": "Manufacture of machinery for pulp, paper and paperboard industries",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28292,
+   "description": "Manufacture of machinery  for  working  rubber or plastic or for the manufacture of products of these materials",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28293,
+   "description": "Manufacture of printing-trade machinery and equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28294,
+   "description": "Manufacture of machinery for producing tiles, bricks, shaped ceramic pastes, pipes, graphite, electrodes, blackboard chalk, foundry molds, etc.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28295,
+   "description": "Manufacture  of  machines  for  production  or  hot-working of glass; glassware or yarn",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28296,
+   "description": "Manufacture of centrifugal clothes driers",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 28299,
+   "description": "Manufacture  of  other  special-purpose  machinery, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 29100,
+   "description": "Manufacture of motor vehicles",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 29201,
+   "description": "Manufacture of bodies (coachwork) for motor vehicles",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 29202,
+   "description": "Manufacture of trailers and semi-trailers",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 29301,
+   "description": "Manufacture of electric ignition or starting equipment for internal combustion engines",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 29302,
+   "description": "Manufacture of parts  and  accessories for motor vehicles and their engines",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 30111,
+   "description": "Building of ships and boats other than sports and",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 30112,
+   "description": "Manufacture of floating or submersible drilling platforms",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 30113,
+   "description": "Manufacture of inflatable rafts",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 30114,
+   "description": "Manufacture of metal sections for ships and barges",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 30121,
+   "description": "Manufacture of inflatable boats",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 30129,
+   "description": "Manufacture of other pleasure and sporting boats, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 30201,
+   "description": "Building and rebuilding of locomotives of any type of gauge, and railroad and tramway cars for freight and passenger service",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 30202,
+   "description": "Production of specialized parts for locomotives, railroad and tramway",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 30300,
+   "description": "Manufacture of air and spacecraft and related machinery",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 30400,
+   "description": "Manufacture of military fighting vehicles",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 30911,
+   "description": "Manufacture and assembly of motorcycles",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 30912,
+   "description": "Manufacture of motorcycle engines and parts thereof",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 30913,
+   "description": "Manufacture of tricycles and parts thereof",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 30914,
+   "description": "Manufacture of side cars",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 30915,
+   "description": "Manufacture of parts and accessories of motorcyles",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 30921,
+   "description": "Manufacture of bicycles and bicycle parts ",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 30922,
+   "description": "Manufacture of invalid carriages, motorized and non-motorized",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 30923,
+   "description": "Manufacture of baby carriages",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 30991,
+   "description": "Manufacture of hand-propelled vehicles",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 30992,
+   "description": "Manufacture of animal drawn vehicles",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 31010,
+   "description": "Manufacture of wood furniture",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 31020,
+   "description": "Manufacture of rattan furniture (reed, wicker, and cane)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 31030,
+   "description": "Manufacture of box beds and mattresses",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 31040,
+   "description": "Manufacture of partitions, shelves, lockers and office and store fixtures",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 31050,
+   "description": "Manufacture of plastic furniture",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 31060,
+   "description": "Manufacture of furniture and fixtures of metal",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 31090,
+   "description": "Manufacture of other furniture and fixtures, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32111,
+   "description": "Manufacture of jewelry made of precious and semi-precious stones",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32112,
+   "description": "Manufacture of silverware and plated ware",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32113,
+   "description": "Manufacture of watchbands and bracelets of precious metals",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32119,
+   "description": "Manufacture of articles related to jewelry",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32120,
+   "description": "Manufacture of imitation of jewelry and related articles",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32201,
+   "description": "Manufacture of guitars",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32202,
+   "description": "Manufacture of string instruments, other than guitars",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32203,
+   "description": "Manufacture of pianos",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32204,
+   "description": "Manufacture of musical organs (all types)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32205,
+   "description": "Manufacture of wind and percussion instruments",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32206,
+   "description": "Manufacture of instrument parts and accessories",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32209,
+   "description": "Manufacture of musical instruments, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32301,
+   "description": "Manufacture of sporting gloves and mitts",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32302,
+   "description": "Manufacture of sporting balls",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32309,
+   "description": "Manufacture of sporting and athletic goods, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32401,
+   "description": "Manufacture of dolls and doll garments",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32402,
+   "description": "Manufacture of wheeled toys",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32403,
+   "description": "Manufacture of billiard, pool, bowling alley and similar games equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32404,
+   "description": "Manufacture  of  electronic  games  (video  games, checkers)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32409,
+   "description": "Manufacture of toys and games, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32501,
+   "description": "Manufacture of medical, surgical, dental furniture and fixtures",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32502,
+   "description": "Manufacture  of   opthalmic  goods,  eyeglasses, sunglasses, lenses ground to prescription, contact lenses, safety goggles",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32503,
+   "description": "Manufacture of prosthetic appliances, artificial teeth made to order",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32504,
+   "description": "Manufacture of medical and precision instruments",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32505,
+   "description": "Manufacture of temperature  measuring  and controlling hygrometric instruments",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32506,
+   "description": "Manufacture of cement used in dentistry",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32509,
+   "description": "Manufacture of other medical and dental instruments and supplies, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32910,
+   "description": "Manufacture of pens and pencils of all kinds",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32920,
+   "description": "Manufacture of umbrellas, walking sticks, canes, whips and riding crops",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32930,
+   "description": "Manufacture of articles  for  personal  use,  e.g. smoking pipes, combs, slides and similar articles",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32940,
+   "description": "Manufacture of candles",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32950,
+   "description": "Manufacture of artificial flowers, fruits and foliage",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32961,
+   "description": "Manufacture of wooden coffin",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32962,
+   "description": "Manufacture of metal coffin",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32991,
+   "description": "Manufacture of buttons, except plastic",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32992,
+   "description": "Manufacture of brooms, brushes and fans",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32993,
+   "description": "Manufacture of identification plates, badges, emblems and tags",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32994,
+   "description": "Manufacture of signs and advertising displays",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32995,
+   "description": "Manufacture of cigarette lighters",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 32999,
+   "description": "Manufacture of miscellaneous articles, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 33110,
+   "description": "Repair of fabricated metal products",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 33120,
+   "description": "Repair of machinery",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 33130,
+   "description": "Repair of electronic and optical equipment",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 33140,
+   "description": "Repair of electrical equipment",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 33151,
+   "description": "Repairing of ships and boats other than sports and",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 33152,
+   "description": "Repairing of sports and pleasure boats",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 33159,
+   "description": "Repair of transport equipment, except motor vehicles, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 33190,
+   "description": "Repair of other equipment",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 33200,
+   "description": "Installation of industrial machinery and equipment",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 35100,
+   "description": "Electric power generation, transmission and distribution",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 35200,
+   "description": "Manufacture of gas; distribution of gaseous fuels through mains",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 35300,
+   "description": "Steam, air conditioning supply and production of ice",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 36000,
+   "description": "Water collection, treatment and supply",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 37000,
+   "description": "Sewerage",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 38110,
+   "description": "Collection of non-hazardous waste",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 38120,
+   "description": "Collection of hazardous waste",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 38210,
+   "description": "Treatment and disposal of non-hazardous waste",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 38220,
+   "description": "Treatment and disposal of hazardous waste",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 38300,
+   "description": "Materials recovery",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 39000,
+   "description": "Remediation activities and other waste management ",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 41001,
+   "description": "Residential (dwelling) building constructions",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 41002,
+   "description": "Non-residential building constructions",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 42100,
+   "description": "Construction of roads and railways",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 42200,
+   "description": "Construction of utility projects",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 42900,
+   "description": "Construction of other civil engineering projects",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 43110,
+   "description": "Demolition",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 43120,
+   "description": "Site preparation",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 43210,
+   "description": "Electrical installation",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 43220,
+   "description": "Plumbing, heat and air-conditioning installation",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 43290,
+   "description": "Other construction installation",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 43301,
+   "description": "Painting and related work",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 43302,
+   "description": "Floor and wall tiling or covering with other material",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 43303,
+   "description": "Carpentry",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 43309,
+   "description": "Other building completion and finishing activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 43900,
+   "description": "Other specialized construction activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 45101,
+   "description": "Sale of passenger motor vehicles",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 45102,
+   "description": "Sale of lorries, trailers and semi-trailers",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 45109,
+   "description": "Sale of other motor vehicles",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 45201,
+   "description": "Repair of motor vehicles, including overhauling",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 45202,
+   "description": "Repair of batteries for motor vehicles",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 45203,
+   "description": "Vulcanizing or preparing of tires for motor vehicles",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 45209,
+   "description": "Maintenance of motor vehicles, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 45301,
+   "description": "Wholesale of motor vehicles parts and accessories",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 45302,
+   "description": "Retail sale of motor vehicles parts and accessories",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 45303,
+   "description": "Wholesale of motor vehicles tires and batteries",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 45304,
+   "description": "Retail sale of motor vehicles tires and batteries",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 45309,
+   "description": "Sale of motor vehicle parts and accessories, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 45401,
+   "description": "Sale of motorcycles and their parts and components ",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 45402,
+   "description": "Maintenance and repair of motorcycles and their parts and components",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 46101,
+   "description": "Wholesale on a fee or contract basis, of agricultural raw materials and live animals",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 46102,
+   "description": "Wholesale  on  a  fee  or  contract  basis,  of  food, beverages and tobacco",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46103,
+   "description": "Wholesale  on a fee  or contract basis, of  textile, clothing, and footwear",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46104,
+   "description": "Wholesale on a fee or contract basis, of household appliances, articles and equipment",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 46105,
+   "description": "Wholesale on a fee or contract basis, of miscellaneous consumer goods",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 46106,
+   "description": "Wholesale on a fee or contract basis, of construction materials and hardware",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 46107,
+   "description": "Wholesale on a fee or contract basis, of chemical and pharmaceutical products",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 46108,
+   "description": "Wholesale on a fee or contract basis, of machinery, equipment and supplies",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 46109,
+   "description": "Wholesale on a fee or contract basis, of other products",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 46201,
+   "description": "Wholesale of palay, corn (unmilled) and other grains",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46202,
+   "description": "Wholesale of abaca and  other fibers,  except synthetic fibers",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46203,
+   "description": "Wholesale of coconut and coconut by-products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46204,
+   "description": "Wholesale of oleaginous fruits (e.g., oil seeds, palm oil, sunflower seeds, etc.)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46205,
+   "description": "Wholesale of tobacco leaf",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46206,
+   "description": "Wholesale of flowers and plants",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46207,
+   "description": "Wholesale of livestock and poultry and unprocessed animal products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46208,
+   "description": "Wholesale of fish and other seafoods",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46209,
+   "description": "Wholesale  of  farm,  forest  and  marine  products, including seeds and animal feeds, hides and skins, leather, etc., n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46301,
+   "description": "Wholesale of fruits, nuts and vegetables",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46302,
+   "description": "Wholesale of sugar, confectionery and bakery products and other processed foods",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46303,
+   "description": "Wholesale of meat and poultry products, including eggs",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46304,
+   "description": "Wholesale of rice, corn and other cereals",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46305,
+   "description": "Wholesale of fishery products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46306,
+   "description": "Wholesale  of  drinking  water,  juices  (including powder), coffee, tea, cocoa and other beverages",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46307,
+   "description": "Wholesale of tobacco products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46308,
+   "description": "Wholesale of spices",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46309,
+   "description": "Other  wholesale of  food,  beverage  and  tobacco, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46411,
+   "description": "Wholesale of textile fabrics, all kinds, including man-made fibers",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46412,
+   "description": "Wholesale of wearing apparel, except footwear",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46413,
+   "description": "Wholesale of made-up textile goods, except wearing apparel",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46414,
+   "description": "Wholesale of articles of clothing, including accessories",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46415,
+   "description": "Wholesale of footwear, all kinds of materials",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46416,
+   "description": "Wholesale of embroideries",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46417,
+   "description": "Wholesale of cordage, rope and twine",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46418,
+   "description": "Wholesale of leather and leather goods, including man-made leather, except footwear",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46419,
+   "description": "Wholesale of textiles, clothing and footwear, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46421,
+   "description": "Wholesale of medicinal and pharmaceutical products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46422,
+   "description": "Wholesale  of  surgical and orthopedic instruments and devices",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46423,
+   "description": "Wholesale of photographic and optical goods",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46424,
+   "description": "Wholesale of musical instruments/sporting goods (including bicycles), and games and toys",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46425,
+   "description": "Wholesale of paper and paper products (including stationeries)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46426,
+   "description": "Wholesale of books, magazines and newspapers",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46427,
+   "description": "Wholesale of perfumeries, cosmetics and soaps",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46428,
+   "description": "Wholesale of watches, clocks and jewelries",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46429,
+   "description": "Wholesale of miscellaneous consumer goods, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46491,
+   "description": "Wholesale of other household-type appliances, except radio  and television equipment,  CD and DVD players/recorders   \n",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46492,
+   "description": "Wholesale  of  household  furniture,  furnishing  and fixtures",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46493,
+   "description": "Wholesale of recorded audio and video tapes, CDs, DVDs",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46494,
+   "description": "Wholesale  of  chinaware,  glassware,  earthenware, woodenware, wickerware,  corkware, plasticware, cutlery and utensils",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46495,
+   "description": "Wholesale of handicraft products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46496,
+   "description": "Wholesale of lighting equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46499,
+   "description": "Wholesale of other household goods, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46510,
+   "description": "Wholesale of computers, computer peripheral equipment and software",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46521,
+   "description": "Wholesale of electronic valves and tubes",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46522,
+   "description": "Wholesale of semi-conductor devices",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46523,
+   "description": "Wholesale micro-chips and integrated circuits",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46524,
+   "description": "Wholesale of printed circuits",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46525,
+   "description": "Wholesale of radio and television including parts and accessories",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46526,
+   "description": "Wholesale of telephone and communications equipment including parts and accessories",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46527,
+   "description": "Wholesale of blank audio and video tapes and diskettes, magnetic and optical disks (CDs, DVDs)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46530,
+   "description": "Wholesale of agricultural machinery, equipment and supplies",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46591,
+   "description": "Wholesale of commercial machinery and equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46592,
+   "description": "Wholesale of industrial machinery and equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46593,
+   "description": "Wholesale of office machinery equipment including office furniture, furnishings, appliances and vases",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46594,
+   "description": "Wholesale of professional and scientific and measuring and controlling equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46595,
+   "description": "Wholesale  of  transport  equipment  and  supplies, except land motor vehicles, motorcycles and bicycles",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46599,
+   "description": "Wholesale of other machinery and equipment, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46610,
+   "description": "Wholesale of solid, liquid and gaseous fuels and related products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46620,
+   "description": "Wholesale of metals and metal ores",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46631,
+   "description": "Wholesale of lumber and planing mill products, wood in the rough",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46632,
+   "description": "Wholesale of cement, hydraulic",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46633,
+   "description": "Wholesale of masonry materials, except cement",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46634,
+   "description": "Wholesale of flat glass",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46635,
+   "description": "Wholesale  of  hardware,  paints,  varnishes  and lacquers, and plumbing materials, including fittings and fixtures",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46636,
+   "description": "Wholesale of electrical materials",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46637,
+   "description": "Wholesale of wallpaper and floor coverings",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46639,
+   "description": "Wholesale of construction materials and supplies, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46691,
+   "description": "Wholesale of industrial chemical products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46692,
+   "description": "Wholesale of fertilizers and agro-chemical products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46693,
+   "description": "Wholesale of non-metallic products except cement, sand and gravel",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46694,
+   "description": "Wholesale of scrap metals, waste and junk",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46695,
+   "description": "Wholesale of scraps, except metal",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46699,
+   "description": "Wholesale of other waste and scrap and products, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 46900,
+   "description": "Non-specialized wholesale trade",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47111,
+   "description": "Retail selling in groceries",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47112,
+   "description": "Retail selling in supermarkets",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47113,
+   "description": "Retail selling in sari-sari stores",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47114,
+   "description": "Retail selling in convenience stores",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47191,
+   "description": "Retail selling in department stores",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47199,
+   "description": "Retail selling in non-specialized stores, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47211,
+   "description": "Retail sale of fruits and vegetables",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47212,
+   "description": "Retail sale of eggs and dairy products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47213,
+   "description": "Retail sale of meat and poultry products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47214,
+   "description": "Retail sale of bakery products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47215,
+   "description": "Retail sale of fish and other seafoods (fresh and dried)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47216,
+   "description": "Retail sale of rice, corn and other cereals",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47219,
+   "description": "Retail sale of food products, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47221,
+   "description": "Retail sale of alcoholic beverages (not consumed on the spot)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47222,
+   "description": "Retail sale of non-alcoholic beverages",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47230,
+   "description": "Retail sale of tobacco products in specialized stores",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47300,
+   "description": "Retail sale of automotive fuel in specialized stores",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47411,
+   "description": "Retail sale of computers",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47412,
+   "description": "Retail sale of computer peripheral equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47413,
+   "description": "Retail sale of computer software",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47414,
+   "description": "Retail sale of cellular phones, parts and accessories",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47419,
+   "description": "Retail sale of other telecommunications equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47421,
+   "description": "Retail sale of of radio and television, including parts and accessories",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47422,
+   "description": "Retail sale of audio and video equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47423,
+   "description": "Retail sale of stereo equipment, CD and DVD players and equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47429,
+   "description": "Retail sale of audio and video equipment, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47511,
+   "description": "Retail sale of textiles, all kinds",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47512,
+   "description": "Retail sale of modistes' supplies",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47521,
+   "description": "Retail sale of hardware materials",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47522,
+   "description": "Retail sale of glass and mirror",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47523,
+   "description": "Retail sale of lumber",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47524,
+   "description": "Retail sale of construction materials",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47525,
+   "description": "Retail sale of masonry materials",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47526,
+   "description": "Retail sale of nipa, bamboo and rattan",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47527,
+   "description": "Retail sale of paints, varnishes and lacquers",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47529,
+   "description": "Retail sale of construction supplies, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47530,
+   "description": "Retail sale of carpets, rugs, wall and floor coverings in specialized stores",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47591,
+   "description": "Retail sale of home furnishing, furniture and fixtures, including lamps and lamp shades",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47592,
+   "description": "Retail sale of chinaware, glassware, earthenware and utensils",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47593,
+   "description": "Retail sale of household appliances,  articles and equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47594,
+   "description": "Retail sale of musical instruments and records, tapes and cartridges",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47595,
+   "description": "Retail sale of handicrafts",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47599,
+   "description": "Retail  sale  of  electrical  household  appliances, furniture,  lighting  equipment and  other  household articles in specialized stores, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47610,
+   "description": "Retail sale of books, newspapers and stationery in specialized stores",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47620,
+   "description": "Retail sale of  music  and  video  recordings  in specialized stores",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47631,
+   "description": "Retail sale of sporting goods and athletic supplies",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47632,
+   "description": "Retail sale of marine supplies, including nets and gears",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47633,
+   "description": "Retail sale of camping goods and bicycles",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47640,
+   "description": "Retail sale of games and toys in specialized stores",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47711,
+   "description": "Retail sale of wearing apparel, except footwear",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47712,
+   "description": "Retail sale of made-up textile goods",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47713,
+   "description": "Retail sale of footwear, all kinds",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47714,
+   "description": "Retail sale of leather and artificial leather goods and travel accessories, except footwear",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47719,
+   "description": "Retail sale of other clothing, footwear and leather articles in specialized stores, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47721,
+   "description": "Retail sale of drugs and pharmaceutical goods",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47722,
+   "description": "Retail sale of medical, surgical and orthopedic goods/instruments and dental supplies",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47723,
+   "description": "Retail sale of perfumery, cosmetic and toilet articles",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47731,
+   "description": "Retail sale of feeds, fertilizers and insecticides",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47732,
+   "description": "Retail sale of toys, gifts and novelty goods",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47733,
+   "description": "Retail  sale  of  office  machines  and  equipment, excluding  computers  and  computer  peripheral equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47734,
+   "description": "Retail sale of jewelry, watches and clocks",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47735,
+   "description": "Retail sale of fresh and artificial flowers and plants",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47736,
+   "description": "Retail sale of beauty parlor supplies and equipment",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47737,
+   "description": "Retail sale of art goods, marble products, painting and artists' supplies",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47738,
+   "description": "Retail sale of optical goods and supplies",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47739,
+   "description": "Other retail sale of new goods in specialized stores, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47741,
+   "description": "Retail sale of second-hand clothing, footwear and leather articles",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47742,
+   "description": "Retail sale of books and other goods",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47743,
+   "description": "Retail sale of antiques and auctioning houses",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47749,
+   "description": "Retail sale of second-hand goods, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47750,
+   "description": "Retail sale of liquefied petroleum gas and other fuel prod",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47810,
+   "description": "Retail sale via stalls and markets of food, beverages and tobacco products",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47820,
+   "description": "Retail sale via stalls and markets of textiles, clothing and footwear",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47891,
+   "description": "Retail sale of prepaid cards",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47892,
+   "description": "Retail sale of internet card",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47893,
+   "description": "Retail sale of electronic load",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47894,
+   "description": "Retail sale of music and video recordings",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47895,
+   "description": "Retail sale of household appliances and consumer electronics",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47896,
+   "description": "Retail sale of books",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47897,
+   "description": "Retail sale of games and toys",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47898,
+   "description": "Retail sale of carpets and rugs",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47899,
+   "description": "Other retail sale via stalls and markets of other goods, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47911,
+   "description": "Retail sale via mail order",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47912,
+   "description": "Retail sale via telephone order",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47913,
+   "description": "Retail sale via internet",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47991,
+   "description": "Door-to-door retailing",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47992,
+   "description": "Selling by vending machine",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47993,
+   "description": "Retail sale of health products, non-store",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47994,
+   "description": "Retail sale of water (including distribution)",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 47999,
+   "description": "Other retail sale not in stores, stalls or markets, n.e.c",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 49111,
+   "description": "Inter-urban passenger railway transport",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 49112,
+   "description": "Urban and suburban railway transport",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 49120,
+   "description": "Freight rail transport",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 49201,
+   "description": "Inter-urban bus line operation",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 49202,
+   "description": "Urban and suburban bus line operation",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 49203,
+   "description": "Local bus line operation",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 49204,
+   "description": "Chartered  buses  and  cars  operation  (e.g. Tourist buses, rent-a-car)",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 49205,
+   "description": "Operation of school buses/shuttle",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 49209,
+   "description": "Other transport via buses, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 49310,
+   "description": "Urban or suburban passenger land transport, except by bus",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 49321,
+   "description": "Jeepney and Asian Utility Vehicle (AUV) operation",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 49322,
+   "description": "Tricycles and pedicabs operation",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 49323,
+   "description": "Public utility cars and taxicabs operation",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 49329,
+   "description": "Other land transport operation, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 49331,
+   "description": "Truck-for-hire operation (with driver)",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 49332,
+   "description": "Freight truck operation",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 49333,
+   "description": "Tank truck delivery services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 49339,
+   "description": "Freight transport operation, by road, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 49400,
+   "description": "Transport via pipeline",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 50111,
+   "description": "Ocean passenger transport",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 50112,
+   "description": "Interisland water passenger transport",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 50113,
+   "description": "Renting of ship with operator",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 50121,
+   "description": "Ocean freight transport",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 50122,
+   "description": "Interisland water freight transport",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 50123,
+   "description": "Towing and pushing services on coastal and trans-oceanic waters",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 50210,
+   "description": "Inland passenger water transport",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 50220,
+   "description": "Inland freight water transport",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 5100,
+   "description": "Mining of hard coal",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 5200,
+   "description": "Mining of lignite",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 52101,
+   "description": "General bonded warehouses except grain warehouse",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 52102,
+   "description": "Grain warehouses",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 52103,
+   "description": "Customs bonded warehouses",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 52104,
+   "description": "Cold storage",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 52109,
+   "description": "Storage and warehousing, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 52211,
+   "description": "Freight terminal facilities for trucking companies ",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 52212,
+   "description": "Operation of parking lots",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 52213,
+   "description": "Operation of toll roads and bridges",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 52219,
+   "description": "Other supporting land transport activities, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 52220,
+   "description": "Service activities incidental to water transportation",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 52230,
+   "description": "Service activities incidental to air transportation",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 52241,
+   "description": "Containerized cargohandling, auxiliary activity to land transport",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 52242,
+   "description": "Non- containerized cargo handling, auxiliary activity to land transport",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 52291,
+   "description": "Freight forwarding services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 52292,
+   "description": "Customs brokerage (ship and aircraft)",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 52293,
+   "description": "Logistics services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 52299,
+   "description": "Activities of other transport agencies, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 53100,
+   "description": "Postal activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 53201,
+   "description": "Private postal service",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 53202,
+   "description": "Messenger service",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 55101,
+   "description": "Hotels and motels",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 55102,
+   "description": "Resort hotels",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 55103,
+   "description": "Condotels",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 55104,
+   "description": "Pension houses",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 55105,
+   "description": "Camping sites/facilities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 55109,
+   "description": "Other short term accommodation activities, n.e.c",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 55901,
+   "description": "Dormitories/boarding houses",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 55909,
+   "description": "Other accommodation, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 56210,
+   "description": "Event catering",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 56290,
+   "description": "Other food service activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 56301,
+   "description": "Night clubs",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 56302,
+   "description": "Bars and cocktail lounges",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 56303,
+   "description": "Caf? or coffee shops",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 56309,
+   "description": "Other beverage serving activities, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 58110,
+   "description": "Book Publishing",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 58120,
+   "description": "Publishing of directories and mailing lists",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 58130,
+   "description": "Publishing of newspapers, journals and periodicals",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 58190,
+   "description": "Other publishing activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 58200,
+   "description": "Software publishing",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 59110,
+   "description": "Motion picture, video andtelevision programme activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 59120,
+   "description": "Motion picture, video and television programme post-production activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 59130,
+   "description": "Motion picture, video and television programme distribution activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 59140,
+   "description": "Motion picture projection activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 59201,
+   "description": "Sound recording activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 59202,
+   "description": "Publishing of music",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 60101,
+   "description": "Radio broadcasting and relay station and studios",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 60102,
+   "description": "Radio program production",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 60103,
+   "description": "Radio broadcasting activities over the Internet (Internet radio stations)",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 60201,
+   "description": "Television broadcasting and relay stations and studios including closed circuit television services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 60202,
+   "description": "Television program production",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 60203,
+   "description": "Television broadcasting activities over the Internet (Internet television stations)",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 61101,
+   "description": "Wired (landline) services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 61102,
+   "description": "Wired internet access service activities (e.g. DSL, leased line, dial-up)",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 61103,
+   "description": "Telegraph, facsimile/telefax, and telex services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 61109,
+   "description": "Other wired telecommunications activities, including pay telephone",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 61201,
+   "description": "Wireless landline services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 61202,
+   "description": "Mobile telecommunications services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 61203,
+   "description": "Wireless  internet  access  services  (e.g.  Internet Service Provider, broadband)",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 61209,
+   "description": "Other wireless telecommunication services, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 61300,
+   "description": "Satellite telecommunications activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 61901,
+   "description": "Telephone access in facilities open to the public service",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 61902,
+   "description": "Internet access in facilities open to the public service activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 61903,
+   "description": "Voice Over Internet Protocol (VOIP)service activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 61909,
+   "description": "Other telecommunications service activities, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 6200,
+   "description": "Extraction of natural gas",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 62010,
+   "description": "Computer programming activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 62020,
+   "description": "Computer  consultancy  and  computer  facilities management activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 62090,
+   "description": "Other information technology and computer service activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 63111,
+   "description": "Data processing",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 63112,
+   "description": "Website hosting services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 63113,
+   "description": "Application hosting services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 63120,
+   "description": "Web portals",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 63910,
+   "description": "News agency activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 63990,
+   "description": "Other information service activities, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 64197,
+   "description": "Cooperative rural banking",
+   "baseVolBus": "Total Amount of Gross Loans Release",
+   "FIELD4": ""
+ },
+ {
+   "id": 64301,
+   "description": "Investment company operation",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 64302,
+   "description": "Investment house operation",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 64303,
+   "description": "Securities dealership, own account",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 64304,
+   "description": "Trust and investment management corporation",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 64910,
+   "description": "Financial leasing",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 64921,
+   "description": "Credit card activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 64922,
+   "description": "Lending investor activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 64923,
+   "description": "Financing company operations",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 64924,
+   "description": "Venture capital corporation operation",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 64929,
+   "description": "Other credit granting, n.e.c",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 64930,
+   "description": "Pawnshop operations",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 64991,
+   "description": "Mutual building and loan association operation",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 64993,
+   "description": "Credit cooperative activities",
+   "baseVolBus": "Total Amount of Gross Loans Release",
+   "FIELD4": ""
+ },
+ {
+   "id": 64994,
+   "description": "Mutual benefit association operation",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 65110,
+   "description": "Life insurance",
+   "baseVolBus": "Gross Receipts",
+   "FIELD4": ""
+ },
+ {
+   "id": 65120,
+   "description": "Non-life insurance",
+   "baseVolBus": "Gross Receipts",
+   "FIELD4": ""
+ },
+ {
+   "id": 65200,
+   "description": "Reinsurance",
+   "baseVolBus": "Gross Receipts",
+   "FIELD4": ""
+ },
+ {
+   "id": 65300,
+   "description": "Pension funding",
+   "baseVolBus": "Gross Receipts",
+   "FIELD4": ""
+ },
+ {
+   "id": 66110,
+   "description": "Administration of financial markets",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 66120,
+   "description": "Security and commodity contracts brokerage",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 66130,
+   "description": "Foreign exchange dealing",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 66190,
+   "description": "Other activities auxiliary to financial service activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 66210,
+   "description": "Risk and damage evaluation",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 66220,
+   "description": "Activities of insurance agents and brokers",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 66231,
+   "description": "Pre-need plan for health",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 66232,
+   "description": "Pre-need plan for education",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 66233,
+   "description": "Pre-need plan for memorial and interment",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 66234,
+   "description": "Pre-need plan for pension",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 66239,
+   "description": "Pre-need plan activities, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 66290,
+   "description": "Other activities auxilary to insurance and pension funding",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 66300,
+   "description": "Fund management activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 68110,
+   "description": "Real estate buying, selling, renting, leasing and operating of self-owned/leased apartment buildings, non-residential and dwellings",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 68120,
+   "description": "Real estate buying, developing, subdividing and selling",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 68130,
+   "description": "Cemetery  and  columbarium  development,  selling, renting,  leasing  and  operating  of  self-owned cemetery/columbarium (including burial crypt)",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 68140,
+   "description": "Renting or leasing services of residential properties",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 68190,
+   "description": "Other real estate activities with own or leased property",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 68200,
+   "description": "Real estate activities on a fee or contract basis",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 69200,
+   "description": "Accounting, bookkeeping and auditing activities; tax consultancy",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 7100,
+   "description": "Mining of iron ores",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 71101,
+   "description": "Environmental engineering activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 71102,
+   "description": "Architectural and other engineering activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 71103,
+   "description": "Land surveying services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 71109,
+   "description": "Other technical activities related to architectural and engineering",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 71200,
+   "description": "Technical testing and analysis",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 7210,
+   "description": "Mining of iron ores",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 72101,
+   "description": "Research and experimental development in natural sciences",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 72102,
+   "description": "Research   and   experimental   development   in engineering and technology",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 72103,
+   "description": "Research and experimental development in health sciences",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 72104,
+   "description": "Research and experimental development in agricutural sciences",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 72200,
+   "description": "Research and experimental development on social sciences and humanities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 7221,
+   "description": "Gold ore mining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 7222,
+   "description": "Mining of iron ores",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 72300,
+   "description": "Research and  experimental development in information technology",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 7291,
+   "description": "Copper ore mining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 7292,
+   "description": "Chromite ore mining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 7293,
+   "description": "Manganese ore mining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 7294,
+   "description": "Nickel ore mining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 73101,
+   "description": "Advertising  agency,  except  billboard  and  outdoor advertising",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 73102,
+   "description": "Billboard and outdoor adverstising services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 73103,
+   "description": "Media representation",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 73104,
+   "description": "Commercial art services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 73109,
+   "description": "Advertising services, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 73200,
+   "description": "Market research and public opinion polling",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 74101,
+   "description": "Fashion design",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 74102,
+   "description": "Interior decoration services other than those in class",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 74201,
+   "description": "Digital photograph processing",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 74202,
+   "description": "Commercial and consumer photograph production (except aerial photography)",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 74203,
+   "description": "Photograph  and  motion  pictures  processing  (not related to motion pictures and TV industries)",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 74204,
+   "description": "Film  developing  and  printing  and  photograph enlarging",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 74205,
+   "description": "Aerial photography",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 74206,
+   "description": "Microfilming activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 74207,
+   "description": "Underwater photography",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 74209,
+   "description": "Photographic activities, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 74901,
+   "description": "Business brokerage activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 74902,
+   "description": "Weather forecasting and meteorological services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 74903,
+   "description": "Translation and interpretation services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 74904,
+   "description": "Environmental consulting services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 74909,
+   "description": "Other professional, scientific and technical activities,",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 75000,
+   "description": "Veterinary activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 77100,
+   "description": "Renting and leasing of motor vehicles",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 77210,
+   "description": "Renting and leasing of recreational and sports goods",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 77220,
+   "description": "Renting of video tapes and disks",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 77291,
+   "description": "Renting of wearing apparel",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 77292,
+   "description": "Renting of furniture",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 77293,
+   "description": "Renting of books, journals and magazines",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 77294,
+   "description": "Renting of ornamental plants",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 77295,
+   "description": "Renting of electrical appliances",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 77296,
+   "description": "Renting of audio-video machines, tapes and records",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 77299,
+   "description": "Renting of personal and household goods, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 77301,
+   "description": "Renting of land transport equipment",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 77302,
+   "description": "Renting of water transport equipment",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 77303,
+   "description": "Renting of air transport equipment",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 77304,
+   "description": "Renting of agricultural machinery and equipment",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 77305,
+   "description": "Renting  of  construction  and  civil  engineering machinery and equipment",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 77306,
+   "description": "Renting of computers and computer peripherals equipment",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 77307,
+   "description": "Renting of office   machinery  and equipment (excluding computers)",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 77309,
+   "description": "Renting and leasing of other machinery, equipment and tangible goods, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 77400,
+   "description": "Leasing of intellectual property and similar products,",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 78300,
+   "description": "Other human resources provision",
+   "baseVolBus": "Total Contract Price",
+   "FIELD4": ""
+ },
+ {
+   "id": 79110,
+   "description": "Travel agency activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 79120,
+   "description": "Tour operator activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 79901,
+   "description": "Activities of booking offices",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 79902,
+   "description": "Accommodation reservation activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 79903,
+   "description": "Transportation reservation activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 79904,
+   "description": "Package tour reservation activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 79905,
+   "description": "Tourist assistance activities (e.g. tourist guides)",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 79906,
+   "description": "Event tickets, entertainment and recreational",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 79907,
+   "description": "Visitor information activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 79909,
+   "description": "Other reservation service and related activities, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 80100,
+   "description": "Private security activites",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 80200,
+   "description": "Security systems service activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 80300,
+   "description": "Investigation activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 8101,
+   "description": "Marble quarrying",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8102,
+   "description": "Limestone quarrying",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8103,
+   "description": "Stone quarrying, except limestone and marble",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8104,
+   "description": "Clay quarrying",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8105,
+   "description": "Sand and gravel quarrying",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8106,
+   "description": "Silica sand and silica stone quarrying",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8109,
+   "description": "Stone quarrying, clay and sand pits, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 81210,
+   "description": "General cleaning of buildings",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 81291,
+   "description": "Industrial cleaning activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 81292,
+   "description": "Pest control services, non-agricultural",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 81299,
+   "description": "Other building and industrial cleaning activities, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 81300,
+   "description": "Landscape care and maintenance service activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82110,
+   "description": "Combined office administrative service activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82191,
+   "description": "Photocopying service acitivities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82192,
+   "description": "Duplicating and mailing activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82199,
+   "description": "Other specialized office support activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82211,
+   "description": "Customer relationship management activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82212,
+   "description": "Sales  and  marketing  (including  telemarketing) activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82219,
+   "description": "Other call centers activities (voice), n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82221,
+   "description": "Finance and accounting activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82222,
+   "description": "Human resources and training activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82223,
+   "description": "Administrative support activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82224,
+   "description": "Document processes activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82225,
+   "description": "Payroll maintenance and other transaction",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82226,
+   "description": "Medical transcription activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82227,
+   "description": "Legal services activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82228,
+   "description": "Supply chain management activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82229,
+   "description": "Other back office operations activities, n.e.c",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82230,
+   "description": "Other non-voice related activities, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82291,
+   "description": "Engineering outsourcing activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82292,
+   "description": "Product development activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82293,
+   "description": "Publishing outsourcing activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82294,
+   "description": "Research and analysis activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82295,
+   "description": "Intellectual property research and documentation activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82296,
+   "description": "Security outsourcing activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82300,
+   "description": "Organization of conventions and trade shows",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82910,
+   "description": "Activities of collection agencies and credit bureaus",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82920,
+   "description": "Packaging activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 82990,
+   "description": "Other business support service activities, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 85112,
+   "description": "Private pre-primary/pre-school education",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 85122,
+   "description": "Private  pre-primary  and  primary  education  for children with special needs",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 85212,
+   "description": "Private primary/elementary education",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 85222,
+   "description": "Private  primary/elementary  education  for  children with special needs",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 85312,
+   "description": "Private general secondary education",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 85322,
+   "description": "Private general secondary education for children with special needs",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 85332,
+   "description": "Private technical and vocational secondary education",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 85342,
+   "description": "Private technical and vocational secondary education for children with special needs",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 85402,
+   "description": "Private higher education",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 85520,
+   "description": "Cultural education",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 85590,
+   "description": "Other education n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 86121,
+   "description": "Private general hospitals activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 86122,
+   "description": "Private sanitaria and other similar activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 86123,
+   "description": "Private mental health and substance abuse hospitals",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 86129,
+   "description": "Other private hospitals, sanitaria and other similar activities, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 86221,
+   "description": "Private medical activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 86222,
+   "description": "Private dental and laboratory services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 86223,
+   "description": "Child care clinics",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 86229,
+   "description": "Private medical, dental and other health activities, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 86900,
+   "description": "Other human health activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 87100,
+   "description": "Residential nursing care facilities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 87201,
+   "description": "Rehabilitation of people addicted to drugs or alcohol",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 87202,
+   "description": "Caring for the mentally and physically handicapped",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 87300,
+   "description": "Residential care activities for the elderly and disabled",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 87901,
+   "description": "Child care services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 87902,
+   "description": "Caring for unwed mothers and children",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 87903,
+   "description": "Caring for the aged and orphans",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 87909,
+   "description": "Other residential care activities, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 88101,
+   "description": "Welfare and guidance counseling activities (elderly and disabled)",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 88102,
+   "description": "Day-care activities for the elderly or for handicapped adults",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 88103,
+   "description": "Vocational rehabilitation and habilitation activities for disabled adults",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 88901,
+   "description": "Welfare and guidance counseling activities for children and adolescents",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 88902,
+   "description": "Child-care activities (including for the handicapped)",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 88903,
+   "description": "Vocational rehabilitation and habilitation activities for unemployed persons",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 88909,
+   "description": "Other social work activities without accommodation, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 8911,
+   "description": "Baryte mining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8912,
+   "description": "Guano gathering",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8913,
+   "description": "Pyrite mining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8914,
+   "description": "Rock phosphate mining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8915,
+   "description": "Sulphur mining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8919,
+   "description": "Other chemical and fertilizer mineral mining",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8920,
+   "description": "Extraction of peat",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8930,
+   "description": "Extraction of Salt",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 8990,
+   "description": "Other mining and quarrying, n.e.c.",
+   "baseVolBus": "Gross Sales",
+   "FIELD4": ""
+ },
+ {
+   "id": 90001,
+   "description": "Concerts and opera or dance production",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 90002,
+   "description": "Live theatrical presentations and other stage productions",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 90003,
+   "description": "Individual artists activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 90004,
+   "description": "Ancillary theatrical activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 90005,
+   "description": "Art galleries",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 90006,
+   "description": "Operation of concert and theatre halls and other arts facilities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 90009,
+   "description": "Other creative, arts and entertainment activities, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 9101,
+   "description": "Oil and gas extraction activities on a fee or contract basis",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 91010,
+   "description": "Library and archives activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 9102,
+   "description": "Oil and gas extraction activities not performed on a fee or contract basis",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 91020,
+   "description": "Museums activities and operation of historical sites",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 91030,
+   "description": "Botanical and zoological gardens and nature reserves activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 92000,
+   "description": "Gambling and betting activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 93110,
+   "description": "Operation of sports facilities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 93120,
+   "description": "Activities of sports clubs",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 93190,
+   "description": "Other sports activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 93210,
+   "description": "Activities of amusement parks and theme parks",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 93291,
+   "description": "Operation of ballrooms, discotheques (disco's)",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 93292,
+   "description": "Operation  of  recreation  parks,  beaches,  including renting  of  facilities  such  as  bathhouses,  lockers, chairs etc.;",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 93299,
+   "description": "Other amusement and recreation activities, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 94120,
+   "description": "Activities of professional membership organizations",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 95110,
+   "description": "Repair of computers and peripheral equipment",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 95120,
+   "description": "Repair of communications equipment",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 95210,
+   "description": "Repair of consumer electronics",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 95221,
+   "description": "Repair and servicing of household appliances",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 95222,
+   "description": "Repair and servicing of home and garden equipment",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 95231,
+   "description": "Repair of boots and shoes",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 95232,
+   "description": "Repair of luggage and handbags",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 95241,
+   "description": "Repair of wood furniture",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 95242,
+   "description": "Repair of rattan furniture (reed, wicker and cane)",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 95243,
+   "description": "Repair of furniture and fixtures of metal",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 95249,
+   "description": "Repair of other furniture and fixtures, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 95290,
+   "description": "Repair of personal and household goods, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 96101,
+   "description": "Spa activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 96102,
+   "description": "Steam and bath activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 96103,
+   "description": "Slendering and body building activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 96104,
+   "description": "Beauty treatment and personal grooming activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 96105,
+   "description": "Beauty parlor activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 96106,
+   "description": "Barber shop activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 96109,
+   "description": "Other personal services for wellness activities, n.e.c.",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 96210,
+   "description": "Washing and dry cleaning of textile and fur products",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 96300,
+   "description": "Funeral and related activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 96400,
+   "description": "Domestic services",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 96901,
+   "description": "Social  escort  service  activities  (excluding  tourist guides)",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 96902,
+   "description": "Pet boarding activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 96903,
+   "description": "Astrological and spiritualists' activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 96904,
+   "description": "Shoe shiners, porters, valet car parkers activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 96905,
+   "description": "Coin-operated machines activities",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ },
+ {
+   "id": 9900,
+   "description": "Support activities for other mining and quarrying",
+   "baseVolBus": "Gross Service Revenue/Income",
+   "FIELD4": ""
+ }
+]
