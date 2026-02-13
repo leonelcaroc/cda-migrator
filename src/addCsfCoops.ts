@@ -7,7 +7,7 @@ import path from "path";
 import fs from "fs";
 import { v4 as uuid } from "uuid";
 import { generateReferenceId } from "./utils/generateReferenceId.js";
-import csf_coops_items from "./data/csf_migration_copy.json" with { type: "json" };
+import csf_coops_items from "./data/new_csfMigration.json" with { type: "json" };
 // import csf_cooperators from "./data/csf_cooperators.json" with { type: "json" };
 import refregions from "./data/refregion.json" with { type: "json" };
 
@@ -23,7 +23,8 @@ export default async function runAddCsfCoops() {
   // const csfCoops = loadJSON("csf_migration.json").slice(0, 1);
   // const csfCoops = loadJSON("csf_migration.json").slice(3, 3 + 10);
 
-  const csfCoops = csf_coops_items.slice(13, 23);
+  const csfCoops = csf_coops_items;
+  // .slice(0, 10);
   // const csfCoops = csf_coops_items.slice(3, 13);
 
   const cooperators = loadJSON("csf_cooperators.json");
@@ -45,6 +46,9 @@ export default async function runAddCsfCoops() {
     try {
       const newReferenceId = generateReferenceId();
       const registrationNo = row.regNo?.trim();
+      const rawDate = row.dateOfRegistration?.trim();
+
+      const dateOfRegistration = rawDate ? new Date(rawDate) : null;
       const cooperativeName = row.coopName?.trim();
       const acronym = row.acronym?.trim() || null;
       const email = row.email?.trim()?.toLowerCase();
@@ -109,38 +113,40 @@ export default async function runAddCsfCoops() {
 
       // Validate required fields
       if (!registrationNo || !cooperativeName || !email) {
-        console.log("[SKIP] Missing required fields:", row);
+        console.log(registrationNo, cooperativeName);
+        console.log("[SKIP] Missing required fields:");
+        // registrationNo, cooperativeName
         skipCount++;
         continue;
       }
 
       // Check if cooperative already exists
-      const existingCoop = await prismaCoop.cooperativeOrg.findUnique({
-        where: { regNo: registrationNo },
-        select: { id: true },
-      });
+      // const existingCoop = await prismaCoop.cooperativeOrg.findUnique({
+      //   where: { regNo: registrationNo },
+      //   select: { id: true },
+      // });
 
-      // TODO
+      // // TODO
 
-      if (existingCoop) {
-        console.log(`[SKIP] Cooperative already exists: ${registrationNo}`);
-        skipCount++;
-        console.log("Skipped: ", registrationNo, cooperativeName);
-        continue;
-      }
+      // if (existingCoop) {
+      //   console.log(`[SKIP] Cooperative already exists: ${registrationNo}`);
+      //   skipCount++;
+      //   console.log("Skipped: ", registrationNo, cooperativeName);
+      //   continue;
+      // }
 
       // Check if user already exists
-      const existingUser = await prismaAuth.user.findUnique({
-        where: { email },
-        select: { id: true },
-      });
+      // const existingUser = await prismaAuth.user.findUnique({
+      //   where: { email },
+      //   select: { id: true },
+      // });
 
-      if (existingUser) {
-        console.log(`[SKIP] User already exists: ${email}`);
-        skipCount++;
-        console.log("Skipped: ", registrationNo, cooperativeName);
-        continue;
-      }
+      // if (existingUser) {
+      //   console.log(`[SKIP] User already exists: ${email}`);
+      //   skipCount++;
+      //   console.log("Skipped: ", registrationNo, cooperativeName);
+      //   continue;
+      // }
 
       const plainPassword = randomPassword();
       const hashedPassword = await hashPasswordUtil(plainPassword);
@@ -149,8 +155,18 @@ export default async function runAddCsfCoops() {
 
       // Transaction: user + cooperative
       await prismaAuth.$transaction(async (txAuth: any) => {
-        const user = await txAuth.user.create({
-          data: {
+        const user = await txAuth.user.upsert({
+          where: { email },
+          update: {
+            email,
+            password: hashedPassword,
+            firstname: "User",
+            lastname: "",
+            verified_at: new Date(),
+            status: "APPROVED",
+            migrated: 1,
+          },
+          create: {
             email,
             password: hashedPassword,
             firstname: "User",
@@ -171,8 +187,105 @@ export default async function runAddCsfCoops() {
 
         // console.log("cooperatorList: ", cooperatorList);
 
-        await prismaCoop.cooperativeOrg.create({
-          data: {
+        // await prismaCoop.cooperativeOrg.create({
+        //   data: {
+        //     regNo: registrationNo,
+        //     cooperativeName,
+        //     acronym,
+        //     email,
+        //     isCompliant: true,
+        //     migrated: 1,
+        //     ownedBy: user.id,
+        //     dateOfRegistration: dateOfRegistration,
+
+        //     approvedCooperative: {
+        //       create: {
+        //         registrationId: newReferenceId,
+        //         cooperativeName,
+        //         cooperativeCategory: "special",
+        //         cooperativeType: {
+        //           connect: { id: csfCoopTypeId },
+        //         },
+        //         isAmendment: false,
+        //         isBspRegistered: isBspRegistered,
+        //         areaOfOperation,
+        //         commonBondOfMembership: "associational",
+        //         cooperatorList: cooperatorList,
+        //         assignedTreasurer: treasurerFullName,
+        //         isDraft: false,
+        //         applicationStatus: "APPROVED",
+        //         region: {
+        //           connect: {
+        //             regCode: regCode,
+        //           },
+        //         },
+        //         province: {
+        //           connect: {
+        //             provCode: provCode,
+        //           },
+        //         },
+        //         cityMunicipality: {
+        //           connect: {
+        //             citymunCode: citymunCode,
+        //           },
+        //         },
+        //         barangay: {
+        //           connect: {
+        //             brgyCode: brgyCode,
+        //           },
+        //         },
+        //         // migrated: 1,
+        //       },
+        //     },
+        //   },
+        // });
+
+        await prismaCoop.cooperativeOrg.upsert({
+          where: { regNo: registrationNo },
+          update: {
+            cooperativeName,
+            acronym,
+            email,
+            isCompliant: true,
+            migrated: 1,
+            dateOfRegistration,
+
+            approvedCooperative: {
+              upsert: {
+                update: {
+                  cooperativeName,
+                  cooperativeCategory: "special",
+                  isBspRegistered,
+                  areaOfOperation,
+                  commonBondOfMembership: "associational",
+                  cooperatorList,
+                  assignedTreasurer: treasurerFullName,
+                  applicationStatus: "APPROVED",
+                },
+                create: {
+                  registrationId: newReferenceId,
+                  cooperativeName,
+                  cooperativeCategory: "special",
+                  cooperativeType: {
+                    connect: { id: csfCoopTypeId },
+                  },
+                  isAmendment: false,
+                  isBspRegistered,
+                  areaOfOperation,
+                  commonBondOfMembership: "associational",
+                  cooperatorList,
+                  assignedTreasurer: treasurerFullName,
+                  isDraft: false,
+                  applicationStatus: "APPROVED",
+                  region: { connect: { regCode } },
+                  province: { connect: { provCode } },
+                  cityMunicipality: { connect: { citymunCode } },
+                  barangay: { connect: { brgyCode } },
+                },
+              },
+            },
+          },
+          create: {
             regNo: registrationNo,
             cooperativeName,
             acronym,
@@ -180,6 +293,7 @@ export default async function runAddCsfCoops() {
             isCompliant: true,
             migrated: 1,
             ownedBy: user.id,
+            dateOfRegistration,
 
             approvedCooperative: {
               create: {
@@ -190,34 +304,17 @@ export default async function runAddCsfCoops() {
                   connect: { id: csfCoopTypeId },
                 },
                 isAmendment: false,
-                isBspRegistered: isBspRegistered,
+                isBspRegistered,
                 areaOfOperation,
                 commonBondOfMembership: "associational",
-                cooperatorList: cooperatorList,
+                cooperatorList,
                 assignedTreasurer: treasurerFullName,
                 isDraft: false,
                 applicationStatus: "APPROVED",
-                region: {
-                  connect: {
-                    regCode: regCode,
-                  },
-                },
-                province: {
-                  connect: {
-                    provCode: provCode,
-                  },
-                },
-                cityMunicipality: {
-                  connect: {
-                    citymunCode: citymunCode,
-                  },
-                },
-                barangay: {
-                  connect: {
-                    brgyCode: brgyCode,
-                  },
-                },
-                // migrated: 1,
+                region: { connect: { regCode } },
+                province: { connect: { provCode } },
+                cityMunicipality: { connect: { citymunCode } },
+                barangay: { connect: { brgyCode } },
               },
             },
           },

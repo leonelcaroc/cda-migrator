@@ -236,9 +236,11 @@ LEFT JOIN capitalization am_cap
 
 
 
-LIMIT 100 OFFSET 200;
+LIMIT 100
 
 `;
+
+// OFFSET 200
 
 let mockEmailCounter = 1000;
 

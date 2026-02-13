@@ -21,8 +21,8 @@ async function main() {
     // await thirdTestMigration();
     // await fourthTestMigration();
     // await fifthTestMigration();
-    await sixthTestMigration();
-    // await runAddCsfCoops();
+    // await sixthTestMigration();
+    await runAddCsfCoops();
 
     const PORT = 6000;
     app.listen(PORT, () => {

@@ -2,6 +2,7 @@
   {
     "no": "1",
     "regNo": "10744-0800001",
+    "dateOfRegistration": "July 9, 2019",
     "folder_name": "REG8_PH083747_1",
     "regCode": "08",
     "provCode": "0837",
@@ -69,6 +70,7 @@
   {
     "no": "2",
     "regNo": "10744-01500002",
+    "dateOfRegistration": "November 25, 2019",
     "folder_name": "CAR_PH1411_2",
     "regCode": "14",
     "provCode": "1411",
@@ -86,6 +88,7 @@
   {
     "no": "3",
     "regNo": "10744-01500003",
+    "dateOfRegistration": "December 20, 2019",
     "folder_name": "CAR_PH1411_3",
     "regCode": "14",
     "provCode": "1411",
@@ -103,6 +106,7 @@
   {
     "no": "4",
     "regNo": "10744-0200004",
+    "dateOfRegistration": "January 17, 2020",
     "folder_name": "REG2_PH0215_4",
     "regCode": "02",
     "provCode": "0215",
@@ -120,6 +124,7 @@
   {
     "no": "5",
     "regNo": "10744-01200005",
+    "dateOfRegistration": "February 6, 2020",
     "folder_name": "REG12_PH126511_5",
     "regCode": "12",
     "provCode": "1265",
@@ -137,6 +142,7 @@
   {
     "no": "6",
     "regNo": "10744-0200006",
+    "dateOfRegistration": "February 19, 2020",
     "folder_name": "REG1_PH012927_6",
     "regCode": "02",
     "provCode": "0231",
@@ -154,6 +160,7 @@
   {
     "no": "7",
     "regNo": "10744-1100007",
+    "dateOfRegistration": "September 14, 2020",
     "folder_name": "REG11_PH112403_7",
     "regCode": "11",
     "provCode": "1124",
@@ -171,6 +178,7 @@
   {
     "no": "8",
     "regNo": "10744-1000009",
+    "dateOfRegistration": "September 22, 2020",
     "folder_name": "REG7_PH074623_8",
     "regCode": "10",
     "provCode": "1013",
@@ -188,6 +196,7 @@
   {
     "no": "9",
     "regNo": "10744-0300008",
+    "dateOfRegistration": "September 24, 2020",
     "folder_name": "REG3_PH034926_9",
     "regCode": "03",
     "provCode": "0349",
@@ -205,6 +214,7 @@
   {
     "no": "10",
     "regNo": "10744-0200010",
+    "dateOfRegistration": "October 22, 2020",
     "folder_name": "REG2_PH025_10",
     "regCode": "02",
     "provCode": "0250",
@@ -222,6 +232,7 @@
   {
     "no": "11",
     "regNo": "10744-0200011",
+    "dateOfRegistration": "November 16, 2020",
     "folder_name": "REG6_PH064507_11",
     "regCode": "02",
     "provCode": "0231",
@@ -239,6 +250,7 @@
   {
     "no": "12",
     "regNo": "10744-1500012",
+    "dateOfRegistration": "December 17, 2020",
     "folder_name": "CAR_PH1427_12",
     "regCode": "14",
     "provCode": "1427",
@@ -256,6 +268,7 @@
   {
     "no": "13",
     "regNo": "10744-1800013",
+    "dateOfRegistration": "January 18, 2021",
     "folder_name": "REG4-B_PH175316_13",
     "regCode": "17",
     "provCode": "1753",
@@ -273,6 +286,7 @@
   {
     "no": "14",
     "regNo": "10744-0100014",
+    "dateOfRegistration": "March 2, 2021",
     "folder_name": "REG1_PH0133_14",
     "regCode": "01",
     "provCode": "0133",
@@ -290,6 +304,7 @@
   {
     "no": "15",
     "regNo": "10744-1300015",
+    "dateOfRegistration": "May 4, 2021",
     "folder_name": "REG13_PH160202_15",
     "regCode": "16",
     "provCode": "1602",
@@ -307,6 +322,7 @@
   {
     "no": "16",
     "regNo": "10744-0400016",
+    "dateOfRegistration": "May 12, 2021",
     "folder_name": "REG4-A_PH043428_16",
     "regCode": "04",
     "provCode": "0434",
