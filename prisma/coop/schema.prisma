@@ -39,6 +39,9 @@ model CooperativeOrg {
   acronym                  String?
   dateOfRegistration       DateTime?
   recentAmendmentDate      DateTime?
+  amendmentHistory         Json?
+  mergerCount              Int?                @default(0)
+  mergerHistory            Json?
   BranchSatellite          BranchSatellite[]
   CoopStatus               CoopStatus[]
   alternateRepresentative  Representative?     @relation("OrgAlternateRep", fields: [alternateRepId], references: [id])
@@ -53,206 +56,218 @@ model CooperativeOrg {
 }
 
 model Cooperatives {
-  id                                  String                     @id @default(uuid())
-  cooperativeOrgId                    String?
-  registrationId                      String?                    @unique
-  applicationType                     String?
-  level                               String?
-  isAmendment                         Boolean?                   @default(false)
-  isConsolidation                     Boolean?
-  isYouthCooperative                  Boolean?                   @default(false)
-  isGuardianCooperative               Boolean?                   @default(false)
-  regularAndAssociate                 String?
-  validator_question_id               String?
-  cooperativeCategory                 String?
-  cooperativeTypeId                   String?
-  industryClassification              Json?
-  cooperativeName                     String?
-  coopNamePrefix                      String?
-  allowCustomName                     Boolean?                   @default(false)
-  cooperativeNameAcronym              String?
-  regCode                             String?
-  provCode                            String?
-  citymunCode                         String?
-  brgyCode                            String?
-  townDistrict                        String?
-  zipCode                             String?
-  streetName                          String?
-  subdivisionVillageZone              String?
-  unitRoomFloorBuilding               String?
-  lotBlockPhaseHouseNo                String?
-  fedEngagedIn                        String?
-  purposes                            Json?
-  federationPurposes                  Json?
-  termOfExistence                     Int?                       @default(50)
-  chairmanOfBoard                     String?
-  commonBondOfMembership              String?
-  fieldOfMembership                   String?
-  nameOfAssociation                   Json?
-  nameOfInstitution                   Json?
-  compositionOfMembers                Json?
-  areaOfOperation                     String?
-  areaOfOperationRegions              Json?
-  cooperatorList                      Json?
-  cooperators                         Json?
-  fedCooperators                      Json?
-  totalFeeContributions               Int?
-  boardOfDirectors                    Json?
-  totalAuthorizedShareCapital         Int?
-  totalShares                         Int?
-  shareParValue                       Int?
-  hasPreferredShare                   Boolean?
-  preferredShares                     Int?
-  preferredShareParValue              Int?
-  commonShares                        Int?
-  commonShareParValue                 Int?
-  totalSubscribedCapital              Int?
-  totalPaidUpCapital                  Int?
-  paidUpShareCommon                   Json?
-  paidUpSharePreferred                Json?
-  regularMinimumSubscribed            Int?
-  regularMinimumPaidUp                Int?
-  associateMinimumSubscribed          Int?
-  associateMinimumPaidUp              Int?
-  memberSubscriberShares              Json?
-  assignedTreasurer                   String?
-  regularMembersQualifications        Json?
-  associateMembersQualifications      Json?
-  requirementsForMembership           Json?
-  membershipApplicationProcessingDays Int?
-  membershipFee                       Int?
-  regularMinSubscribedShares          Int?
-  regularMinPaidShares                Int?
-  associateMinSubscribedShares        Int?
-  associateMinPaidShares              Int?
-  membersEntitledToVote               Json?
-  delegatedPower                      Json?
-  generalAssemblyPowers               Json?
-  generalAssemblyMeeting              String?
-  quorumPercentage                    Int?
-  boardOfDirectorsCount               Int?
-  cooperatorsCount                    Int?
-  numberOfMaleCooperators             Int?
-  numberOfFemaleCooperators           Int?
-  numberOfMaleBod                     Int?
-  numberOfFemaleBod                   Int?
-  maxConsecutiveAbsences              Int?
-  maxPercentageAbsences               Int?
-  electionTermLength                  Int?
-  capitalBuildMonthlyAmount           Int?
-  capitalBuildAnnualInterest          Int?
-  capitalBuildTransaction             Int?
-  reserveFundPercentage               Int?
-  educationAndTrainingFundPercentage  Int?
-  communityDevelopmentFundPercentage  Int?
-  optionalFundPercentage              Int?
-  votingRights                        String?
-  byLaws                              Json?
-  treasurerAffidavit                  Json?
-  documentaryRequirements             Json?
-  otherDocumentaryRequirements        Json?
-  suretyBondFileUrl                   String?
-  prsCertificate                      String?
-  articlesOfCooperativeFileUrl        String?
-  byLawsFileUrl                       String?
-  economicSurveyUrl                   String?
-  treasurerAffidavitFileUrl           String?
-  certOfRegFileUrl                    String?
-  certOfComplianceFileUrl             String?
-  projectedMembershipIncrease         Json?
-  sourcesOfFunds                      Json?
-  savingMobilization                  Json?
-  revolvingCapital                    Boolean?
-  typeAndNature                       Json?
-  targetSegment                       Json?
-  managementAndStaffing               Json?
-  capitalRequirements                 Json?
-  logistics                           Json?
-  legalDocumentsAndSystem             Json?
-  businessOperationAddress            String?
-  firstEvaluatedBy                    String?
-  secondEvaluatedBy                   String?
-  thirdEvaluatedBy                    String?
-  firstEvaluatorStatus                EvaluatorStatus?
-  secondEvaluatorStatus               EvaluatorStatus?
-  thirdEvaluatorStatus                EvaluatorStatus?
-  aocHardCopyStatus                   EvaluatorStatus?
-  byLawsHardCopyStatus                EvaluatorStatus?
-  econSurveyhardCopyStatus            EvaluatorStatus?
-  treasurerAffHardCopyStatus          EvaluatorStatus?
-  hardCopyValidationStatus            EvaluatorStatus?
-  seniorCdsRemarks                    Json?
-  regionalDirectorRemarks             Json?
-  applicationStatus                   ApplicationStatus?         @default(IN_PROGRESS)
-  status                              Status?
-  isApproved                          Boolean?                   @default(false)
-  isDraft                             Boolean?                   @default(true)
-  isDetailsComplete                   Boolean?                   @default(false)
-  isAocComplete                       Boolean?                   @default(false)
-  isByLawsComplete                    Boolean?                   @default(false)
-  isEconSurveyComplete                Boolean?                   @default(false)
-  expiresAt                           DateTime?
-  createdBy                           String?
-  updatedBy                           String?
-  date_of_cor                         DateTime?
-  created_at                          DateTime?                  @default(now())
-  updated_at                          DateTime?                  @updatedAt
-  archived_at                         DateTime?
-  deleted_at                          DateTime?
-  closed_at                           DateTime?
-  audit_logs                          Json?
-  validatorId                         String?
-  addressCoordinates                  Json?
-  version                             String                     @default("1")
-  directorsTerm                       Int?
-  noOfAuditCommittee                  Int?
-  noOfEducAndTrainingCommittee        Int?
-  noOfElectionCommittee               Int?
-  noOfEthicsCommittee                 Int?
-  noOfMedConCommittee                 Int?
-  termOfOffice                        Int?
-  minimumSharePaidUp                  Int?
-  minimumShareSubscribed              Int?
-  bodPerDiem                          Json?
-  majorityMembersLocation             String?
-  qualificationPeriodYears            Int?
-  totalRestrictedCapital              Int?
-  economicAspect                      Json?
-  financialAspect                     Json?
-  technicalAspect                     Json?
-  bodElection                         String?
-  consolidatingCoops                  Json?
-  formOfRegistration                  String?                    @default("none")
-  parentCoop                          Json?
-  amendmentType                       String?
-  isMainOffice                        Boolean?                   @default(false)
-  transferRegionCode                  String?
-  members                             Json?
-  coopTypeList                        Json?
-  registrationNo                      String?                    @unique
-  electedAndQualifiedWithin           Int?
-  chairperson                         String?
-  totalNoOfFemaleMembers              Int?
-  totalNoOfMaleMembers                Int?
-  totalNoOfMembers                    Int?
-  totalNoOfAssociateMembers           Int?
-  totalNoOfRegularMembers             Int?
-  mergingCoops                        Json?
-  isSubsidiaryCooperative             Boolean?                   @default(false)
-  isBspRegistered                     Boolean?
-  amendmentNo                         Int?
-  migrated                            Int?                       @default(0)
-  CooperativeEconomicSurvey           CooperativeEconomicSurvey?
-  amendmentOrg                        CooperativeOrg?            @relation("OrgAmendmentApplication")
-  approvedByOrg                       CooperativeOrg?            @relation("OrgApprovedApplication")
-  barangay                            Barangays?                 @relation(fields: [brgyCode], references: [brgyCode])
-  cityMunicipality                    CityMunicipality?          @relation(fields: [citymunCode], references: [citymunCode])
-  cooperativeOrg                      CooperativeOrg?            @relation("OrgApplications", fields: [cooperativeOrgId], references: [id])
-  cooperativeType                     TypeCooperative?           @relation(fields: [cooperativeTypeId], references: [id])
-  province                            Province?                  @relation(fields: [provCode], references: [provCode])
-  region                              Regions?                   @relation(fields: [regCode], references: [regCode])
-  validatorQuestion                   ValidatorQuestion?         @relation(fields: [validator_question_id], references: [id])
-  validationTool                      ValidationTool?            @relation("ValidationByRegistration")
+  id                                     String                                  @id @default(uuid())
+  cooperativeOrgId                       String?
+  registrationId                         String?                                 @unique
+  applicationType                        String?
+  level                                  String?
+  isAmendment                            Boolean?                                @default(false)
+  isConsolidation                        Boolean?
+  isYouthCooperative                     Boolean?                                @default(false)
+  isGuardianCooperative                  Boolean?                                @default(false)
+  regularAndAssociate                    String?
+  validator_question_id                  String?
+  cooperativeCategory                    String?
+  cooperativeTypeId                      String?
+  industryClassification                 Json?
+  cooperativeName                        String?
+  coopNamePrefix                         String?
+  allowCustomName                        Boolean?                                @default(false)
+  cooperativeNameAcronym                 String?
+  regCode                                String?
+  provCode                               String?
+  citymunCode                            String?
+  brgyCode                               String?
+  townDistrict                           String?
+  zipCode                                String?
+  streetName                             String?
+  subdivisionVillageZone                 String?
+  unitRoomFloorBuilding                  String?
+  lotBlockPhaseHouseNo                   String?
+  fedEngagedIn                           String?
+  purposes                               Json?
+  federationPurposes                     Json?
+  termOfExistence                        Int?                                    @default(50)
+  chairmanOfBoard                        String?
+  commonBondOfMembership                 String?
+  fieldOfMembership                      String?
+  nameOfAssociation                      Json?
+  nameOfInstitution                      Json?
+  compositionOfMembers                   Json?
+  areaOfOperation                        String?
+  areaOfOperationRegions                 Json?
+  cooperatorList                         Json?
+  cooperators                            Json?
+  fedCooperators                         Json?
+  totalFeeContributions                  Int?
+  boardOfDirectors                       Json?
+  totalAuthorizedShareCapital            Int?
+  totalShares                            Int?
+  shareParValue                          Int?
+  hasPreferredShare                      Boolean?
+  preferredShares                        Int?
+  preferredShareParValue                 Int?
+  commonShares                           Int?
+  commonShareParValue                    Int?
+  totalSubscribedCapital                 Int?
+  totalPaidUpCapital                     Int?
+  paidUpShareCommon                      Json?
+  paidUpSharePreferred                   Json?
+  regularMinimumSubscribed               Int?
+  regularMinimumPaidUp                   Int?
+  associateMinimumSubscribed             Int?
+  associateMinimumPaidUp                 Int?
+  memberSubscriberShares                 Json?
+  assignedTreasurer                      String?
+  regularMembersQualifications           Json?
+  associateMembersQualifications         Json?
+  requirementsForMembership              Json?
+  membershipApplicationProcessingDays    Int?
+  membershipFee                          Int?
+  regularMinSubscribedShares             Int?
+  regularMinPaidShares                   Int?
+  associateMinSubscribedShares           Int?
+  associateMinPaidShares                 Int?
+  membersEntitledToVote                  Json?
+  delegatedPower                         Json?
+  generalAssemblyPowers                  Json?
+  generalAssemblyMeeting                 String?
+  quorumPercentage                       Int?
+  boardOfDirectorsCount                  Int?
+  cooperatorsCount                       Int?
+  numberOfMaleCooperators                Int?
+  numberOfFemaleCooperators              Int?
+  numberOfMaleBod                        Int?
+  numberOfFemaleBod                      Int?
+  maxConsecutiveAbsences                 Int?
+  maxPercentageAbsences                  Int?
+  electionTermLength                     Int?
+  capitalBuildMonthlyAmount              Int?
+  capitalBuildAnnualInterest             Int?
+  capitalBuildTransaction                Int?
+  reserveFundPercentage                  Int?
+  educationAndTrainingFundPercentage     Int?
+  communityDevelopmentFundPercentage     Int?
+  optionalFundPercentage                 Int?
+  votingRights                           String?
+  byLaws                                 Json?
+  treasurerAffidavit                     Json?
+  documentaryRequirements                Json?
+  otherDocumentaryRequirements           Json?
+  suretyBondFileUrl                      String?
+  prsCertificate                         String?
+  articlesOfCooperativeFileUrl           String?
+  byLawsFileUrl                          String?
+  economicSurveyUrl                      String?
+  treasurerAffidavitFileUrl              String?
+  certOfRegFileUrl                       String?
+  certOfComplianceFileUrl                String?
+  projectedMembershipIncrease            Json?
+  sourcesOfFunds                         Json?
+  savingMobilization                     Json?
+  revolvingCapital                       Boolean?
+  typeAndNature                          Json?
+  targetSegment                          Json?
+  managementAndStaffing                  Json?
+  capitalRequirements                    Json?
+  logistics                              Json?
+  legalDocumentsAndSystem                Json?
+  businessOperationAddress               String?
+  firstEvaluatedBy                       String?
+  secondEvaluatedBy                      String?
+  thirdEvaluatedBy                       String?
+  firstEvaluatorStatus                   EvaluatorStatus?
+  secondEvaluatorStatus                  EvaluatorStatus?
+  thirdEvaluatorStatus                   EvaluatorStatus?
+  aocHardCopyStatus                      EvaluatorStatus?
+  byLawsHardCopyStatus                   EvaluatorStatus?
+  econSurveyhardCopyStatus               EvaluatorStatus?
+  treasurerAffHardCopyStatus             EvaluatorStatus?
+  hardCopyValidationStatus               EvaluatorStatus?
+  seniorCdsRemarks                       Json?
+  regionalDirectorRemarks                Json?
+  applicationStatus                      ApplicationStatus?                      @default(IN_PROGRESS)
+  status                                 Status?
+  isApproved                             Boolean?                                @default(false)
+  isDraft                                Boolean?                                @default(true)
+  isDetailsComplete                      Boolean?                                @default(false)
+  isAocComplete                          Boolean?                                @default(false)
+  isByLawsComplete                       Boolean?                                @default(false)
+  isEconSurveyComplete                   Boolean?                                @default(false)
+  expiresAt                              DateTime?
+  createdBy                              String?
+  updatedBy                              String?
+  date_of_cor                            DateTime?
+  created_at                             DateTime?                               @default(now())
+  updated_at                             DateTime?                               @updatedAt
+  archived_at                            DateTime?
+  deleted_at                             DateTime?
+  closed_at                              DateTime?
+  audit_logs                             Json?
+  validatorId                            String?
+  addressCoordinates                     Json?
+  version                                String                                  @default("1")
+  directorsTerm                          Int?
+  noOfAuditCommittee                     Int?
+  noOfEducAndTrainingCommittee           Int?
+  noOfElectionCommittee                  Int?
+  noOfEthicsCommittee                    Int?
+  noOfMedConCommittee                    Int?
+  termOfOffice                           Int?
+  minimumSharePaidUp                     Int?
+  minimumShareSubscribed                 Int?
+  bodPerDiem                             Json?
+  majorityMembersLocation                String?
+  qualificationPeriodYears               Int?
+  totalRestrictedCapital                 Int?
+  economicAspect                         Json?
+  financialAspect                        Json?
+  technicalAspect                        Json?
+  bodElection                            String?
+  consolidatingCoops                     Json?
+  formOfRegistration                     String?                                 @default("none")
+  parentCoop                             Json?
+  amendmentType                          String?
+  isMainOffice                           Boolean?                                @default(false)
+  transferRegionCode                     String?
+  members                                Json?
+  coopTypeList                           Json?
+  registrationNo                         String?                                 @unique
+  electedAndQualifiedWithin              Int?
+  chairperson                            String?
+  totalNoOfFemaleMembers                 Int?
+  totalNoOfMaleMembers                   Int?
+  totalNoOfMembers                       Int?
+  totalNoOfAssociateMembers              Int?
+  totalNoOfRegularMembers                Int?
+  mergingCoops                           Json?
+  isSubsidiaryCooperative                Boolean?                                @default(false)
+  isBspRegistered                        Boolean?
+  amendmentNo                            Int?
+  migrated                               Int?                                    @default(0)
+  isIndigenousCommunity                  Boolean?                                @default(false)
+  bodQualifications                      Json?
+  esFileUploads                          Json?
+  cashFlowStatement                      Json?
+  projectedIncomeStatement               Json?
+  quorumTieBreaker                       String?
+  isProcessed                            Boolean?                                @default(false)
+  generalAssemblyDays                    Int?
+  minimumShareCapitalRequirement         Int?
+  bodCountAoc                            Int?
+  bodCountByLaws                         Int?
+  CooperativeEconomicSurvey              CooperativeEconomicSurvey?
+  amendmentOrg                           CooperativeOrg?                         @relation("OrgAmendmentApplication")
+  approvedByOrg                          CooperativeOrg?                         @relation("OrgApprovedApplication")
+  barangay                               Barangays?                              @relation(fields: [brgyCode], references: [brgyCode])
+  cityMunicipality                       CityMunicipality?                       @relation(fields: [citymunCode], references: [citymunCode])
+  cooperativeOrg                         CooperativeOrg?                         @relation("OrgApplications", fields: [cooperativeOrgId], references: [id])
+  cooperativeType                        TypeCooperative?                        @relation(fields: [cooperativeTypeId], references: [id])
+  province                               Province?                               @relation(fields: [provCode], references: [provCode])
+  region                                 Regions?                                @relation(fields: [regCode], references: [regCode])
+  validatorQuestion                      ValidatorQuestion?                      @relation(fields: [validator_question_id], references: [id])
+  validationTool                         ValidationTool?                         @relation("ValidationByRegistration")
+  certificate_of_registration_compliance certificate_of_registration_compliance?
 }
 
 model Validation {
@@ -374,12 +389,11 @@ model TypesOfID {
 }
 
 model AreasOfOperation {
-  id                     String                   @id @default(uuid())
-  name                   String                   @unique
-  created_at             DateTime?                @default(now())
-  updated_at             DateTime?                @updatedAt
-  deleted_at             DateTime?
-  appRegistrationTypeFee AppRegistrationTypeFee[]
+  id         String    @id @default(uuid())
+  name       String    @unique
+  created_at DateTime? @default(now())
+  updated_at DateTime? @updatedAt
+  deleted_at DateTime?
 }
 
 model CategoryCooperatives {
@@ -391,26 +405,24 @@ model CategoryCooperatives {
 }
 
 model ApplicationType {
-  id                     String                   @id @default(uuid())
-  name                   String                   @unique
-  created_at             DateTime?                @default(now())
-  updated_at             DateTime?                @updatedAt
-  deleted_at             DateTime?
-  appRegistrationTypeFee AppRegistrationTypeFee[]
-  validatorQuestions     ValidatorQuestion[]      @relation("ApplicationTypeToValidatorQuestion")
+  id                 String              @id @default(uuid())
+  name               String              @unique
+  created_at         DateTime?           @default(now())
+  updated_at         DateTime?           @updatedAt
+  deleted_at         DateTime?
+  validatorQuestions ValidatorQuestion[] @relation("ApplicationTypeToValidatorQuestion")
 }
 
 model AppRegistrationTypeFee {
-  id                String           @id @default(uuid())
-  applicationTypeId String
-  areaOfOperationId String
-  fee               Float
-  coc_fee           Float?
-  created_at        DateTime?        @default(now())
-  updated_at        DateTime?        @updatedAt
-  deleted_at        DateTime?
-  applicationType   ApplicationType  @relation(fields: [applicationTypeId], references: [id])
-  areaOfOperation   AreasOfOperation @relation(fields: [areaOfOperationId], references: [id])
+  id              String    @id @default(uuid())
+  created_at      DateTime? @default(now())
+  updated_at      DateTime? @updatedAt
+  deleted_at      DateTime?
+  amount          Int?
+  applicationType String?
+  category        String?
+  fee_code        String?
+  fee_name        String?
 }
 
 model TypeCooperative {
@@ -440,15 +452,18 @@ model CooperativePurposes {
 }
 
 model DocumentaryRequirements {
-  id                          String           @id @default(uuid())
-  forSubmission               Json?
-  coopTypeId                  String?
-  newRegUploadRequirements    Json?
-  created_at                  DateTime?        @default(now())
-  deleted_at                  DateTime?
-  updated_at                  DateTime?        @updatedAt
-  amendmentUploadRequirements Json?
-  coopType                    TypeCooperative? @relation(fields: [coopTypeId], references: [id])
+  id                             String           @id @default(uuid())
+  forSubmission                  Json?
+  coopTypeId                     String?
+  newRegUploadRequirements       Json?
+  created_at                     DateTime?        @default(now())
+  deleted_at                     DateTime?
+  updated_at                     DateTime?        @updatedAt
+  amendmentUploadRequirements    Json?
+  submissionRoute                SubmissionRoute?
+  onsiteAmendmentRequirements    Json?
+  onsiteRegistrationRequirements Json?
+  coopType                       TypeCooperative? @relation(fields: [coopTypeId], references: [id])
 }
 
 model BondOfMembership {
@@ -483,7 +498,7 @@ model subIndustryClassifications {
   description                  String
   baseVolBus                   String?
   created_at                   DateTime?                      @default(now())
-  updated_at                   DateTime?                      @updatedAt
+  updated_at                   DateTime?                      @default(now()) @updatedAt
   deleted_at                   DateTime?
   classifications              TypeCoopIndustryLink[]
   majorIndustryClassifications majorIndustryClassifications[] @relation("majorIndustryClassificationsTosubIndustryClassifications")
@@ -599,31 +614,33 @@ model CtcApplication {
 }
 
 model TransferApplication {
-  id               String            @id @default(uuid())
-  applicationId    String            @unique
-  reason           String?
-  documents        Json?
-  newTown          String?
-  newZipCode       String?
-  newStreet        String?
-  newSubdivision   String?
-  newUnitBldg      String?
-  newLotBlock      String?
-  createdAt        DateTime          @default(now())
-  updatedAt        DateTime          @updatedAt
-  deletedAt        DateTime?
-  endedAt          DateTime?
-  newBarangayCode  String?
-  newCityMunCode   String?
-  newProvinceCode  String?
-  newRegionCode    String?
-  letterOfIntent   String?
-  noticeOfTransfer String?
-  application      CtcApplication    @relation(fields: [applicationId], references: [id])
-  newBarangay      Barangays?        @relation(fields: [newBarangayCode], references: [brgyCode])
-  newCityMun       CityMunicipality? @relation(fields: [newCityMunCode], references: [citymunCode])
-  newProvince      Province?         @relation(fields: [newProvinceCode], references: [provCode])
-  newRegion        Regions?          @relation(fields: [newRegionCode], references: [regCode])
+  id                  String            @id @default(uuid())
+  applicationId       String            @unique
+  reason              String?
+  documents           Json?
+  newTown             String?
+  newZipCode          String?
+  newStreet           String?
+  newSubdivision      String?
+  newUnitBldg         String?
+  newLotBlock         String?
+  createdAt           DateTime          @default(now())
+  updatedAt           DateTime          @updatedAt
+  deletedAt           DateTime?
+  endedAt             DateTime?
+  newBarangayCode     String?
+  newCityMunCode      String?
+  newProvinceCode     String?
+  newRegionCode       String?
+  letterOfIntent      String?
+  noticeOfTransfer    String?
+  certificationPosted String?
+  originalCertificate String?
+  application         CtcApplication    @relation(fields: [applicationId], references: [id])
+  newBarangay         Barangays?        @relation(fields: [newBarangayCode], references: [brgyCode])
+  newCityMun          CityMunicipality? @relation(fields: [newCityMunCode], references: [citymunCode])
+  newProvince         Province?         @relation(fields: [newProvinceCode], references: [provCode])
+  newRegion           Regions?          @relation(fields: [newRegionCode], references: [regCode])
 }
 
 model ConversionApplication {
@@ -638,26 +655,29 @@ model ConversionApplication {
   letterOfIntent             String?
   auditedFinancialStatement  String?
   businessPlan               String?
-  certOfNoticePosted         String?
   certSignedManualOperations String?
   generalAssemblyResolution  String?
   noticeOfConversion         String?
   oathOfUndertaking          String?
   originalCert               String?
+  certOfNoticePosted         String?
+  authorityNo                String?
   application                CtcApplication @relation(fields: [applicationId], references: [id])
 }
 
 model ClosureApplication {
-  id              String         @id @default(uuid())
-  applicationId   String         @unique
-  closureReason   String?
-  closureDate     DateTime?
-  documents       Json?
-  createdAt       DateTime       @default(now())
-  updatedAt       DateTime       @updatedAt
-  letterOfIntent  String?
-  noticeOfClosure String?
-  application     CtcApplication @relation(fields: [applicationId], references: [id])
+  id                  String         @id @default(uuid())
+  applicationId       String         @unique
+  closureReason       String?
+  closureDate         DateTime?
+  documents           Json?
+  createdAt           DateTime       @default(now())
+  updatedAt           DateTime       @updatedAt
+  letterOfIntent      String?
+  noticeOfClosure     String?
+  certificationPosted String?
+  originalCertificate String?
+  application         CtcApplication @relation(fields: [applicationId], references: [id])
 }
 
 model Laboratory {
@@ -697,6 +717,10 @@ model Laboratory {
   documents              Json?
   expiresAt              DateTime?
   manualOfOperations     String?
+  minorMembers           Json?
+  otherDocuments         String?
+  registrationNo         String?            @unique
+  acronym                String?
   barangay               Barangays?         @relation(fields: [barangay_id], references: [id])
   cityMun                CityMunicipality?  @relation(fields: [cityMun_id], references: [id])
   commonBondMembership   BondOfMembership?  @relation(fields: [commonBondMembershipId], references: [id])
@@ -706,41 +730,44 @@ model Laboratory {
 }
 
 model AccountApplications {
-  id                       String                    @id @default(uuid())
-  email                    String?
-  alternate_email          String?
-  password                 String?
-  registrationId           String?                   @unique
-  contact_number           String?
-  alternate_contact_number String?
-  primaryRepId             String?                   @unique
-  alternateRepId           String?                   @unique
-  regionCode               String?
-  provinceCode             String?
-  cityMunicipalityCode     String?
-  barangayCode             String?
-  townDistrict             String?
-  zipCode                  String?
-  streetName               String?
-  subdivisionVillageZone   String?
-  unitRoomFloorBuilding    String?
-  lotBlockPhaseHouseNo     String?
-  certOfAuthorization      String?
-  status                   AccountApplicationStatus? @default(PENDING)
-  validatedBy              String?
-  reasonOfDenial           String?
-  isLock                   Boolean?                  @default(false)
-  idNumber                 String?
-  reasonsList              Json?
-  created_at               DateTime?                 @default(now())
-  updated_at               DateTime?                 @updatedAt
-  deleted_at               DateTime?
-  alternate_rep            Representative?           @relation("AlternateRepresentative", fields: [alternateRepId], references: [id])
-  barangay                 Barangays?                @relation("BarangayCodeRelation", fields: [barangayCode], references: [brgyCode])
-  cityMunicipality         CityMunicipality?         @relation("CityMunCodeRelation", fields: [cityMunicipalityCode], references: [citymunCode])
-  primary_rep              Representative?           @relation("PrimaryRepresentative", fields: [primaryRepId], references: [id])
-  province                 Province?                 @relation("ProvinceCodeRelation", fields: [provinceCode], references: [provCode])
-  region                   Regions?                  @relation("RegionCodeRelation", fields: [regionCode], references: [regCode])
+  id                            String                    @id @default(uuid())
+  email                         String?
+  alternate_email               String?
+  password                      String?
+  registrationId                String?                   @unique
+  contact_number                String?
+  alternate_contact_number      String?
+  primaryRepId                  String?                   @unique
+  alternateRepId                String?                   @unique
+  regionCode                    String?
+  provinceCode                  String?
+  cityMunicipalityCode          String?
+  barangayCode                  String?
+  townDistrict                  String?
+  zipCode                       String?
+  streetName                    String?
+  subdivisionVillageZone        String?
+  unitRoomFloorBuilding         String?
+  lotBlockPhaseHouseNo          String?
+  certOfAuthorization           String?
+  status                        AccountApplicationStatus? @default(PENDING)
+  validatedBy                   String?
+  reasonOfDenial                String?
+  isLock                        Boolean?                  @default(false)
+  idNumber                      String?
+  reasonsList                   Json?
+  created_at                    DateTime?                 @default(now())
+  updated_at                    DateTime?                 @updatedAt
+  deleted_at                    DateTime?
+  email_verified_at             DateTime?
+  email_verification_token      String?                   @unique
+  email_verification_expires_at DateTime?
+  alternate_rep                 Representative?           @relation("AlternateRepresentative", fields: [alternateRepId], references: [id])
+  barangay                      Barangays?                @relation("BarangayCodeRelation", fields: [barangayCode], references: [brgyCode])
+  cityMunicipality              CityMunicipality?         @relation("CityMunCodeRelation", fields: [cityMunicipalityCode], references: [citymunCode])
+  primary_rep                   Representative?           @relation("PrimaryRepresentative", fields: [primaryRepId], references: [id])
+  province                      Province?                 @relation("ProvinceCodeRelation", fields: [provinceCode], references: [provCode])
+  region                        Regions?                  @relation("RegionCodeRelation", fields: [regionCode], references: [regCode])
 }
 
 model Representative {
@@ -837,16 +864,17 @@ model CooperativeApproverLog {
 }
 
 model TransactionLog {
-  id              String   @id @default(uuid())
-  amount          Float
-  status          String
-  region_id       String?
-  data            Json
-  created_at      DateTime @default(now())
-  type            Int      @default(0)
-  officialReceipt String?
-  referenceId     String?
-  orderNo         String
+  id                                     String                                  @id @default(uuid())
+  amount                                 Float
+  status                                 String
+  region_id                              String?
+  data                                   Json
+  created_at                             DateTime                                @default(now())
+  type                                   Int                                     @default(0)
+  officialReceipt                        String?
+  referenceId                            String?
+  orderNo                                String
+  certificate_of_registration_compliance certificate_of_registration_compliance?
 }
 
 model CdaChairman {
@@ -987,6 +1015,20 @@ model EconomicSurveyPrimary {
   CooperativeEconomicSurvey CooperativeEconomicSurvey?
 }
 
+model certificate_of_registration_compliance {
+  id                 String          @id
+  cooperative_id     String          @unique
+  transaction_log_id String?         @unique
+  certificate_number String?         @unique
+  is_revoked         Boolean         @default(false)
+  expiration_date    DateTime?
+  e_signature_id     String?
+  created_at         DateTime        @default(now())
+  updated_at         DateTime
+  Cooperatives       Cooperatives    @relation(fields: [cooperative_id], references: [id], onDelete: Cascade)
+  TransactionLog     TransactionLog? @relation(fields: [transaction_log_id], references: [id])
+}
+
 enum ApplicationStatus {
   APPROVED
   IN_PROGRESS
@@ -1045,4 +1087,9 @@ enum CooperativeDocumentType {
 enum EconomicSurveyType {
   PRIMARY
   CSF
+}
+
+enum SubmissionRoute {
+  region
+  main
 }

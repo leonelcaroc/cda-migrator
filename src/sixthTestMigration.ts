@@ -20,6 +20,12 @@ import { ApplicationStatus } from "@prisma/client/coop/index.js";
 import { generateUuid } from "./utils/generateUuid.js";
 import ref_regions from "./data/refregion.json" with { type: "json" };
 import { createCoopApplication } from "./utils/createCoopApplication.js";
+import { CoopRow } from "./types/coop.js";
+import {
+  createApplication,
+  createCoopOrg,
+  createRepresentative,
+} from "./utils/createCoopOrg.js";
 
 import {
   TCoopCategory,
@@ -28,7 +34,7 @@ import {
 
 const counterCoop = 1;
 
-const getAllCoops = `
+const getCoop = `
 SELECT
   rc.*,
 
@@ -184,7 +190,7 @@ ORDER BY rc.id ASC
 
 // LIMIT 100 OFFSET 200;
 
-let mockEmailCounter = 1000;
+// let mockEmailCounter = 1000;
 
 /**
  * Log file path
@@ -196,6 +202,7 @@ const logFilePath = path.join(process.cwd(), "user_credentials_log.txt");
  */
 fs.writeFileSync(logFilePath, "Cooperatives Credentials\n");
 
+let mockEmailCounter = 1000;
 let successCount = 0;
 let skipCount = 0;
 let noRegNoCount = 0;
@@ -204,42 +211,157 @@ let duplicateCount = 0;
 let errorCount = 0;
 
 export default function sixthTestMigration() {
-  connection.query<RowDataPacket[]>(getAllCoops, async (err, results) => {
+  connection.query<any>(getCoop, async (err, res) => {
     if (err) throw err;
 
-    console.log("Results: ", results);
+    const results = res[0];
+
+    console.log(results);
+    //  return console.log(results)
+
+    // console.log("Results: ", results);
+
+    // console.log("Reg No: ", results.regNo);
+    // console.log("Coop Name: ", results.coopName);
+
+    if (!results?.regNo) {
+      skipCount++;
+      noRegNoCount++;
+      console.log("No Reg Number: ", results.coopName);
+    }
+
+    // console.log("New Rep: ", newRepresentative);
 
     // console.log(`Starting migration of ${results.length} cooperatives...`);
 
-    // let existingUser = await prismaAuth.user.findFirst({
-    //   where: { email },
-    // });
+    const newRepresentative = createRepresentative(results, mockEmailCounter);
 
-    // if (!existingUser) {
-    //   const hashedPassword = await hashPasswordUtil(plainPassword);
+    // Create User in Auth Service
+    let existingUser;
 
-    //   existingUser = await prismaAuth.user.create({
-    //     data: {
-    //       email,
-    //       firstname: finalName?.firstName,
-    //       middlename: finalName?.middleName,
-    //       lastname: finalName?.lastName,
-    //       mobile: contact_number || "",
-    //       address: row.user_address?.trim() || "",
-    //       status: "APPROVED",
-    //       migrated: 1,
-    //       verified_at: new Date(),
-    //       password: hashedPassword,
-    //     },
-    //   });
+    try {
+      existingUser = await prismaAuth.user.findFirst({
+        where: { email: newRepresentative.email },
+      });
 
-    //   const spacer = "   ";
+      // console.log("Existing User: ", existingUser);
 
-    //   fs.appendFileSync(
-    //     logFilePath,
-    //     `${regNo}${spacer}${coopName}${spacer}${email}${spacer}${plainPassword}${spacer}${myRegion.regCode}${spacer}${myRegion.regDesc}\n`, // Add Region
-    //   );
-    // }
+      if (!existingUser) {
+        const hashedPassword = await hashPasswordUtil(
+          newRepresentative.password,
+        );
+
+        existingUser = await prismaAuth.user.create({
+          data: {
+            id: generateUuid(),
+            email: newRepresentative.email,
+            firstname: newRepresentative.firstname,
+            middlename: newRepresentative.middlename,
+            lastname: newRepresentative.lastname,
+            mobile: newRepresentative.contactNumber,
+            address: newRepresentative.address,
+            status: "approved",
+            migrated: 1,
+            verified_at: new Date(),
+            password: hashedPassword,
+          },
+        });
+
+        const spacer = "   ";
+
+        fs.appendFileSync(
+          logFilePath,
+          // `${results.regNo}${spacer}${results.coopName}${spacer}${results.email}${spacer}${results.plainPassword}${spacer}${results.myRegion.regCode}${spacer}${results.myRegion.regDesc}\n`, // Add Region
+          // `${results.regNo}${spacer}${results.coopName}${spacer}${results.email}${spacer}${results.plainPassword}`, // Add Region
+          `${newRepresentative.email}${spacer}${newRepresentative.password}\n`, // Add Region
+        );
+      }
+    } catch (error) {
+      console.error("Error creating representative:", error);
+    }
+
+    // Create Coop Org
+    try {
+      // const newReferenceId = generateReferenceId();
+
+      // const newCoopOrg = createCoopOrg(results, newRepresentative);
+      const {
+        cooperativeName,
+        acronym,
+        regNo,
+        dateOfRegistration,
+        email,
+        contact_number,
+        ...rest
+      } = createCoopOrg(results, newRepresentative);
+
+      await prismaCoop.cooperativeOrg.create({
+        data: {
+          cooperativeName: cooperativeName,
+          acronym: acronym,
+          regNo: regNo,
+          dateOfRegistration: dateOfRegistration,
+          // // prevComplianceRemarks: row.compliant,
+          // recentAmendmentDate: recentAmendmentDateRegistration || null,
+          // amendmentCount: registeredAmendment.amendmentNo || null,
+          email: email,
+          // alternate_email: "",
+          contact_number: contact_number,
+          // alternate_contact_number: "",
+          // //     finalName = {
+          // //   firstName: row?.user_first_name?.trim(),
+          // //   middleName: row?.user_middle_name?.trim(),
+          // //   lastName: row?.user_last_name?.trim(),
+          // // };
+          primaryRepresentative: {
+            create: {
+              firstname: newRepresentative.firstname,
+              lastname: newRepresentative.lastname,
+              middlename: newRepresentative.middlename,
+              title: "",
+              designation: newRepresentative.designation,
+              // gender: "Male",
+              nationality: newRepresentative.nationality,
+              birth_date: newRepresentative.birth_date,
+              id_no: newRepresentative.id_no,
+              // governmentId: "Passport",
+            },
+          },
+          // // alternateRepresentative: "",
+          // // laboratories: []
+          // // BranchSatellite: []
+          ownedBy: existingUser?.id,
+          ...rest,
+
+          // cooperatives: {
+          //   connect: [
+          //     { id: initial.id },
+          //     ...(amendment ? [{ id: amendment.id }] : []),
+          //   ],
+          // },
+
+          // approvedCooperative: {
+          //   connect: { id: approvedCoopData.id },
+          // },
+        },
+      });
+
+      // console.log(newCoopOrg);
+    } catch (error) {
+      console.error("Error creating coop org:", error);
+    }
+
+    // Create Application
+    try {
+      const {
+        // cooperativeName: _coopName,
+        // cooperativeNameAcronym: _coopAcronym,
+
+        ...coopRest
+      } = createApplication(results);
+    } catch (error) {
+      console.error("Error creating application:", error);
+    }
 
     // console.log("MIGRATION COMPLETED");
     // console.log(`✅ Created: ${successCount}`);
@@ -252,6 +374,8 @@ export default function sixthTestMigration() {
     await prismaCoop.$disconnect();
     await prismaAuth.$disconnect();
     connection.end();
+
+    console.log("✅ Migration finished");
   });
 }
 

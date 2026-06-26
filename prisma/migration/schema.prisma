@@ -1,0 +1,76 @@
+// prisma/migration/schema.prisma
+generator client {
+    provider = "prisma-client-js"
+    output   = "../../node_modules/.prisma/migration"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL_MIGRATION")
+}
+
+// Track migrated records
+model MigratedRecord {
+    id             String          @id @default(cuid())
+    sourceId       String          @unique // The ID from source database
+    sourceTable    String // Which table the record came from
+    sourceDatabase String // 'auth' or 'coop'
+    targetId       String? // The ID in target database (if different)
+    targetTable    String? // Target table name
+    migratedAt     DateTime        @default(now())
+    migratedBy     String
+    migrationBatch String // Batch ID for grouping
+    status         MigrationStatus @default(COMPLETED)
+    errorMessage   String?
+    metadata       Json? // Additional data like old values, transformations
+
+    // For rollback support
+    rollbackData Json? // Data needed for rollback
+    rolledBackAt DateTime?
+    rolledBackBy String?
+
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+
+    @@unique([sourceId, sourceTable, sourceDatabase])
+    @@index([sourceDatabase])
+    @@index([sourceTable])
+    @@index([status])
+    @@index([migrationBatch])
+    @@map("migrated_records")
+}
+
+// Track migration batches
+model MigrationBatch {
+    id           String      @id @default(cuid())
+    batchName    String      @unique
+    description  String?
+    startedAt    DateTime    @default(now())
+    completedAt  DateTime?
+    totalRecords Int         @default(0)
+    successCount Int         @default(0)
+    failedCount  Int         @default(0)
+    status       BatchStatus @default(IN_PROGRESS)
+    executedBy   String
+    metadata     Json?
+
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+
+    @@map("migration_batches")
+}
+
+enum MigrationStatus {
+    PENDING
+    IN_PROGRESS
+    COMPLETED
+    FAILED
+    ROLLED_BACK
+}
+
+enum BatchStatus {
+    IN_PROGRESS
+    COMPLETED
+    FAILED
+    ROLLED_BACK
+}
