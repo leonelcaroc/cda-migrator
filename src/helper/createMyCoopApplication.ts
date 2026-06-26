@@ -4,7 +4,7 @@
 // import { normalizeDate } from "./resolveData.js";
 // import { normalizeAddress } from "./resolveData.js";
 import { ApplicationStatus } from "@prisma/client/coop/index.js";
-import { generateReferenceId } from "./generateReferenceId.js";
+import { generateReferenceId } from "../utils/generateReferenceId.js";
 
 export type UUID = string & { readonly __brand: "UUID" };
 export type TCoopCategory = "primary" | "secondary" | "tertiary" | "special";
@@ -61,7 +61,7 @@ export type TCompositionOfMembers = {
 //   parentCoop: MergingConsolidationParentCoops | null;
 // };
 
-export type TCooperativeApplication = {
+export type TCoopApplication = {
   isAmendment?: boolean;
   amendmentNo?: number | null;
 
@@ -144,8 +144,8 @@ export type TCooperativeApplication = {
   //-- members: [];
 
   // Total Number of Members
-  // totalNoOfRegularMembers: number;
-  // totalNoOfAssociateMembers: number;
+  //-- totalNoOfRegularMembers: number;
+  //-- totalNoOfAssociateMembers: number;
   //-- totalNoOfMaleMembers: number;
   //-- totalNoOfFemaleMembers: number;
   //-- totalNoOfMembers: number;
@@ -169,12 +169,12 @@ export type TCooperativeApplication = {
   //-- preferredShareParValue: number;
 
   // Capitalization
-  totalAuthorizedShareCapital: number;
-  totalSubscribedCapital: number;
-  totalPaidUpCapital: number;
-  paidUpShareCommon?: [];
-  paidUpSharePreferred?: [];
-  // totalRestrictedCapital: number;
+  //-- totalAuthorizedShareCapital: number;
+  //-- totalSubscribedCapital: number;
+  //-- totalPaidUpCapital: number;
+  //-- paidUpShareCommon: [];
+  //-- paidUpSharePreferred: [];
+  //-- totalRestrictedCapital: number;
 
   // Regular Members
   //-- regularMinimumSubscribed: number;
@@ -251,16 +251,16 @@ export type TCooperativeApplication = {
   migrated?: number;
 };
 
-export function createCooperativeApplication(row: any) {}
+export function createCoopApplication(row: any) {}
 
 // export function createCooperativeApplication(
 //   // cooperativeData: CooperativeApplication,
-//   cooperativeData: TCooperativeApplication,
+//   cooperativeData: TCoopApplication,
 // ) {
-//   //  TCooperativeApplication
+//   //  TCoopApplication
 //   // const newRegRefId = generateReferenceId();
 
-//   // TCooperativeApplication
+//   // TCoopApplication
 //   const application = {
 //     //   cooperativeOrgId            //  String?
 //     //   cooperativeOrg              //  CooperativeOrg? @relation(name: "OrgApplications", fields: [cooperativeOrgId], references: [id])

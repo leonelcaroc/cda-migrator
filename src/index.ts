@@ -3,9 +3,13 @@ import express from "express";
 // import thirdTestMigration from "./thirdTestMigration";
 // import thirdTestMigration from "./thirdTestMigration.js";
 // import fourthTestMigration from "./fourthTestMigration.js";
-// import fifthTestMigration from "./fifthTestMigration.js";
+import fifthTestMigration from "./fifthTestMigration.js";
 import sixthTestMigration from "./sixthTestMigration.js";
 import runAddCsfCoops from "./addCsfCoops.js";
+import { prismaCoop } from "./utils/prismaCoop.js";
+import { deleteAll } from "./deleteRecords.js";
+import { migrateCooperativeRange } from "./seventhTestMigration.js";
+import eightTestMigration from "./eightMigrationTesting.js";
 
 const app = express();
 app.use(express.json());
@@ -21,8 +25,25 @@ async function main() {
     // await thirdTestMigration();
     // await fourthTestMigration();
     // await fifthTestMigration();
-    await sixthTestMigration();
+
+    // for (let i = 2048; i <= 52063; i++) {
+    // // await fifthTestMigration(i);
+    // await fifthTestMigration(2049);
+    // }
+
+    for (let i = 2048; i <= 2150; i++) {
+      await eightTestMigration(i);
+    }
+
+    // await sixthTestMigration();
     // await runAddCsfCoops();
+
+    // await migrateCooperativeRange(1, 100, 100);
+    // Migrates IDs 1 to 1000 with 100ms delay
+
+    // Option 1: Delete all in a single query using deleteMany
+
+    // deleteAll();
 
     const PORT = 6000;
     app.listen(PORT, () => {

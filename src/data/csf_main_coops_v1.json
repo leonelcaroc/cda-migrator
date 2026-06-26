@@ -15,57 +15,7 @@
     "email": "rvcagara1@up.edu.ph",
     "houseBlockUnit": "New Bus Terminal Compound,",
     "street": "Brgy. 91, Abucay",
-    "areaOp": "2",
-    "sampleCooperator": [
-      {
-        "address": "",
-        "amountOfPaidUpSharesCommon": 1000,
-        "amountOfPaidUpSharesPreferred": 0,
-        "amountOfSubscribedSharesCommon": 1000,
-        "amountOfSubscribedSharesPreferred": 0,
-        "bod": true,
-        "contribution": 100000,
-        "contributionType": "investment",
-        "coopId": "",
-        "id": "9f6b1a5e-3d2a-4f0e-bc6a-8b3c7f0d2a91",
-        "name": "Department of Energy",
-        "nationality": "Filipino",
-        "noOfPaidUpSharesCommon": 100000,
-        "noOfPaidUpSharesPreferred": 100000,
-        "noOfSubscribedSharesCommon": 100000,
-        "noOfSubscribedSharesPreferred": 100000,
-        "representative": "Test Representative 1",
-        "residence": "Test Residence 1",
-        "restrictedCapital": 99000,
-        "role": "vice-chairperson",
-        "ga": "ga"
-      }
-    ],
-    "cooperators": [
-      {
-        "address": "",
-        "amountOfPaidUpSharesCommon": 1000,
-        "amountOfPaidUpSharesPreferred": 0,
-        "amountOfSubscribedSharesCommon": 1000,
-        "amountOfSubscribedSharesPreferred": 0,
-        "bod": true,
-        "contribution": 100000,
-        "contributionType": "investment",
-        "coopId": "",
-        "id": "9f6b1a5e-3d2a-4f0e-bc6a-8b3c7f0d2a91",
-        "name": "Department of Energy",
-        "nationality": "Filipino",
-        "noOfPaidUpSharesCommon": 100000,
-        "noOfPaidUpSharesPreferred": 100000,
-        "noOfSubscribedSharesCommon": 100000,
-        "noOfSubscribedSharesPreferred": 100000,
-        "representative": "Test Representative 1",
-        "residence": "Test Residence 1",
-        "restrictedCapital": 99000,
-        "role": "vice-chairperson",
-        "ga": "ga"
-      }
-    ]
+    "areaOp": "2"
   },
   {
     "no": "2",
@@ -98,7 +48,7 @@
     "isBspRegistered": "1",
     "coopName": "Benguet Credit Surety Fund Cooperative",
     "acronym": "BCSFC",
-    "email": "BenguetCSFC2019@gmail.com",
+    "email": "benguetCSFC2019@gmail.com",
     "houseBlockUnit": "Benguet Operators & Drivers Association Multipurpose Cooperative (BODA MPC) Office",
     "street": "AE-22 Western Buyagan, Poblacion,",
     "areaOp": "1"
@@ -188,7 +138,7 @@
     "isBspRegistered": "1",
     "coopName": "Valencia City Credit Surety Fund Cooperative",
     "acronym": "VCCSFC",
-    "email": " daquiado.alex@gmail.com ",
+    "email": "daquiado.alex@gmail.com ",
     "houseBlockUnit": "4th Flr. Bukidnon Pharmaceutical Multipurpose Cooperative Building",
     "street": "Sayre Highway, Poblacion",
     "areaOp": "2"
@@ -250,7 +200,7 @@
   {
     "no": "12",
     "regNo": "10744-1500012",
-    "dateOfRegistration": "December 17, 2020",
+    "dateOfRegistration": "17-Dec-20",
     "folder_name": "CAR_PH1427_12",
     "regCode": "14",
     "provCode": "1427",
@@ -340,6 +290,7 @@
   {
     "no": "17",
     "regNo": "10744-0600017",
+    "dateOfRegistration": "June 8, 2021",
     "folder_name": "REG6_PH0604_17",
     "regCode": "06",
     "provCode": "0604",
@@ -357,6 +308,7 @@
   {
     "no": "18",
     "regNo": "10744-1300018",
+    "dateOfRegistration": "June 9, 2021",
     "folder_name": "REG13_PH1685_18",
     "regCode": "16",
     "provCode": "1685",
@@ -374,6 +326,7 @@
   {
     "no": "19",
     "regNo": "10744-1100019",
+    "dateOfRegistration": "June 10, 2021",
     "folder_name": "REG11_PH112402_19",
     "regCode": "11",
     "provCode": "1124",
@@ -391,6 +344,7 @@
   {
     "no": "20",
     "regNo": "10744-0700020",
+    "dateOfRegistration": "June 11, 2021",
     "folder_name": "REG7_PH0712_20",
     "regCode": "07",
     "provCode": "0712",
@@ -400,7 +354,7 @@
     "isBspRegistered": "1",
     "coopName": "Bohol Credit Surety Fund Cooperative",
     "acronym": "",
-    "email": "bccsf2015@yahoo.com / boholcsfcooperative@gmail.com",
+    "email": "bccsf2015@yahoo.com",
     "houseBlockUnit": "4th Floor, FCB Foundation Buildin",
     "street": "#20 Mendoza St., Poblacion l",
     "areaOp": "1"
@@ -408,6 +362,7 @@
   {
     "no": "21",
     "regNo": "10744-1300021",
+    "dateOfRegistration": "July 2, 2021",
     "folder_name": "REG13_PH1602_21",
     "regCode": "16",
     "provCode": "1602",
@@ -425,6 +380,7 @@
   {
     "no": "22",
     "regNo": "10744-0300022",
+    "dateOfRegistration": "July 6, 2021 ",
     "folder_name": "REG3_PH034903_22",
     "regCode": "03",
     "provCode": "0349",
@@ -434,7 +390,7 @@
     "isBspRegistered": "1",
     "coopName": "Cabanatuan City Credit Surety Fund Cooperative",
     "acronym": "",
-    "email": "cabanatuan_csf_+745uxier@gmail.com",
+    "email": "cabanatuancreditsuretyfund@gmail.com",
     "houseBlockUnit": "City Agriculture and Livelihood Management Office (CALMO)",
     "street": "City Hall Compound, Kapitan Pepe Subdivision,",
     "areaOp": "2"
@@ -442,15 +398,16 @@
   {
     "no": "23",
     "regNo": "10744-0700023",
+    "dateOfRegistration": "July 29, 2021",
     "folder_name": "REG7_PH0746_23",
-    "regCode": "07",
-    "provCode": "0746",
-    "citymunCode": "074610",
-    "brgyCode": "074610026",
+    "regCode": "18",
+    "provCode": "1846",
+    "citymunCode": "184610",
+    "brgyCode": "184610026",
     "type": "Province",
     "isBspRegistered": "1",
     "coopName": "Negros Oriental Credit Surety Fund Cooperative",
-    "acronym": "the \"NOCSFC\"",
+    "acronym": "NOCSFC",
     "email": "reygomz.2020@gmail.com",
     "houseBlockUnit": "Cooperative Bank of Negros Oriental Bldg.",
     "street": "Libertad St.,",
@@ -459,6 +416,7 @@
   {
     "no": "24",
     "regNo": "10744-0400024",
+    "dateOfRegistration": "September 6, 2021",
     "folder_name": "REG4-A_PH041_24",
     "regCode": "04",
     "provCode": "0410",
@@ -468,7 +426,7 @@
     "isBspRegistered": "1",
     "coopName": "Batangas Credit Surety Fund Cooperative",
     "acronym": "Batangas CSF Cooperative",
-    "email": "egg.mighty@gmail.com\r\nfnancehead.batangasegg@gmail.com",
+    "email": "egg.mighty@gmail.com",
     "houseBlockUnit": "Ground Floor, Provincial Cooperative Development Center (PCDC)",
     "street": "Capitol Complex",
     "areaOp": "1"
@@ -476,6 +434,7 @@
   {
     "no": "25",
     "regNo": "10744-0700025",
+    "dateOfRegistration": "October 26, 2021",
     "folder_name": "REG7_PH07223_25",
     "regCode": "07",
     "provCode": "0722",
@@ -484,7 +443,7 @@
     "type": "City",
     "isBspRegistered": "1",
     "coopName": "Mandaue City Credit Surety Fund Cooperative",
-    "acronym": "W/O",
+    "acronym": "",
     "email": "emy_bustillo@yahoo.com",
     "houseBlockUnit": "Mandaue City Cooperative Department, 2F Mandaue City Sports Complex",
     "street": "Barangay Centro",
@@ -493,6 +452,7 @@
   {
     "no": "26",
     "regNo": "10744-1100026",
+    "dateOfRegistration": "December 23, 2021",
     "folder_name": "REG11_PH1182_26",
     "regCode": "11",
     "provCode": "1182",
@@ -510,11 +470,12 @@
   {
     "no": "27",
     "regNo": "10744-0600027",
+    "dateOfRegistration": "January 26, 2022",
     "folder_name": "REG6_PH0645_27",
-    "regCode": "06",
-    "provCode": "0645",
-    "citymunCode": "064501",
-    "brgyCode": "064501059",
+    "regCode": "18",
+    "provCode": "1845",
+    "citymunCode": "184501",
+    "brgyCode": "184501059",
     "type": "Province",
     "isBspRegistered": "1",
     "coopName": "Negros Occidental Credit Surety Fund Cooperative",
@@ -527,6 +488,7 @@
   {
     "no": "28",
     "regNo": "10744-1600028",
+    "dateOfRegistration": "February 18, 2022",
     "folder_name": "NCR_PH137604_28",
     "regCode": "13",
     "provCode": "1376",
@@ -544,6 +506,7 @@
   {
     "no": "29",
     "regNo": "10744-0500029",
+    "dateOfRegistration": "March 30, 2022",
     "folder_name": "REG5_PH0505_29",
     "regCode": "05",
     "provCode": "0505",
@@ -552,7 +515,7 @@
     "type": "Province",
     "isBspRegistered": "1",
     "coopName": "Albay Credit Surety Fund Cooperative",
-    "acronym": "the \"Albay CSF Cooperative\"",
+    "acronym": "Albay CSF Cooperative",
     "email": "dindoabe@yahoo.com",
     "houseBlockUnit": "Albay Capitol Employees Multi-purpose Cooperative Office, 1st floor, Albay Capitol Building",
     "street": "Old Albay District",
@@ -561,6 +524,7 @@
   {
     "no": "30",
     "regNo": "10744-1200030",
+    "dateOfRegistration": "June 14, 2022",
     "folder_name": "REG12_PH1247_30",
     "regCode": "12",
     "provCode": "1247",
@@ -578,6 +542,7 @@
   {
     "no": "31",
     "regNo": "10744-1100031",
+    "dateOfRegistration": "August 22, 2022",
     "folder_name": "REG11_PH1123_31",
     "regCode": "11",
     "provCode": "1123",
@@ -595,6 +560,7 @@
   {
     "no": "32",
     "regNo": "10744-0400032",
+    "dateOfRegistration": "September 1, 2022",
     "folder_name": "REG4-B_PH1752_32",
     "regCode": "17",
     "provCode": "1751",
@@ -604,7 +570,7 @@
     "isBspRegistered": "1",
     "coopName": "Occidental Mindoro Credit Surety Fund Cooperative",
     "acronym": "OMCSFC",
-    "email": "occidental_mindoro_csf_+293ituv@gmail.com",
+    "email": "shirleysalinas19@gmail.com",
     "houseBlockUnit": "2nd Floor OMCB Building",
     "street": "615",
     "areaOp": "1"
@@ -612,6 +578,7 @@
   {
     "no": "33",
     "regNo": "10744-0400033",
+    "dateOfRegistration": "October 18, 2022",
     "folder_name": "REG4-A_PH0434_33",
     "regCode": "04",
     "provCode": "0434",
@@ -629,6 +596,7 @@
   {
     "no": "34",
     "regNo": "10744-1300034",
+    "dateOfRegistration": " June 29, 2023",
     "folder_name": "NCR_PH1374_34",
     "regCode": "13",
     "provCode": "1374",
@@ -646,6 +614,7 @@
   {
     "no": "35",
     "regNo": "10744-0700033",
+    "dateOfRegistration": "July 11, 2023",
     "folder_name": "REG7_PH0722_33",
     "regCode": "07",
     "provCode": "0722",
@@ -654,7 +623,7 @@
     "type": "City",
     "isBspRegistered": "1",
     "coopName": "Cebu City Credit Surety Fund Cooperative",
-    "acronym": "W/O",
+    "acronym": "",
     "email": "bimbo_fernandez@yahoo.com",
     "houseBlockUnit": "Pagtambayayong Foundation Office, 102 J.Alcantara Street",
     "street": "Sambag 1",
@@ -663,6 +632,7 @@
   {
     "no": "36",
     "regNo": "10744-0700036",
+    "dateOfRegistration": "December 12, 2023",
     "folder_name": "REG5_PH0516_36",
     "regCode": "05",
     "provCode": "0516",
@@ -680,6 +650,7 @@
   {
     "no": "37",
     "regNo": "10744-0300037",
+    "dateOfRegistration": "December 20, 2023",
     "folder_name": "REG3_PH0349_37",
     "regCode": "03",
     "provCode": "0349",
@@ -697,6 +668,7 @@
   {
     "no": "38",
     "regNo": "10744-0110038",
+    "dateOfRegistration": "January 2, 2024",
     "folder_name": "REG11_PH1125_38",
     "regCode": "11",
     "provCode": "1125",
@@ -714,6 +686,7 @@
   {
     "no": "39",
     "regNo": "10744-0110039",
+    "dateOfRegistration": "January 16, 2024",
     "folder_name": "REG12_PH_39",
     "regCode": "12",
     "provCode": "1263",
@@ -731,6 +704,7 @@
   {
     "no": "40",
     "regNo": "10744-0900040",
+    "dateOfRegistration": "March 19, 2024",
     "folder_name": "REG9_PH0973_40",
     "regCode": "09",
     "provCode": "0973",
@@ -740,7 +714,7 @@
     "isBspRegistered": "0",
     "coopName": "Zamboanga City Credit Surety Fund Cooperative",
     "acronym": "ZCCSPC",
-    "email": "zamboanga_csf_+108vsum@gmail.com",
+    "email": "bernarditopatino40gmail.com",
     "houseBlockUnit": "CSWDO Cooperative System Unit, 3rd Floor, CSWDO Building",
     "street": "Gen. V Alvarez St., Zone IV",
     "areaOp": "2"
@@ -748,6 +722,7 @@
   {
     "no": "41",
     "regNo": "10744-0100041",
+    "dateOfRegistration": "May 2, 2024",
     "folder_name": "REG1_PH0155_41",
     "regCode": "01",
     "provCode": "0155",
@@ -765,6 +740,7 @@
   {
     "no": "42",
     "regNo": "10744-0300042",
+    "dateOfRegistration": "May 10, 2024",
     "folder_name": "REG3_PH0349_42",
     "regCode": "03",
     "provCode": "0349",
@@ -782,6 +758,7 @@
   {
     "no": "43",
     "regNo": "10744-1000043",
+    "dateOfRegistration": "June 05, 2024",
     "folder_name": "REG10_PH1013_",
     "regCode": "10",
     "provCode": "1013",
@@ -799,6 +776,7 @@
   {
     "no": "44",
     "regNo": "10744-1200044",
+    "dateOfRegistration": "July 18, 2024",
     "folder_name": "REG12_PH1280_43",
     "regCode": "12",
     "provCode": "1280",
@@ -816,6 +794,7 @@
   {
     "no": "45",
     "regNo": "10744-1200045",
+    "dateOfRegistration": "August 5, 2024",
     "folder_name": "REG12_PH1263_45",
     "regCode": "12",
     "provCode": "1263",
@@ -833,6 +812,7 @@
   {
     "no": "46",
     "regNo": "10744-0900046",
+    "dateOfRegistration": "February 12, 2025",
     "folder_name": "REG9_PH0983_46",
     "regCode": "09",
     "provCode": "0983",
@@ -842,7 +822,7 @@
     "isBspRegistered": "0",
     "coopName": "Zamboanga Sibugay Province Credit Surety Fund Cooperative",
     "acronym": "ZSPCSFC",
-    "email": "zsibugay+093qmas@gmail.com",
+    "email": "felylim45@gmail.com",
     "houseBlockUnit": "Provincial Capitol , IPIL, Heights Zamboanga Sibugay Province, Zamboanga Del Sur",
     "street": "Ipil Heights, IPIL",
     "areaOp": "1"
@@ -850,6 +830,7 @@
   {
     "no": "47",
     "regNo": "10744-0400047",
+    "dateOfRegistration": "September 10, 2025",
     "folder_name": "REG4_PH1753_47",
     "regCode": "17",
     "provCode": "1753",
@@ -859,7 +840,7 @@
     "isBspRegistered": "1",
     "coopName": "Palawan Credit Surety Fund Cooperative",
     "acronym": "PCSF",
-    "email": "palawan_+6452jumw@gmail.com",
+    "email": "niamco_1017@yahoo.com",
     "houseBlockUnit": "PCDO, G/F Provincial Capitol, Rizal Avenue, Puerto Princesa City, Palawan",
     "street": "Rizal Ave., Fernandez St ",
     "areaOp": "1"
@@ -867,6 +848,7 @@
   {
     "no": "48",
     "regNo": "10744-0800048",
+    "dateOfRegistration": "October 24, 2025",
     "folder_name": "REG_PH0848_48",
     "regCode": "08",
     "provCode": "0848",
@@ -876,9 +858,63 @@
     "isBspRegistered": "0",
     "coopName": "Northern Samar Credit Surety Fund Cooperative",
     "acronym": "NSCSFC",
-    "email": "northern_samar_+2243bvgw@gmail.com",
+    "email": "remachan71@gmail.com",
     "houseBlockUnit": "Capitol Road, Catarman, 6400 Northern Samar",
     "street": "Capitol Road, Brgy. Dalakit (Población), Catarman",
     "areaOp": "1"
+  },
+  {
+    "no": "49",
+    "regNo": "10744-0500049",
+    "dateOfRegistration": "December 23, 2025",
+    "folder_name": "REG6_PH0541_49",
+    "regCode": "05",
+    "provCode": "0541",
+    "citymunCode": "054111",
+    "brgyCode": "054111017",
+    "type": "Province",
+    "isBspRegistered": "0",
+    "coopName": "Masbate Province Credit Surety Fund Cooperative",
+    "acronym": "MASBATE CSF Cooperative",
+    "email": "corahuyoa48@gmail.com",
+    "houseBlockUnit": "Capitol Road, Masbate City 5400, Masbate, Philippines",
+    "street": "Provincial Agriculture Compound, Masbate City, Masbate, Region V",
+    "areaOp": "1"
+  },
+  {
+    "no": "50",
+    "regNo": "10744-0600050",
+    "dateOfRegistration": "December 23, 2025",
+    "folder_name": "REG6_PH0630_50",
+    "regCode": "06",
+    "provCode": "0630",
+    "citymunCode": "063022",
+    "brgyCode": "063022113",
+    "type": "Province",
+    "isBspRegistered": "0",
+    "coopName": "Iloilo Province Credit Surety Fund Cooperative",
+    "acronym": "IPCSFC",
+    "email": "pempc_2008@yahoo.com",
+    "houseBlockUnit": "Provincial Capitol, Bonifacio Drive, Iloilo City, Philippines",
+    "street": "PCDO Office, 4th Floor, Provincial Capitol, Iloilo City",
+    "areaOp": "1"
+  },
+  {
+    "no": "51",
+    "regNo": "10744-0300051",
+    "dateOfRegistration": "January 29, 2026",
+    "folder_name": "REG3_PH0371_51",
+    "regCode": "03",
+    "provCode": "0371",
+    "citymunCode": "037107",
+    "brgyCode": "037107001",
+    "type": "City",
+    "isBspRegistered": "0",
+    "coopName": "Olongapo City Credit Surety Fund Cooperative",
+    "acronym": " OCCSFC",
+    "email": "sanchezamy@yahoo.com",
+    "houseBlockUnit": "3/F Olongapo City Hall, Olongapo City, Philippines",
+    "street": "3rd Floor City Budget Office, Olongapo City Hall, Olongapo City",
+    "areaOp": "2"
   }
 ]

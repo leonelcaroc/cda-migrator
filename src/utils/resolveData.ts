@@ -727,10 +727,50 @@ export function normalizeDate(dateStr: string) {
   return date;
 }
 
+// export function normalizeAddress(addrCode: string) {
+//   addrCode = addrCode?.toString().trim() || "";
+
+//   // Remove non-digits (/n, /r, hidden chars, etc.)
+//   addrCode = addrCode.replace(/\D+/g, "");
+
+//   if (addrCode.startsWith("00")) {
+//     addrCode = addrCode.slice(1);
+//   }
+
+//   if (addrCode.length === 10) {
+//     addrCode = addrCode.slice(1);
+//   }
+
+//   if (addrCode.length === 3 && addrCode.startsWith("0")) {
+//     addrCode = addrCode.slice(1, -1);
+//   }
+
+//   // pad if needed
+//   if (addrCode.length === 1 || addrCode.length === 3) {
+//     addrCode = "0" + addrCode;
+//   }
+
+//   if (addrCode.length === 2 && addrCode === "18") {
+//     addrCode = "17";
+//   }
+
+//   const regCode = addrCode.slice(0, 2);
+//   const provCode = addrCode.slice(0, 4);
+//   const citymunCode = addrCode.slice(0, 6);
+//   const brgyCode = addrCode.slice(0, 9);
+
+//   return {
+//     regCode,
+//     provCode,
+//     citymunCode,
+//     brgyCode,
+//   };
+// }
+
 export function normalizeAddress(addrCode: string) {
   addrCode = addrCode?.toString().trim() || "";
 
-  // Remove non-digits (/n, /r, hidden chars, etc.)
+  // Remove non-digits
   addrCode = addrCode.replace(/\D+/g, "");
 
   if (addrCode.startsWith("00")) {
@@ -754,6 +794,26 @@ export function normalizeAddress(addrCode: string) {
     addrCode = "17";
   }
 
+  // ===== SPECIAL REMAP LOGIC =====
+  const specialPrefixes = ["0645", "0746", "0761"];
+
+  const provCodeCheck = addrCode.slice(0, 4);
+  const cityMunCodeCheck = addrCode.slice(0, 6);
+  const brgyCodeCheck = addrCode.slice(0, 9);
+
+  const shouldRemap = specialPrefixes.some(
+    (prefix) =>
+      provCodeCheck === prefix ||
+      cityMunCodeCheck.startsWith(prefix) ||
+      brgyCodeCheck.startsWith(prefix),
+  );
+
+  if (shouldRemap) {
+    // Replace first 2 digits with "18"
+    addrCode = "18" + addrCode.slice(2);
+  }
+
+  // ===== FINAL SLICING =====
   const regCode = addrCode.slice(0, 2);
   const provCode = addrCode.slice(0, 4);
   const citymunCode = addrCode.slice(0, 6);
