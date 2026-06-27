@@ -8,30 +8,79 @@ datasource db {
   url      = env("DATABASE_URL_AUTH")
 }
 
+enum UserStatus {
+  PENDING   @map("pending")
+  APPROVED  @map("approved")
+  DENIED    @map("denied")
+  SUSPENDED @map("suspended")
+}
+
+enum AccountStatus {
+  ACTIVE    @map("active")
+  INACTIVE  @map("inactive")
+  SUSPENDED @map("suspended")
+  LOCKED    @map("locked")
+  ARCHIVED  @map("archived")
+}
+
+enum SupportTicketStatus {
+  OPEN
+  IN_PROGRESS
+  RESOLVED
+  CLOSED
+}
+
+enum SupportTicketPriority {
+  LOW
+  MEDIUM
+  HIGH
+  URGENT
+}
+
 model User {
-  id            String     @id @default(uuid())
-  lastname      String?
-  firstname     String?
-  middlename    String?
-  suffix        String?
-  mobile        String?
-  email         String     @unique
-  gender        String?
-  address       String?
-  id_type       String?
-  id_no         String?
-  password      String?
-  role_name     String?
-  verified_at   DateTime?
-  created_at    DateTime?  @default(now())
-  updated_at    DateTime?  @updatedAt
-  deleted_at    DateTime?
-  refreshToken  String?    @unique
-  firebaseToken String?
-  firebaseUid   String?    @unique
-  status        UserStatus @default(PENDING)
-  provider      String?
-  migrated      Int?
+  id                       String          @id @default(uuid())
+  lastname                 String?
+  firstname                String?
+  middlename               String?
+  suffix                   String?
+  mobile                   String?
+  email                    String          @unique
+  gender                   String?
+  address                  String?
+  id_type                  String?
+  id_no                    String?
+  password                 String?
+  role_name                String?
+  verified_at              DateTime?
+  created_at               DateTime?       @default(now())
+  updated_at               DateTime?       @updatedAt
+  deleted_at               DateTime?
+  status                   UserStatus      @default(PENDING)
+  refreshToken             String?         @unique
+  firebaseToken            String?
+  firebaseUid              String?         @unique
+  provider                 String? // e.g., "auth0", "local"
+  migrated                 Int? // 1 if migrated, 0 if not
+  last_successful_login_at DateTime?
+  loginSessions            LoginSession[]
+  supportTickets           SupportTicket[]
+}
+
+model LoginSession {
+  id             String    @id @default(uuid())
+  userId         String
+  user           User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  otp_hash       String
+  otp_expires_at DateTime
+  expires_at     DateTime
+  attempts       Int       @default(0)
+  resend_count   Int       @default(0)
+  last_resend_at DateTime?
+  remember_me    Boolean   @default(false)
+  used_at        DateTime?
+  created_at     DateTime  @default(now())
+
+  @@index([userId])
 }
 
 model Verification {
@@ -52,76 +101,84 @@ model PasswordResetToken {
 }
 
 model Admin {
-  id            String       @id @default(uuid())
-  email         String       @unique
-  password      String?
-  firstname     String?
-  lastname      String?
-  middlename    String?
-  suffix        String?
-  mobile        String?
-  id_type       String?
-  id_no         String?
-  region        String?
-  is_default    Boolean?
-  verified_at   DateTime?
-  refreshToken  String?      @unique
-  roleId        String
-  created_at    DateTime     @default(now())
-  updated_at    DateTime     @updatedAt
-  deleted_at    DateTime?
-  department_id String?
-  department    Departments? @relation(fields: [department_id], references: [id])
-  role          Role         @relation(fields: [roleId], references: [id])
+  id              String          @id @default(uuid())
+  email           String          @unique
+  password        String?
+  firstname       String?
+  lastname        String?
+  middlename      String?
+  suffix          String?
+  mobile          String?
+  id_type         String?
+  id_no           String?
+  employee_id     String?         @unique
+  regionId        String?
+  region          Regions?        @relation(fields: [regionId], references: [id])
+  status          AccountStatus   @default(ACTIVE)
+  is_default      Boolean? // For default superadmin or similar
+  verified_at     DateTime?
+  refreshToken    String?         @unique
+  roleId          String
+  role            Role            @relation(fields: [roleId], references: [id])
+  department      Departments?    @relation(fields: [department_id], references: [id])
+  department_id   String?
+  /// When true, the account is treated as away for assignments; login remains allowed (unlike status INACTIVE).
+  away_mode       Boolean         @default(false)
+  created_at      DateTime        @default(now())
+  updated_at      DateTime        @updatedAt
+  deleted_at      DateTime?
+  assignedTickets SupportTicket[]
 }
 
 model Role {
   id          String           @id @default(uuid())
   name        String
   description String?
+  subRole     String?
+  slug        String?          @unique
+  permissions RolePermission[] // Relations to Permission
+  admins      Admin[] // Admins under this role
   created_at  DateTime         @default(now())
   updated_at  DateTime         @updatedAt
   deleted_at  DateTime?
-  subRole     String?
-  slug        String?          @unique
-  admins      Admin[]
-  permissions RolePermission[]
 }
 
 model Permission {
   id          String           @id @default(uuid())
   name        String
-  slug        String           @unique
+  slug        String           @unique // e.g., "create:admin", "view:roles"
   description String?
+  roles       RolePermission[] // Roles with this permission
   created_at  DateTime         @default(now())
+  groupName   String?
   updated_at  DateTime         @updatedAt
   deleted_at  DateTime?
-  groupName   String?
-  roles       RolePermission[]
 }
 
 model RolePermission {
   id           String     @id @default(uuid())
-  roleId       String?
+  roleId       String? // optional
   permissionId String
-  created_at   DateTime   @default(now())
-  actionId     String?
-  action       Action?    @relation(fields: [actionId], references: [id])
+  actionId     String? //make this optional for now
+  role         Role?      @relation(fields: [roleId], references: [id]) // ✅ make this optional
   permission   Permission @relation(fields: [permissionId], references: [id])
-  role         Role?      @relation(fields: [roleId], references: [id])
+  action       Action?    @relation(fields: [actionId], references: [id]) // make optional for now
+  created_at   DateTime   @default(now())
 
   @@unique([roleId, permissionId])
 }
 
 model Regions {
-  id         String    @id @default(uuid())
-  psgcCode   String
-  regDesc    String
-  regCode    String    @unique
-  label      String?
-  created_at DateTime? @default(now())
-  updated_at DateTime? @updatedAt
-  deleted_at DateTime?
+  id              String           @id @default(uuid())
+  psgcCode        String
+  regDesc         String
+  regCode         String           @unique
+  label           String?
+  admins          Admin[]
+  adminSignatures AdminSignature[]
+  created_at      DateTime?        @default(now())
+  updated_at      DateTime?        @updatedAt
+  deleted_at      DateTime?
 }
 
 model TypesOfID {
@@ -146,9 +203,9 @@ model Departments {
 model Module {
   id          String   @id @default(uuid())
   name        String
-  createdAt   DateTime @default(now())
-  description String?
   actions     Action[]
+  description String?
+  createdAt   DateTime @default(now())
 }
 
 model Action {
@@ -160,15 +217,90 @@ model Action {
 }
 
 model LandingPageConfig {
-  id        String   @id
-  sections  Json
+  id        String   @id @default(uuid())
+  sections  Json // Stores the array of SectionConfig objects
   isActive  Boolean  @default(true)
   createdAt DateTime @default(now())
-  updatedAt DateTime
+  updatedAt DateTime @updatedAt
 }
 
-enum UserStatus {
-  PENDING  @map("pending")
-  APPROVED @map("approved")
-  DENIED   @map("denied")
+model SupportTicket {
+  id                String                @id @default(uuid())
+  ticket_number     String                @unique
+  subject           String
+  status            SupportTicketStatus   @default(OPEN)
+  priority          SupportTicketPriority @default(MEDIUM)
+  userId            String?
+  user              User?                 @relation(fields: [userId], references: [id])
+  assignedToAdminId String?
+  assignedToAdmin   Admin?                @relation(fields: [assignedToAdminId], references: [id])
+  messages          SupportMessage[]
+  created_at        DateTime              @default(now())
+  updated_at        DateTime              @updatedAt
+  closed_at         DateTime?
+
+  @@index([userId])
+  @@index([assignedToAdminId])
+}
+
+model SupportMessage {
+  id          String        @id @default(uuid())
+  ticketId    String
+  ticket      SupportTicket @relation(fields: [ticketId], references: [id], onDelete: Cascade)
+  senderId    String // Can be userId or adminId
+  senderType  String // "user" or "admin"
+  message     String        @db.Text
+  attachments Json? // Array of file URLs
+  isRead      Boolean       @default(false)
+  created_at  DateTime      @default(now())
+
+  @@index([ticketId])
+}
+
+// E-Signature: stored after upload to storage-service. signatureFileId = File.id from storage.
+model AdminSignature {
+  id              String    @id @default(uuid())
+  fullName        String
+  email           String
+  role            String? // role name, e.g. Director, Chairman
+  regionId        String? // Regions.id (uuid)
+  region          Regions?  @relation(fields: [regionId], references: [id])
+  signatureFileId String // File.id from storage-service after upload
+  created_at      DateTime  @default(now())
+  updated_at      DateTime  @updatedAt
+  deleted_at      DateTime?
+}
+
+enum SuspensionRequestStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+model AccountSuspensionRequest {
+  id          String                  @id @default(uuid())
+  userId      String
+  action      String // 'suspend' or 'unsuspend'
+  reason      String                  @db.Text
+  status      SuspensionRequestStatus @default(PENDING)
+  requestedBy String // Email of admin who requested
+  reviewedBy  String? // Email of system admin who reviewed
+  reviewNotes String?                 @db.Text
+  created_at  DateTime                @default(now())
+  updated_at  DateTime                @updatedAt
+  reviewed_at DateTime?
+
+  @@index([userId])
+  @@index([status])
+}
+
+model AccountDeletionLog {
+  id         String   @id @default(uuid())
+  userId     String
+  userEmail  String
+  reason     String   @db.Text
+  deletedBy  String // Email of admin who deleted
+  created_at DateTime @default(now())
+
+  @@index([userId])
 }
