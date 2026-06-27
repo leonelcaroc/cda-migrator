@@ -16,6 +16,9 @@ app.use(express.json());
 
 // Wrap top-level async logic in a function
 async function main() {
+  const start = 2048;
+  const end = 52063;
+
   try {
     app.get("/health", (_, res) => {
       res.json({ status: "ok" });
@@ -31,7 +34,7 @@ async function main() {
     // await fifthTestMigration(2049);
     // }
 
-    for (let i = 2048; i <= 2150; i++) {
+    for (let i = start; i <= end; i++) {
       await eightTestMigration(i);
     }
 
