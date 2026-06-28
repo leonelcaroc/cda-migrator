@@ -68,12 +68,12 @@ import express from "express";
 // import thirdTestMigration from "./thirdTestMigration";
 // import thirdTestMigration from "./thirdTestMigration.js";
 // import fourthTestMigration from "./fourthTestMigration.js";
-import fifthTestMigration from "./fifthTestMigration.js";
-import sixthTestMigration from "./sixthTestMigration.js";
-import runAddCsfCoops from "./addCsfCoops.js";
-import { prismaCoop } from "./utils/prismaCoop.js";
-import { deleteAll } from "./deleteRecords.js";
-import eightTestMigration from "./eightMigrationTesting.js";
+// import fifthTestMigration from "./fifthTestMigration.ts";
+// import sixthTestMigration from "./sixthTestMigration.ts";
+import runAddCsfCoops from "./addCsfCoops.ts";
+import { prismaCoop } from "./utils/prismaCoop.ts";
+import { deleteAll } from "./deleteRecords.ts";
+import eightTestMigration from "./eightMigrationTesting.ts";
 
 const app = express();
 app.use(express.json());
@@ -82,8 +82,8 @@ app.use(express.json());
 async function main() {
   // const start = 2048;
   // const start = 2331;
-  // const start = 5848;
-  const start = 11031;
+  const start = 5848;
+  // const start = 11031;
   const end = 52063;
 
   try {

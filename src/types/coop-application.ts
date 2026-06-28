@@ -1,5 +1,5 @@
 import { ApplicationStatus } from "@prisma/client/coop/index.js";
-import { generateReferenceId } from "../utils/generateReferenceId.js";
+import { generateReferenceId } from "../utils/generateReferenceId.ts";
 
 export type UUID = string & { readonly __brand: "UUID" };
 export type TCoopCategory = "primary" | "secondary" | "tertiary" | "special";

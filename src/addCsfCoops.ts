@@ -1,17 +1,17 @@
-import { prismaAuth } from "./utils/prismaAuth.js";
-import { prismaCoop } from "./utils/prismaCoop.js";
-import hashPasswordUtil from "./utils/hashPasswordUtil.js";
-import randomPassword from "./utils/randomPassword.js";
-import { loadJSON } from "./utils/loadJson.js";
+import { prismaAuth } from "./utils/prismaAuth.ts";
+import { prismaCoop } from "./utils/prismaCoop.ts";
+import hashPasswordUtil from "./utils/hashPasswordUtil.ts";
+import randomPassword from "./utils/randomPassword.ts";
+import { loadJSON } from "./utils/loadJson.ts";
 import path from "path";
 import fs from "fs";
 import { v4 as uuid } from "uuid";
-import { generateReferenceId } from "./utils/generateReferenceId.js";
+import { generateReferenceId } from "./utils/generateReferenceId.ts";
 // import csf_coops_items from "./data/new_csfMigration.json" with { type: "json" };
 import csf_coops_items from "./data/csf_main_coops_v1.json" with { type: "json" };
 // import csf_cooperators from "./data/csf_cooperators.json" with { type: "json" };
 import refregions from "./data/refregion.json" with { type: "json" };
-import { generateUuid } from "./utils/generateUuid.js";
+import { generateUuid } from "./utils/generateUuid.ts";
 
 const logFilePath = path.join(process.cwd(), "csf_credential_logs.txt");
 

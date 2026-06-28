@@ -1,4 +1,4 @@
-import { prismaCoop } from "./utils/prismaCoop.js";
+import { prismaCoop } from "./utils/prismaCoop.ts";
 
 export async function deleteAll() {
   const regNos = [

@@ -1,34 +1,35 @@
 import fs from "fs";
 import path from "path";
-import connection from "./utils/connectToMySqlDb.js";
-import { prismaAuth } from "./utils/prismaAuth.js";
-import { prismaCoop } from "./utils/prismaCoop.js";
+import connection from "./utils/connectToMySqlDb.ts";
+import { prismaAuth } from "./utils/prismaAuth.ts";
+import { prismaCoop } from "./utils/prismaCoop.ts";
 
-import hashPasswordUtil from "./utils/hashPasswordUtil.js";
-import randomPassword from "./utils/randomPassword.js";
-import randomString from "./utils/randomString.js";
-import { generateReferenceId } from "./utils/generateReferenceId.js";
+import hashPasswordUtil from "./utils/hashPasswordUtil.ts";
+import randomPassword from "./utils/randomPassword.ts";
+import randomString from "./utils/randomString.ts";
+import { generateReferenceId } from "./utils/generateReferenceId.ts";
 
-import { resolveCompliance } from "./utils/resolveData.js";
-import { resolveCoopType } from "./utils/resolveData.js";
-import { normalizeDate } from "./utils/resolveData.js";
-import { normalizeAddress } from "./utils/resolveData.js";
-import { normalizeCategory } from "./utils/resolveData.js";
-import { normalizeAreaOfOperation } from "./utils/resolveData.js";
+import { resolveCompliance } from "./utils/resolveData.ts";
+import { resolveCoopType } from "./utils/resolveData.ts";
+import { normalizeDate } from "./utils/resolveData.ts";
+import { normalizeAddress } from "./utils/resolveData.ts";
+import { normalizeCategory } from "./utils/resolveData.ts";
+import { normalizeAreaOfOperation } from "./utils/resolveData.ts";
 import { RowDataPacket } from "mysql2";
 // import { ApplicationStatus } from "@prisma/client/coop/index.js";
+// import { ApplicationStatus } from "@prisma/client/coop/index.ts";
 import { ApplicationStatus } from "@prisma/client/coop/index.js";
-import { generateUuid } from "./utils/generateUuid.js";
+import { generateUuid } from "./utils/generateUuid.ts";
 import ref_regions from "./data/refregion.json" with { type: "json" };
-import { createCooperativeApplication } from "./utils/createCooperativeApplication.js";
-import { logMigrationError } from "./logMigrationError.js";
+import { createCooperativeApplication } from "./utils/createCooperativeApplication.ts";
+import { logMigrationError } from "./logMigrationError.ts";
 
 import {
   TCoopCategory,
   TCooperativeApplication,
-} from "./utils/createCooperativeApplication.js";
+} from "./utils/createCooperativeApplication.ts";
 import { UserStatus } from "@prisma/client/auth/index.js";
-import getLogFilePath from "./utils/getLogFilePath.js";
+import getLogFilePath from "./utils/getLogFilePath.ts";
 // import { queryCoop } from "./helper/query.js";
 import { queryCoop } from "./helper/query.ts";
 
