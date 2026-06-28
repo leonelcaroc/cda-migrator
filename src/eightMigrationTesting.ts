@@ -29,7 +29,8 @@ import {
 } from "./utils/createCooperativeApplication.js";
 import { UserStatus } from "@prisma/client/auth/index.js";
 import getLogFilePath from "./utils/getLogFilePath.js";
-import { queryCoop } from "./helper/query.js";
+// import { queryCoop } from "./helper/query.js";
+import { queryCoop } from "./helper/query.ts";
 
 // ---------------------------------------------------------
 
