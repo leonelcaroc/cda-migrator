@@ -73,7 +73,6 @@ import sixthTestMigration from "./sixthTestMigration.js";
 import runAddCsfCoops from "./addCsfCoops.js";
 import { prismaCoop } from "./utils/prismaCoop.js";
 import { deleteAll } from "./deleteRecords.js";
-import { migrateCooperativeRange } from "./seventhTestMigration.js";
 import eightTestMigration from "./eightMigrationTesting.js";
 
 const app = express();
