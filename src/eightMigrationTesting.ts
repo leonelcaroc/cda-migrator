@@ -49,6 +49,8 @@ const logFilePath = getLogFilePath();
 fs.writeFileSync(logFilePath, "Cooperatives Credentials\n");
 
 export default function eightTestMigration(id: number) {
+  console.log("Current ID: ", id);
+
   const coopId = id?.toString();
 
   connection.query<RowDataPacket[]>(queryCoop(coopId), async (err, results) => {
