@@ -49,7 +49,7 @@ const logFilePath = getLogFilePath();
 fs.writeFileSync(logFilePath, "Cooperatives Credentials\n");
 
 export default function eightTestMigration(id: number) {
-  console.log("Current ID: ", id);
+  // console.log("Current ID: ", id);
 
   const coopId = id?.toString();
 
@@ -870,6 +870,7 @@ export default function eightTestMigration(id: number) {
       }
     }
 
+    console.log("Completed ID: ", id);
     console.log("MIGRATION COMPLETED");
     console.log(`✅ Created: ${successCount}`);
     console.log(`⏭️  Skipped: ${skipCount}`);
