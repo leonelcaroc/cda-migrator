@@ -99,9 +99,9 @@ model Cooperatives {
   cooperatorList                         Json?
   cooperators                            Json?
   fedCooperators                         Json?
-  totalFeeContributions                  Int?
+  totalFeeContributions                  Decimal?                                @db.Decimal(19, 2)
   boardOfDirectors                       Json?
-  totalAuthorizedShareCapital            Int?
+  totalAuthorizedShareCapital            Decimal?                                @db.Decimal(19, 2)
   totalShares                            Int?
   shareParValue                          Int?
   hasPreferredShare                      Boolean?
@@ -109,8 +109,8 @@ model Cooperatives {
   preferredShareParValue                 Int?
   commonShares                           Int?
   commonShareParValue                    Int?
-  totalSubscribedCapital                 Int?
-  totalPaidUpCapital                     Int?
+  totalSubscribedCapital                 Decimal?                                @db.Decimal(19, 2)
+  totalPaidUpCapital                     Decimal?                                @db.Decimal(19, 2)
   paidUpShareCommon                      Json?
   paidUpSharePreferred                   Json?
   regularMinimumSubscribed               Int?
@@ -219,7 +219,7 @@ model Cooperatives {
   bodPerDiem                             Json?
   majorityMembersLocation                String?
   qualificationPeriodYears               Int?
-  totalRestrictedCapital                 Int?
+  totalRestrictedCapital                 Decimal?                                @db.Decimal(19, 2)
   economicAspect                         Json?
   financialAspect                        Json?
   technicalAspect                        Json?
@@ -256,6 +256,9 @@ model Cooperatives {
   minimumShareCapitalRequirement         Int?
   bodCountAoc                            Int?
   bodCountByLaws                         Int?
+  isValidatorAccepted                    Boolean?                                @default(false)
+  depositForCapitalSubscription          Decimal?                                @db.Decimal(19, 2)
+  csfRoutingStage                        Int                                     @default(1)
   CooperativeEconomicSurvey              CooperativeEconomicSurvey?
   amendmentOrg                           CooperativeOrg?                         @relation("OrgAmendmentApplication")
   approvedByOrg                          CooperativeOrg?                         @relation("OrgApprovedApplication")
@@ -586,6 +589,7 @@ model BranchSatellite {
   streetName             String?
   townDistrict           String?
   expiresAt              DateTime?
+  isValidatorAccepted    Boolean?           @default(false)
   barangay               Barangays?         @relation(fields: [barangay_id], references: [id])
   cityMun                CityMunicipality?  @relation(fields: [cityMun_id], references: [id])
   cooperativeOrg         CooperativeOrg     @relation(fields: [cooperativeOrgId], references: [id])
@@ -595,22 +599,23 @@ model BranchSatellite {
 }
 
 model CtcApplication {
-  id                String                 @id @default(uuid())
-  referenceId       String?                @unique
-  branchSatelliteId String?
-  applicationType   CtcApplicationType
-  status            String?
-  createdAt         DateTime               @default(now())
-  updatedAt         DateTime               @updatedAt
-  applicationStatus ApplicationStatus?     @default(IN_PROGRESS)
-  isDraft           Boolean?               @default(true)
-  version           String                 @default("1")
-  validator_id      String?
-  expiresAt         DateTime?
-  closure           ClosureApplication?
-  conversion        ConversionApplication?
-  branchSatellite   BranchSatellite?       @relation(fields: [branchSatelliteId], references: [id])
-  transfer          TransferApplication?
+  id                  String                 @id @default(uuid())
+  referenceId         String?                @unique
+  branchSatelliteId   String?
+  applicationType     CtcApplicationType
+  status              String?
+  createdAt           DateTime               @default(now())
+  updatedAt           DateTime               @updatedAt
+  applicationStatus   ApplicationStatus?     @default(IN_PROGRESS)
+  isDraft             Boolean?               @default(true)
+  version             String                 @default("1")
+  validator_id        String?
+  expiresAt           DateTime?
+  isValidatorAccepted Boolean?               @default(false)
+  closure             ClosureApplication?
+  conversion          ConversionApplication?
+  branchSatellite     BranchSatellite?       @relation(fields: [branchSatelliteId], references: [id])
+  transfer            TransferApplication?
 }
 
 model TransferApplication {
@@ -721,6 +726,7 @@ model Laboratory {
   otherDocuments         String?
   registrationNo         String?            @unique
   acronym                String?
+  isValidatorAccepted    Boolean?           @default(false)
   barangay               Barangays?         @relation(fields: [barangay_id], references: [id])
   cityMun                CityMunicipality?  @relation(fields: [cityMun_id], references: [id])
   commonBondMembership   BondOfMembership?  @relation(fields: [commonBondMembershipId], references: [id])
@@ -1029,6 +1035,62 @@ model certificate_of_registration_compliance {
   TransactionLog     TransactionLog? @relation(fields: [transaction_log_id], references: [id])
 }
 
+model ApplicationFindingReport {
+  id                           String                         @id
+  referenceId                  String
+  applicationFamily            String
+  applicationKind              String
+  version                      String
+  stageRole                    String?
+  submittedBy                  String?
+  status                       String                         @default("SUBMITTED")
+  isFinal                      Boolean                        @default(false)
+  clientVisible                Boolean                        @default(false)
+  createdAt                    DateTime                       @default(now())
+  updatedAt                    DateTime
+  deletedAt                    DateTime?
+  ApplicationFindingReportItem ApplicationFindingReportItem[]
+
+  @@index([referenceId, applicationKind, version, clientVisible], map: "AFR_ref_kind_version_client_idx")
+  @@index([referenceId, applicationKind, version, isFinal], map: "AFR_ref_kind_version_final_idx")
+  @@index([referenceId, applicationKind, version], map: "AFR_ref_kind_version_idx")
+}
+
+model ApplicationFindingReportItem {
+  id                       String                   @id
+  reportId                 String
+  sourceFindingId          String?
+  sourceReportItemId       String?
+  findingSnapshot          String
+  recommendationSnapshot   String?
+  originalAuthorId         String?
+  originalAuthorRole       String?
+  submittedBy              String?
+  submittedByRole          String?
+  sortOrder                Int                      @default(0)
+  clientVisible            Boolean                  @default(false)
+  createdAt                DateTime                 @default(now())
+  updatedAt                DateTime
+  deletedAt                DateTime?
+  ApplicationFindingReport ApplicationFindingReport @relation(fields: [reportId], references: [id], onDelete: Cascade)
+
+  @@index([reportId], map: "AFRI_report_idx")
+  @@index([sourceFindingId], map: "AFRI_source_finding_idx")
+  @@index([sourceReportItemId], map: "AFRI_source_report_item_idx")
+}
+
+model SystemSettings {
+  id                  String                   @id
+  settingsName        String                   @unique
+  settingsDescription String?
+  optionsType         SystemSettingsOptionType @default(SWITCH)
+  options             Json?
+  currentOption       String                   @default("true")
+  created_at          DateTime?                @default(now())
+  updated_at          DateTime?
+  deleted_at          DateTime?
+}
+
 enum ApplicationStatus {
   APPROVED
   IN_PROGRESS
@@ -1092,4 +1154,8 @@ enum EconomicSurveyType {
 enum SubmissionRoute {
   region
   main
+}
+
+enum SystemSettingsOptionType {
+  SWITCH
 }
