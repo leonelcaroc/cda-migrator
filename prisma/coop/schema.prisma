@@ -39,9 +39,9 @@ model CooperativeOrg {
   acronym                  String?
   dateOfRegistration       DateTime?
   recentAmendmentDate      DateTime?
-  amendmentHistory         Json?
   mergerCount              Int?                @default(0)
   mergerHistory            Json?
+  AmendmentHistory         AmendmentHistory[]
   BranchSatellite          BranchSatellite[]
   CoopStatus               CoopStatus[]
   alternateRepresentative  Representative?     @relation("OrgAlternateRep", fields: [alternateRepId], references: [id])
@@ -259,6 +259,7 @@ model Cooperatives {
   isValidatorAccepted                    Boolean?                                @default(false)
   depositForCapitalSubscription          Decimal?                                @db.Decimal(19, 2)
   csfRoutingStage                        Int                                     @default(1)
+  AmendmentHistory                       AmendmentHistory[]
   CooperativeEconomicSurvey              CooperativeEconomicSurvey?
   amendmentOrg                           CooperativeOrg?                         @relation("OrgAmendmentApplication")
   approvedByOrg                          CooperativeOrg?                         @relation("OrgApprovedApplication")
@@ -1089,6 +1090,23 @@ model SystemSettings {
   created_at          DateTime?                @default(now())
   updated_at          DateTime?
   deleted_at          DateTime?
+}
+
+model AmendmentHistory {
+  id               Int             @id @default(autoincrement())
+  referenceNo      String?
+  cooperativeName  String?
+  cooperativeType  String?
+  amendmentType    String?
+  status           String?
+  created_at       DateTime?       @default(now())
+  deleted_at       DateTime?
+  updated_at       DateTime
+  amendmentDate    DateTime?
+  cooperativeOrgId String?
+  cooperativeId    String?
+  Cooperatives     Cooperatives?   @relation(fields: [cooperativeId], references: [id])
+  CooperativeOrg   CooperativeOrg? @relation(fields: [cooperativeOrgId], references: [id])
 }
 
 enum ApplicationStatus {
